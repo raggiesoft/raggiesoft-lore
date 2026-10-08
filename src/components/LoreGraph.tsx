@@ -118,3 +118,4 @@ export default function LoreGraph({ data }: { data: GraphData }) {
     </div>
   );
 }
+

@@ -15,7 +15,7 @@
 
 # next.js
 /.next/
-/out/
+# /out/  <- Allowed so Jenna can push the static build for Sarah to pull
 
 # production
 /build
