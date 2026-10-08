@@ -18,3 +18,4 @@ Sarah Bennett is the daughter of [Sam Bennett](/vault/characters/sam-bennett.md)
 Like the rest of her immediate family, Sarah is entirely unaware of the Bennett Schism of 1978 and does not know of the existence of her second cousin, [Arthur Bennett](/vault/characters/arthur-bennett.md).
 
 Sarah's name and identity later became the namesake for a deployment automation script (`sarah-deploy.sh`) within the RaggieSoft server infrastructure.
+

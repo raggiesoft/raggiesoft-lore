@@ -8,3 +8,4 @@ const LoreGraphNoSSR = dynamic(() => import("./LoreGraph"), { ssr: false });
 export default function LoreGraphWrapper({ data }: { data: GraphData }) {
   return <LoreGraphNoSSR data={data} />;
 }
+

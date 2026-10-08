@@ -22,3 +22,4 @@ Sam Bennett is the paternal cousin of [Arthur Bennett](/vault/characters/arthur-
 Sam's father and Arthur's father were brothers who had a catastrophic falling out over a failed business venture and a disputed inheritance in 1978. The split was so absolute that neither brother spoke of the other again. Consequently, Sam grew up completely oblivious to Arthur's existence.
 
 Sam eventually started a family of his own, having two children: [Jack Bennett](/vault/characters/jack-bennett.md) and [Sarah Bennett](/vault/characters/sarah-bennett.md).
+
