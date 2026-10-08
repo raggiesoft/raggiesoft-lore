@@ -1,6 +1,6 @@
 ---
 id: "drew"
-name: "Drew"
+name: "Drew Hayes"
 type: "character"
 tags: ["survivor", "martial-artist"]
 relations:
