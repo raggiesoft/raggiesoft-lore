@@ -178,7 +178,17 @@ export default function LoreGraph({ data }: { data: GraphData }) {
 
               {/* Markdown Content */}
               <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                {data.nodes.find((n) => n.id === focusedNodeId)?.content || ""}
+                {(() => {
+                  let content = data.nodes.find((n) => n.id === focusedNodeId)?.content || "";
+                  // Replace {{cms}} with the actual assets CDN
+                  content = content.replace(/\{\{cms\}\}/g, 'https://assets.raggiesoft.com');
+                  // Map custom communication tags to accessible Markdown representations
+                  content = content.replace(/<aac>(.*?)<\/aac>/gi, '_$1_ (AAC)');
+                  content = content.replace(/<sgn>(.*?)<\/sgn>/gi, '_$1_ (Signed)');
+                  content = content.replace(/<asl>(.*?)<\/asl>/gi, '_$1_ (ASL)');
+                  content = content.replace(/<sms>(.*?)<\/sms>/gi, '_$1_ (Text Message)');
+                  return content;
+                })()}
               </ReactMarkdown>
             </div>
           </>
