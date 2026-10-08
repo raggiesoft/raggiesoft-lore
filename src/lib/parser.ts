@@ -7,6 +7,8 @@ export interface GraphNode {
   name: string;
   group: string; // e.g., 'character', 'location', 'event'
   val: number; // visual size of node
+  content: string; // Markdown body
+  metadata: Record<string, any>; // Arbitrary frontmatter
 }
 
 export interface GraphLink {
@@ -38,15 +40,21 @@ export function getLoreGraphData(): GraphData {
         readDirectory(fullPath);
       } else if (entry.isFile() && entry.name.endsWith('.md')) {
         const fileContents = fs.readFileSync(fullPath, 'utf8');
-        const { data } = matter(fileContents);
+        const { data, content } = matter(fileContents);
 
         if (data.id) {
           existingNodeIds.add(data.id);
+          
+          // Separate known fields from generic metadata
+          const { id, name, type, relations, ...metadata } = data;
+
           nodes.push({
             id: data.id,
             name: data.name || data.id,
             group: data.type || 'unknown',
             val: 10, // Base size
+            content: content || '',
+            metadata: metadata || {}
           });
 
           // Process relations (edges)

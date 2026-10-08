@@ -2,6 +2,8 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import ForceGraph2D from "react-force-graph-2d";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { GraphData, GraphNode, GraphLink } from "@/lib/parser";
 
 export default function LoreGraph({ data }: { data: GraphData }) {
@@ -129,6 +131,58 @@ export default function LoreGraph({ data }: { data: GraphData }) {
             );
           })}
         </ul>
+      </div>
+
+      {/* LAYER 3: The Side Panel */}
+      <div
+        className={`absolute top-0 right-0 w-full md:w-96 h-full bg-white dark:bg-zinc-800 shadow-2xl transition-transform duration-300 ease-in-out flex flex-col ${
+          focusedNodeId ? "translate-x-0" : "translate-x-full"
+        }`}
+        aria-hidden={!focusedNodeId}
+      >
+        {focusedNodeId && (
+          <>
+            <div className="flex justify-between items-center p-4 border-b border-gray-200 dark:border-zinc-700">
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white">
+                {data.nodes.find((n) => n.id === focusedNodeId)?.name}
+              </h2>
+              <button
+                onClick={() => setFocusedNodeId(null)}
+                className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-zinc-700 text-gray-500 dark:text-gray-400"
+                aria-label="Close panel"
+              >
+                ✕
+              </button>
+            </div>
+            <div className="p-6 overflow-y-auto flex-1 prose prose-sm dark:prose-invert">
+              <div className="mb-4 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+                {data.nodes.find((n) => n.id === focusedNodeId)?.group}
+              </div>
+              
+              {/* Metadata mapping */}
+              {Object.entries(data.nodes.find((n) => n.id === focusedNodeId)?.metadata || {}).length > 0 && (
+                <div className="mb-6 bg-gray-50 dark:bg-zinc-900/50 p-4 rounded-lg">
+                  <h3 className="text-sm font-semibold mb-2 mt-0">Metadata</h3>
+                  <dl className="grid grid-cols-1 gap-x-4 gap-y-2 text-sm">
+                    {Object.entries(data.nodes.find((n) => n.id === focusedNodeId)?.metadata || {}).map(([key, value]) => (
+                      <div key={key} className="sm:col-span-1">
+                        <dt className="font-medium text-gray-500 dark:text-gray-400 capitalize">{key.replace(/_/g, ' ')}</dt>
+                        <dd className="text-gray-900 dark:text-gray-200 mt-1">
+                          {Array.isArray(value) ? value.join(', ') : String(value)}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                </div>
+              )}
+
+              {/* Markdown Content */}
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {data.nodes.find((n) => n.id === focusedNodeId)?.content || ""}
+              </ReactMarkdown>
+            </div>
+          </>
+        )}
       </div>
 
     </div>
