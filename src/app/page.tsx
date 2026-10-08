@@ -1,5 +1,5 @@
 import { getLoreGraphData } from "@/lib/parser";
-import LoreGraph from "@/components/LoreGraph";
+import LoreGraphWrapper from "@/components/LoreGraphWrapper";
 
 export default function Home() {
   // This runs entirely on the server during the Next.js build step!
@@ -12,7 +12,7 @@ export default function Home() {
         We pass the pre-parsed JSON graph data down into the Client Component.
         The browser never has to download or parse the markdown files itself.
       */}
-      <LoreGraph data={graphData} />
+      <LoreGraphWrapper data={graphData} />
     </main>
   );
 }

@@ -5,7 +5,7 @@ import ForceGraph2D from "react-force-graph-2d";
 import { GraphData, GraphNode, GraphLink } from "@/lib/parser";
 
 export default function LoreGraph({ data }: { data: GraphData }) {
-  const fgRef = useRef<any>();
+  const fgRef = useRef<any>(null);
   const [dimensions, setDimensions] = useState({ width: 800, height: 600 });
   const [focusedNodeId, setFocusedNodeId] = useState<string | null>(null);
 
@@ -51,12 +51,28 @@ export default function LoreGraph({ data }: { data: GraphData }) {
           width={dimensions.width}
           height={dimensions.height}
           nodeLabel="name"
-          nodeColor={(node) => (node.id === focusedNodeId ? "#ff0000" : "#3b82f6")}
+          nodeVal={(node: any) => (node.id === focusedNodeId ? 10 : 5)} // Node size
+          nodeColor={(node: any) => {
+            if (node.id === focusedNodeId) return "#facc15"; // yellow-400 for focused
+            switch (node.group) {
+              case "character": return "#3b82f6"; // blue-500
+              case "location": return "#10b981"; // emerald-500
+              case "event": return "#ef4444"; // red-500
+              case "organization": return "#8b5cf6"; // violet-500
+              default: return "#9ca3af"; // gray-400
+            }
+          }}
           linkColor={() => "rgba(150, 150, 150, 0.4)"}
+          linkWidth={(link: any) => {
+            const sId = typeof link.source === 'object' ? link.source.id : link.source;
+            const tId = typeof link.target === 'object' ? link.target.id : link.target;
+            return (sId === focusedNodeId || tId === focusedNodeId) ? 2 : 1;
+          }}
           linkDirectionalArrowLength={3.5}
           linkDirectionalArrowRelPos={1}
           onNodeClick={(node) => {
-            // Visual click pans camera
+            // Visual click pans camera and sets focus
+            setFocusedNodeId(node.id as string);
             fgRef.current.centerAt(node.x, node.y, 1000);
             fgRef.current.zoom(2, 1000);
           }}
