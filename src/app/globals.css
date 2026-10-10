@@ -1,11 +1,34 @@
+/**
+ * ============================================================================
+ * ARCHITECTURAL OVERVIEW: GLOBAL CSS STYLES (NEXT.JS APP)
+ * ============================================================================
+ * 
+ * This file serves as the foundational stylesheet for the Next.js application.
+ * It imports the Tailwind CSS framework, registers global plugins, and defines
+ * essential CSS variables and root element styles.
+ *
+ * MAINTENANCE NOTES:
+ * - This file contains global resets and theme variable definitions.
+ * - For component-specific styles, prefer Tailwind utility classes or CSS modules
+ *   rather than adding global rules here.
+ * - CSS variables defined here (e.g., --background, --foreground) are consumed
+ *   by Tailwind's configuration or inline utility classes.
+ * ============================================================================
+ */
+
+/* Initialize Tailwind CSS directives for the project */
 @import "tailwindcss";
+
+/* Include the typography plugin for prose and rich text styling */
 @plugin "@tailwindcss/typography";
 
+/* Default light mode variables (fallback) */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+/* Expose global color and font tokens for inline usage or Tailwind config */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
