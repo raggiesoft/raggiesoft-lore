@@ -1,44 +1,86 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# =================================================
+# 
+# RaggieSoft Master Git Ignore Rules
+# 
+# =================================================
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# --- Audio Source Files ---
+*.wav
+*.aiff
+*.flac
+*.alac
+*.dsd
+*.dff
+*.dsf
 
-# testing
-/coverage
+# --- Generated Audio Files ---
+*.mp3
+*.ogg
+*.aac
+*.m4a
+*.wma
 
-# next.js
-/.next/
-# /out/  <- Allowed so Jenna can push the static build for Sarah to pull
+# --- High-Resolution Design & Art Files ---
+*.psd
+*.psb
+*.ai
+*.eps
+*.tiff
+*.tif
+*.raw
+*.cr2
+*.dng
 
-# production
-/build
+# --- Video & Motion Graphics ---
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.prproj
+*.aep
 
-# misc
+# --- Archives & Compressed Files ---
+*.7z
+*.zip
+*.tar.gz
+*.rar
+*.gz
+
+# --- Disc Image & Binary Data ---
+*.iso
+*.bin
+*.cue
+*.img
+*.dmg
+
+# --- OS Generated Files ---
 .DS_Store
-*.pem
+Thumbs.db
+Desktop.ini
+ehthumbs.db
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+# --- IDE / Editor Configs ---
+.vscode/
+.idea/
+*.swp
 
-# env files (can opt-in for committing if needed)
-.env*
+# --- Narrative & Reference Assets ---
+_workspace/books/*/images/source/
+_workspace/books/*/images/people/real-person/
 
-# vercel
-.vercel
+# Ignore all Upscayl output directories and contents
+*[Uu]pscayl*/
+*upscayl*.png
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# --- WORKSPACE SECURITY ---
+_workspace/build-tools/rclone/rclone.conf
+_workspace/build-tools/ssh_keys.txt
+!_workspace/build-tools/rclone/rclone.conf.example
+
+# --- WORKSPACE & TOOLS ---
+_workspace/build-tools/
+!_workspace/build-tools/rclone/rclone.conf.example
 
 # --- Google Analytics 4 API Credentials ---
 ga4-credentials.json
@@ -49,3 +91,29 @@ ga4-credentials.json
 .venv/
 __pycache__/
 
+# --- Node / Next.js / Web ---
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+/coverage
+/.next/
+# /out/  <- Allowed so Jenna can push the static build for Sarah to pull
+/build
+*.pem
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.env*
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+
+# --- Project Specific Overrides ---
+/lore/**/_old/
+orion.php
