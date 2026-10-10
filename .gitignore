@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# --- Google Analytics 4 API Credentials ---
+ga4-credentials.json
+*_credentials*.json
+*service-account*.json
+
+# --- Python Virtual Environment ---
+.venv/
+__pycache__/
+
