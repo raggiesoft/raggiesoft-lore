@@ -47,6 +47,29 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
       <head>
+        {/*
+          =====================================================================
+          Google Analytics 4 (GA4) Telemetry Integration (G-P9RG9JVYB6)
+          =====================================================================
+          Unified RaggieSoft ecosystem measurement property. Injected into the
+          static Next.js export head so every knowledge graph route reports to
+          the central GA4 property without blocking initial render.
+          =====================================================================
+        */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-P9RG9JVYB6"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-P9RG9JVYB6');
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
