@@ -83,10 +83,10 @@ export default function RootLayout({
         />
         <link
           rel="stylesheet"
-          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261017i"
+          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261017j"
         />
         <script
-          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261017i"
+          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261017j"
           defer
         ></script>
       </head>
@@ -124,7 +124,6 @@ export default function RootLayout({
                   <li role="none"><a role="menuitem" href="https://stardust.raggiesoft.com">🚀 The Stardust Engine</a></li>
                 </ul>
               </li>
-              <li><a href="https://lore.raggiesoft.com" aria-current="page" className="is-active">🏛️ Lore</a></li>
               <li><a href="https://corporate.raggiesoft.com">🏢 Corporate</a></li>
               <li><a href="https://storetrainer.raggiesoft.com">💾 StoreTrainer</a></li>
               <li><a href="https://michaelpragsdale.com">👔 Michael P. Ragsdale</a></li>
