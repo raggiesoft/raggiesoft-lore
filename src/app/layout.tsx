@@ -83,10 +83,10 @@ export default function RootLayout({
         />
         <link
           rel="stylesheet"
-          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261017g"
+          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261017h"
         />
         <script
-          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261017g"
+          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261017h"
           defer
         ></script>
       </head>
@@ -97,10 +97,33 @@ export default function RootLayout({
             <ul className="rs-network-links">
               <li><a href="https://raggiesoft.com">🌐 Hub</a></li>
               <li><a href="https://nebulae.raggiesoft.com">🌌 Nebulae</a></li>
-              <li><a href="https://music.raggiesoft.com">🎧 Music</a></li>
               <li><a href="https://books.raggiesoft.com">📚 Books</a></li>
-              <li><a href="https://stardust.raggiesoft.com">🚀 Stardust</a></li>
-              <li><a href="https://engineroom.raggiesoft.com">⚙️ Engine Room</a></li>
+              <li className="rs-network-dropdown">
+                <button
+                  type="button"
+                  className="rs-network-dropdown-toggle"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  <span aria-hidden="true">⚙️</span>
+                  <span>Engine Room</span>
+                  <span className="rs-network-caret" aria-hidden="true">▾</span>
+                </button>
+                <ul className="rs-network-dropdown-menu" role="menu" aria-label="Engine Room Records & Band Roster">
+                  <li role="none"><a role="menuitem" href="https://engineroom.raggiesoft.com">⚙️ Engine Room Records Hub</a></li>
+                  <li role="none"><a role="menuitem" href="https://music.raggiesoft.com">🎧 The Listening Room</a></li>
+                  <li role="none"><a role="menuitem" href="https://engineroom.raggiesoft.com/artists">🎸 All Artists Directory (7)</a></li>
+                  <li className="rs-network-dropdown-divider" role="separator"></li>
+                  <li className="rs-network-dropdown-header" role="presentation">✦ Band Roster (A–Z)</li>
+                  <li role="none"><a role="menuitem" href="https://engineroom.raggiesoft.com/artists/crimson-node">🔴 Crimson Node</a></li>
+                  <li role="none"><a role="menuitem" href="https://engineroom.raggiesoft.com/artists/firelight">🔥 Firelight</a></li>
+                  <li role="none"><a role="menuitem" href="https://engineroom.raggiesoft.com/artists/fractured-prisms">💎 Fractured Prisms</a></li>
+                  <li role="none"><a role="menuitem" href="https://engineroom.raggiesoft.com/artists/mana-canvas">🎨 Mana Canvas</a></li>
+                  <li role="none"><a role="menuitem" href="https://engineroom.raggiesoft.com/artists/the-arctic-symphony-project">❄️ The Arctic Symphony Project</a></li>
+                  <li role="none"><a role="menuitem" href="https://engineroom.raggiesoft.com/artists/the-paper-wall">🧱 The Paper Wall</a></li>
+                  <li role="none"><a role="menuitem" href="https://stardust.raggiesoft.com">🚀 The Stardust Engine</a></li>
+                </ul>
+              </li>
               <li><a href="https://lore.raggiesoft.com" aria-current="page" className="is-active">🏛️ Lore</a></li>
               <li><a href="https://corporate.raggiesoft.com">🏢 Corporate</a></li>
               <li><a href="https://storetrainer.raggiesoft.com">💾 StoreTrainer</a></li>
