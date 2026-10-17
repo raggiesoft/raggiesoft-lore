@@ -81,8 +81,31 @@ export default function RootLayout({
             }),
           }}
         />
+        <link
+          rel="stylesheet"
+          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css"
+        />
       </head>
-      <body>{children}</body>
+      <body>
+        <nav className="rs-network-bar" aria-label="RaggieSoft Ecosystem Network">
+          <div className="rs-network-bar-inner">
+            <span className="rs-network-label">✦ RaggieSoft Network:</span>
+            <ul className="rs-network-links">
+              <li><a href="https://raggiesoft.com">🌐 Hub</a></li>
+              <li><a href="https://nebulae.raggiesoft.com">🌌 Nebulae</a></li>
+              <li><a href="https://music.raggiesoft.com">🎧 Music</a></li>
+              <li><a href="https://books.raggiesoft.com">📚 Books</a></li>
+              <li><a href="https://stardust.raggiesoft.com">🚀 Stardust</a></li>
+              <li><a href="https://engineroom.raggiesoft.com">⚙️ Engine Room</a></li>
+              <li><a href="https://lore.raggiesoft.com" aria-current="page" className="is-active">🏛️ Lore</a></li>
+              <li><a href="https://corporate.raggiesoft.com">🏢 Corporate</a></li>
+              <li><a href="https://storetrainer.raggiesoft.com">💾 StoreTrainer</a></li>
+              <li><a href="https://michaelpragsdale.com">👔 Michael P. Ragsdale</a></li>
+            </ul>
+          </div>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
