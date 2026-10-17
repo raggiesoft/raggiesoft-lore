@@ -83,10 +83,10 @@ export default function RootLayout({
         />
         <link
           rel="stylesheet"
-          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261017e"
+          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261017f"
         />
         <script
-          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261017e"
+          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261017f"
           defer
         ></script>
       </head>
