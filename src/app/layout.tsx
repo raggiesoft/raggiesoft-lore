@@ -85,6 +85,10 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css"
         />
+        <script
+          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js"
+          defer
+        ></script>
       </head>
       <body>
         <nav className="rs-network-bar" aria-label="RaggieSoft Ecosystem Network">
