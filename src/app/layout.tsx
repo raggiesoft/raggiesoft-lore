@@ -113,6 +113,8 @@ export default function RootLayout({
                   <li role="none"><a role="menuitem" href="https://engineroom.raggiesoft.com">⚙️ Engine Room Records Hub</a></li>
                   <li role="none"><a role="menuitem" href="https://music.raggiesoft.com">🎧 The Listening Room</a></li>
                   <li role="none"><a role="menuitem" href="https://engineroom.raggiesoft.com/artists">🎸 All Artists Directory (7)</a></li>
+                  <li role="none"><a role="menuitem" href="https://engineroom.raggiesoft.com/isrc">🏷️ Official ISRC Registry (QTAHP)</a></li>
+                  <li role="none"><a role="menuitem" href="https://engineroom.raggiesoft.com/dsp-verification">🔍 DSP Verification Ledger</a></li>
                   <li className="rs-network-dropdown-divider" role="separator"></li>
                   <li className="rs-network-dropdown-header" role="presentation">✦ Band Roster (A–Z)</li>
                   <li role="none"><a role="menuitem" href="https://engineroom.raggiesoft.com/artists/crimson-node">🔴 Crimson Node</a></li>
