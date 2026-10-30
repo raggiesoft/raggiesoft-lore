@@ -75,9 +75,53 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "RaggieSoft Lore Graph",
-              url: "https://lore.raggiesoft.com",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://raggiesoft.com/#organization",
+                  name: "RaggieSoft",
+                  url: "https://raggiesoft.com",
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://lore.raggiesoft.com/#website",
+                  name: "RaggieSoft Lore Graph & Encyclopedia",
+                  url: "https://lore.raggiesoft.com",
+                  publisher: { "@id": "https://raggiesoft.com/#organization" },
+                },
+                {
+                  "@type": "WebApplication",
+                  "@id": "https://lore.raggiesoft.com/#knowledge-graph",
+                  name: "RaggieSoft Lore Graph",
+                  url: "https://lore.raggiesoft.com",
+                  applicationCategory: "ReferenceApplication",
+                  operatingSystem: "All",
+                  description:
+                    "Interactive 2D force-directed knowledge graph and canonical encyclopedia for The Stardust Engine, Engine Room Records, Ocean View Archives, and Caelum-IV (RaggieSoft Nebulae).",
+                  author: {
+                    "@type": "Person",
+                    "@id": "https://michaelpragsdale.com/#michael-ragsdale",
+                    name: "Michael P. Ragsdale",
+                    url: "https://michaelpragsdale.com",
+                  },
+                  license: "https://creativecommons.org/licenses/by-sa/4.0/",
+                  mentions: [
+                    {
+                      "@type": "Article",
+                      "@id": "https://raggiesoft.com/in-memoriam#article",
+                      headline:
+                        "In Memoriam: Sir Patrick Stewart (July 13, 1940 – October 28, 2026)",
+                      url: "https://raggiesoft.com/in-memoriam",
+                    },
+                    {
+                      "@type": "CreativeWork",
+                      "@id": "https://nebulae.raggiesoft.com/#short-film-experience",
+                      name: "Escape Velocity (Ad Astra) — Caelum-IV Planetary Survey",
+                      url: "https://nebulae.raggiesoft.com/",
+                    },
+                  ],
+                },
+              ],
             }),
           }}
         />
