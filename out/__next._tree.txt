@@ -3,4 +3,4 @@
 :HL["/_next/static/media/605ce01b664af129-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261029f","style"]
 1:[["children",{"s":"__PAGE__","h":128}]]
-0:{"b":"i5AUJdgN0jgkHLRCn-EnM","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"0_ezzEmvZHNqeJXyK3sw0","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
