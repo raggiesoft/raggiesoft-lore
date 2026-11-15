@@ -13,11 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RaggieSoft Lore Graph",
-  description: "The interactive semantic knowledge graph for the RaggieSoft universe.",
+  metadataBase: new URL("https://lore.raggiesoft.com"),
+  title: "RaggieSoft Lore Graph | Universe Guide & Connections",
+  description: "Explore the interactive story and music map connecting The Stardust Engine, Engine Room Records, and Ocean View Archives.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "RaggieSoft Lore Graph",
-    description: "The interactive semantic knowledge graph for the RaggieSoft universe.",
+    title: "RaggieSoft Lore Graph | Universe Guide & Connections",
+    description: "Explore the interactive story and music map connecting The Stardust Engine, Engine Room Records, and Ocean View Archives.",
     url: "https://lore.raggiesoft.com",
     siteName: "RaggieSoft Lore",
     images: [
@@ -33,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "RaggieSoft Lore Graph",
-    description: "The interactive semantic knowledge graph for the RaggieSoft universe.",
+    title: "RaggieSoft Lore Graph | Universe Guide & Connections",
+    description: "Explore the interactive story and music map connecting The Stardust Engine, Engine Room Records, and Ocean View Archives.",
     images: ["https://assets.raggiesoft.com/raggiesoft-lore/images/og/default-og.jpg"],
   },
 };
