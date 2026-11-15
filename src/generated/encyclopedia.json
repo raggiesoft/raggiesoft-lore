@@ -26,7 +26,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 108,
+      "appearanceCount": 109,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -230,8 +230,14 @@
               "location": "Virginia Beach, VA (CCHR Transit Hub & Chesapeake Bay Mall on Lynnhaven Parkway)"
             },
             {
-              "title": "Part 2: Senior Gold Day in Room 204, Paper Snowflakes, & See You After Winter Break",
-              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-2-senior-gold-day-in-room-204-paper-snowflakes-see-you-after-winter-break",
+              "title": "Part 2: Saturday Afternoon on Arvin Road, Two Copies Open at Once, & The Most Important Bond You Have",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-2-saturday-afternoon-on-arvin-road-two-copies-open-at-once-the-most-important-bond-you-have",
+              "date": "2002-08-24",
+              "location": "Virginia Beach, VA (Arvin Road Living Room)"
+            },
+            {
+              "title": "Part 3: Senior Gold Day in Room 204, Paper Snowflakes, & One Tight Hug Before Winter Break",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-3-senior-gold-day-in-room-204-paper-snowflakes-one-tight-hug-before-winter-break",
               "date": "2002-12-20",
               "location": "Virginia Beach, VA (Northwood High School — Room 204, Cafeteria, & Bus Loop; Arvin Road)"
             },
@@ -769,7 +775,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 104,
+      "appearanceCount": 105,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -973,8 +979,14 @@
               "location": "Virginia Beach, VA (CCHR Transit Hub & Chesapeake Bay Mall on Lynnhaven Parkway)"
             },
             {
-              "title": "Part 2: Senior Gold Day in Room 204, Paper Snowflakes, & See You After Winter Break",
-              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-2-senior-gold-day-in-room-204-paper-snowflakes-see-you-after-winter-break",
+              "title": "Part 2: Saturday Afternoon on Arvin Road, Two Copies Open at Once, & The Most Important Bond You Have",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-2-saturday-afternoon-on-arvin-road-two-copies-open-at-once-the-most-important-bond-you-have",
+              "date": "2002-08-24",
+              "location": "Virginia Beach, VA (Arvin Road Living Room)"
+            },
+            {
+              "title": "Part 3: Senior Gold Day in Room 204, Paper Snowflakes, & One Tight Hug Before Winter Break",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-3-senior-gold-day-in-room-204-paper-snowflakes-one-tight-hug-before-winter-break",
               "date": "2002-12-20",
               "location": "Virginia Beach, VA (Northwood High School — Room 204, Cafeteria, & Bus Loop; Arvin Road)"
             },
@@ -22302,12 +22314,12 @@
       "firstChapterUrl": "https://books.raggiesoft.com/katie/early-childhood/the-great-afternoon/cartoons-are-for-life-the-secret-password-the-afternoon-sanctuary",
       "stats": {
         "scaleLabel": "Multi-Volume Omnibus",
-        "readingHours": 18.7,
-        "storyPages": 1020,
+        "readingHours": 18.8,
+        "storyPages": 1025,
         "eraCount": 11,
         "chapterCount": 45,
-        "partCount": 108,
-        "illustrationCount": 128
+        "partCount": 109,
+        "illustrationCount": 130
       },
       "dateSpan": "1994–2044",
       "debutDate": "1994-05-18",
@@ -23000,22 +23012,22 @@
           "eraNum": 4,
           "title": "Seventeen, Senior Year, & Greenway Court",
           "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court",
-          "wordCount": 17874,
-          "illustrationCount": 9,
+          "wordCount": 19290,
+          "illustrationCount": 11,
           "dateSpan": "2002-04-13 to 2004-06-19",
           "locations": [
             "Virginia Beach, VA (CCHR Transit Hub & Chesapeake Bay Mall on Lynnhaven Parkway)",
+            "Virginia Beach, VA (Arvin Road Living Room)",
             "Virginia Beach, VA (Northwood High School — Room 204, Cafeteria, & Bus Loop; Arvin Road)",
             "Virginia Beach, VA (Rental House off Military Highway & Indian River Road)",
-            "Virginia Beach, VA (Northwood High School & Rental House off Military Highway)",
-            "Norfolk, VA (Greenway Court, Apartment A6 — West Ghent)"
+            "Virginia Beach, VA (Northwood High School & Rental House off Military Highway)"
           ],
           "chapters": [
             {
               "chapNum": 1,
               "title": "Seventeen at Chesapeake Bay Mall & Senior Fall With Heather",
               "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather",
-              "partCount": 2,
+              "partCount": 3,
               "parts": [
                 {
                   "partNum": 1,
@@ -23034,11 +23046,26 @@
                 },
                 {
                   "partNum": 2,
-                  "title": "Part 2: Senior Gold Day in Room 204, Paper Snowflakes, & See You After Winter Break",
-                  "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-2-senior-gold-day-in-room-204-paper-snowflakes-see-you-after-winter-break",
+                  "title": "Part 2: Saturday Afternoon on Arvin Road, Two Copies Open at Once, & The Most Important Bond You Have",
+                  "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-2-saturday-afternoon-on-arvin-road-two-copies-open-at-once-the-most-important-bond-you-have",
+                  "date": "2002-08-24",
+                  "location": "Virginia Beach, VA (Arvin Road Living Room)",
+                  "excerpt": "On Arvin Road before senior year, Heather hugs Nate tightly on the sofa beside Katie—celebrating that his twin bond with Katie always comes first.",
+                  "readingMinutes": 6,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b004/aug_2002_arvin_road_sofa_tight_hug_heather_nate_katie.jpg",
+                  "imageAlt": "Inside the sunlit living room on Arvin Road in Virginia Beach on Saturday afternoon, August 24, 2002, seventeen-year-old Nathaniel Prairie and Heather Collins share a tight, heartfelt two-armed hug on the tan-brown sofa while Nate's twin sister Katie Prairie sits close beside him resting a warm supportive hand on his shoulder with a radiant smile, with two plain green ginger ale cans and two open spiral-bound programming manuals on the oak coffee table and their two compact black motorized SwiftChair power wheelchairs parked neatly beside the couch",
+                  "eraNum": 4,
+                  "eraTitle": "Seventeen, Senior Year, & Greenway Court",
+                  "chapNum": 1,
+                  "chapTitle": "Seventeen at Chesapeake Bay Mall & Senior Fall With Heather"
+                },
+                {
+                  "partNum": 3,
+                  "title": "Part 3: Senior Gold Day in Room 204, Paper Snowflakes, & One Tight Hug Before Winter Break",
+                  "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-3-senior-gold-day-in-room-204-paper-snowflakes-one-tight-hug-before-winter-break",
                   "date": "2002-12-20",
                   "location": "Virginia Beach, VA (Northwood High School — Room 204, Cafeteria, & Bus Loop; Arvin Road)",
-                  "excerpt": "On the final Friday before senior winter break in Room 204, Katie, Nate, and Heather compile their semester project and share a warm holiday goodbye.",
+                  "excerpt": "On the final Friday before senior winter break at Northwood High, Katie, Nate, and Heather ace Room 204 and share a tight holiday hug at the bus loop.",
                   "readingMinutes": 6,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b004/dec_2002_northwood_room_204_senior_winter_break_heather_katie_nate.jpg",
                   "imageAlt": "Inside Room 204 Computer Lab on the second floor of Northwood High School on Friday morning, December 20, 2002 before winter break, seventeen-year-old blonde fraternal twins Katie and Nathaniel Prairie sit side by side in their compact black motorized SwiftChair power wheelchairs holding inner hands at an accessible beige CRT workstation while Heather Collins sits beside Nate in a green winter sweater smiling warmly at their compiled bus-map program with paper snowflakes on the classroom window behind them",
@@ -44031,7 +44058,7 @@
           "year": "2002",
           "kind": "Later Storyline Era",
           "title": "Katie & Nathaniel — Seventeen, Senior Year, & Greenway Court",
-          "summary": "4 chapters set across Virginia Beach, VA (CCHR Transit Hub & Chesapeake Bay Mall on Lynnhaven Parkway), Virginia Beach, VA (Northwood High School — Room 204, Cafeteria, & Bus Loop; Arvin Road), Virginia Beach, VA (Rental House off Military Highway & Indian River Road)",
+          "summary": "4 chapters set across Virginia Beach, VA (CCHR Transit Hub & Chesapeake Bay Mall on Lynnhaven Parkway), Virginia Beach, VA (Arvin Road Living Room), Virginia Beach, VA (Northwood High School — Room 204, Cafeteria, & Bus Loop; Arvin Road)",
           "internalHref": "/books/katie",
           "externalUrl": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court",
           "externalLabel": "Open Era in Book Reader",
