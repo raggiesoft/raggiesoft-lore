@@ -35242,7 +35242,68 @@
         "The Hotel at Poly, Commonwealth Mall, & Kincaid Student Center, Commonwealth Polytechnic Institute, Blacksburg, VA"
       ],
       "relatedBands": [],
-      "backstageDossiers": [],
+      "backstageDossiers": [
+        {
+          "title": "The Unprocessed Guilt of Black Friday & Tom Ragsdale's 2:00 AM Christmas Drop",
+          "subtitle": "November 26 – December 25, 1999 — Delaney Street, Virginia Beach, Virginia",
+          "date": "1999-12-25",
+          "url": "https://backstage.raggiesoft.com/books/rachel/black-friday-1999-and-toms-two-am-christmas-drop"
+        },
+        {
+          "title": "The Canadian Arch Sanctuary, Deep-Pressure Anchor Rotation, & Returning to the Mat at Lynnhaven",
+          "subtitle": "April 2007 – June 2009 — Canadian Arch & Lynnhaven Academy of Seondu, Virginia Beach, Virginia",
+          "date": "2007-04-15",
+          "url": "https://backstage.raggiesoft.com/books/rachel/canadian-arch-sanctuary-anchor-rotation-and-lynnhaven-seondu"
+        },
+        {
+          "title": "Code Susquehanna, The Identical-Twin Scan Firewall, & Why Only Rachel Holds the Vault",
+          "subtitle": "March 13, 2024 – October 2, 2026 — Fairlawn Recreation Center & The Moosewood Drive Command Center, Virginia Beach",
+          "date": "2026-10-02",
+          "url": "https://backstage.raggiesoft.com/books/rachel/code-susquehanna-and-the-bear-and-bug-vault"
+        },
+        {
+          "title": "The Tiered IEP Addenda & Closed-Door School Nurse Authority Transfer Briefing",
+          "subtitle": "August 21, 1995 – January 1996 — How the School District Engineered a Zero-Failure Return",
+          "date": "1995-08-21",
+          "url": "https://backstage.raggiesoft.com/books/rachel/confidential-school-nurse-briefing-and-tiered-iep-addenda"
+        },
+        {
+          "title": "David Miller's Norfolk Precinct Tape, The Warehouse Warrant, & The 3:00 PM Arrest",
+          "subtitle": "Friday, August 18, 1995 — How One Witness Shattered the Offsite Wall of Silence",
+          "date": "1995-08-18",
+          "url": "https://backstage.raggiesoft.com/books/rachel/david-miller-precinct-interview-and-warehouse-raid"
+        },
+        {
+          "title": "The Chesapeake Anomaly, Title 22 Diplomatic Shield, & Seoul's Unanimous 'Pamyun' Verdict",
+          "subtitle": "August – November 1995 — Why Master April Stayed in Chesapeake & How the Seonduwon Erased Curtis Maddox",
+          "date": "1995-11-15",
+          "url": "https://backstage.raggiesoft.com/books/rachel/seonduwon-diplomatic-shield-and-pamyun-verdict"
+        },
+        {
+          "title": "Sloane's Brewster Gardens Ban & The January 2000 Brigadoon Rumor Sabotage",
+          "subtitle": "May 1999 – January 2000 — Administrative Consequences & How Northwood's Seniors Defended the Pack",
+          "date": "2000-01-18",
+          "url": "https://backstage.raggiesoft.com/books/rachel/sloanes-punishment-and-the-brigadoon-rumor-sabotage"
+        },
+        {
+          "title": "The Origin of 'Bear' and 'Bug', Base Camp Wedge Protocols, & The Approved Visitor List",
+          "subtitle": "August 1995 — Rewriting Trauma Into Sanctuary on Delaney Street",
+          "date": "1995-08-20",
+          "url": "https://backstage.raggiesoft.com/books/rachel/the-bug-and-bear-dynamic-and-base-camp-protocols"
+        },
+        {
+          "title": "The Quantum Dossier: Jessica Marie Ragsdale (PROGMAN.EXE), William Keswick, & The Clarity Ultimatum",
+          "subtitle": "Fall 2000 – Late 2006 — Northwest Pacific University & Quantum Campus Building 35, Redmond, Washington",
+          "date": "2005-11-14",
+          "url": "https://backstage.raggiesoft.com/books/rachel/the-quantum-dossier-jessica-progman-and-william-keswick"
+        },
+        {
+          "title": "The Wingman Briefing: Ashley Raybourn Explains Rachel & 'The Trio' to Bonnie Reed",
+          "subtitle": "Thursday, May 13, 1999 — Outside the Morrison Middle School Band Room",
+          "date": "1999-05-13",
+          "url": "https://backstage.raggiesoft.com/books/rachel/the-wingman-briefing-ashley-and-bonnie"
+        }
+      ],
       "eras": [
         {
           "eraNum": 1,
