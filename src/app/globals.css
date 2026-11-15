@@ -1,52 +1,284 @@
 /**
+ * @license MIT
  * ============================================================================
- * ARCHITECTURAL OVERVIEW: GLOBAL CSS STYLES (NEXT.JS APP)
+ * ARCHITECTURAL OVERVIEW: GLOBAL STYLES & ACCESSIBLE LIGHT/DARK THEME TOKENS
  * ============================================================================
- * 
- * This file serves as the foundational stylesheet for the Next.js application.
- * It imports the Tailwind CSS framework, registers global plugins, and defines
- * essential CSS variables and root element styles.
+ * File: src/app/globals.css
+ * Property: https://lore.raggiesoft.com (RaggieSoft Lore Graph & Encyclopedia)
  *
- * MAINTENANCE NOTES:
- * - This file contains global resets and theme variable definitions.
- * - For component-specific styles, prefer Tailwind utility classes or CSS modules
- *   rather than adding global rules here.
- * - CSS variables defined here (e.g., --background, --foreground) are consumed
- *   by Tailwind's configuration or inline utility classes.
+ * Design & Accessibility Architecture:
+ * 1. Native Dual-Scheme Support (`color-scheme: light dark` on `:root`):
+ *    Ensures browser scrollbars, form controls, and `<details>` disclosures
+ *    adapt automatically to the visitor's OS light/dark preference.
+ * 2. Progressive Color Tokens (`@media (prefers-color-scheme: dark)` + `light-dark()`):
+ *    Every foreground/background pair exceeds 4.5:1 contrast, and interactive
+ *    component boundaries (`--lore-border`) exceed 3:1 contrast in both modes.
+ * 3. Keyboard, Touch, Reduced-Motion & Forced-Colors Safety:
+ *    Provides an accessible `.skip-link`, high-visibility `3px` `:focus-visible`
+ *    rings, >= 24x24px interactive hit areas, and Windows High Contrast support.
  * ============================================================================
  */
 
-/* Initialize Tailwind CSS directives for the project */
 @import "tailwindcss";
-
-/* Include the typography plugin for prose and rich text styling */
 @plugin "@tailwindcss/typography";
 
-/* Default light mode variables (fallback) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  color-scheme: light dark;
 
-/* Expose global color and font tokens for inline usage or Tailwind config */
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Light Mode Semantic Palette (>= 4.5:1 text, >= 3:1 UI boundaries) */
+  --lore-bg: #f8fafc;
+  --lore-surface: #ffffff;
+  --lore-surface-alt: #f1f5f9;
+  --lore-text: #0f172a;
+  --lore-text-muted: #334155;
+  --lore-accent: #1d4ed8;
+  --lore-accent-hover: #1e40af;
+  --lore-accent-soft: #dbeafe;
+  --lore-accent-soft-text: #1e3a8a;
+  --lore-border: #64748b;
+  --lore-border-subtle: #cbd5e1;
+  --lore-focus: #1d4ed8;
+  --lore-spoiler-bg: #fffbeb;
+  --lore-spoiler-border: #b45309;
+  --lore-spoiler-text: #78350f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Dark Mode Semantic Palette (>= 4.5:1 text, >= 3:1 UI boundaries) */
+    --lore-bg: #090d16;
+    --lore-surface: #111827;
+    --lore-surface-alt: #1e293b;
+    --lore-text: #f8fafc;
+    --lore-text-muted: #cbd5e1;
+    --lore-accent: #93c5fd;
+    --lore-accent-hover: #bfdbfe;
+    --lore-accent-soft: #1e3a8a;
+    --lore-accent-soft-text: #eff6ff;
+    --lore-border: #94a3b8;
+    --lore-border-subtle: #334155;
+    --lore-focus: #facc15;
+    --lore-spoiler-bg: #291d09;
+    --lore-spoiler-border: #f59e0b;
+    --lore-spoiler-text: #fef3c7;
   }
 }
 
+@supports (color: light-dark(white, black)) {
+  :root {
+    --lore-bg: light-dark(#f8fafc, #090d16);
+    --lore-surface: light-dark(#ffffff, #111827);
+    --lore-surface-alt: light-dark(#f1f5f9, #1e293b);
+    --lore-text: light-dark(#0f172a, #f8fafc);
+    --lore-text-muted: light-dark(#334155, #cbd5e1);
+    --lore-accent: light-dark(#1d4ed8, #93c5fd);
+    --lore-accent-hover: light-dark(#1e40af, #bfdbfe);
+    --lore-accent-soft: light-dark(#dbeafe, #1e3a8a);
+    --lore-accent-soft-text: light-dark(#1e3a8a, #eff6ff);
+    --lore-border: light-dark(#64748b, #94a3b8);
+    --lore-border-subtle: light-dark(#cbd5e1, #334155);
+    --lore-focus: light-dark(#1d4ed8, #facc15);
+    --lore-spoiler-bg: light-dark(#fffbeb, #291d09);
+    --lore-spoiler-border: light-dark(#b45309, #f59e0b);
+    --lore-spoiler-text: light-dark(#78350f, #fef3c7);
+  }
+}
+
+@theme inline {
+  --color-background: var(--lore-bg);
+  --color-foreground: var(--lore-text);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--lore-bg);
+  color: var(--lore-text);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+/* Keyboard Skip-to-Content Link */
+.skip-link {
+  position: absolute;
+  inset-block-start: -999px;
+  inset-inline-start: 1rem;
+  z-index: 9999;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--lore-surface);
+  color: var(--lore-text);
+  border: 2px solid var(--lore-focus);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  inset-block-start: 0.75rem;
+}
+
+/* High-Visibility Focus Indicator Across Interactive Controls */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--lore-focus);
+  outline-offset: 3px;
+}
+
+main:focus {
+  outline: none;
+}
+
+/* Reusable Semantic Surfaces & Controls */
+.lore-card {
+  background-color: var(--lore-surface);
+  color: var(--lore-text);
+  border: 1px solid var(--lore-border-subtle);
+  border-radius: 0.875rem;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.lore-card:hover {
+  border-color: var(--lore-border);
+}
+
+.lore-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-block-size: 1.75rem;
+  padding: 0.1875rem 0.6875rem;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  background-color: var(--lore-accent-soft);
+  color: var(--lore-accent-soft-text);
+  border: 1px solid var(--lore-border);
+}
+
+.lore-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-block-size: 2.75rem;
+  min-inline-size: 2.75rem;
+  padding: 0.5rem 1.125rem;
+  border-radius: 0.625rem;
+  font-weight: 600;
+  background-color: var(--lore-accent-soft);
+  color: var(--lore-accent-soft-text);
+  border: 2px solid var(--lore-accent);
+  text-decoration: none;
+}
+
+.lore-btn-primary:hover {
+  border-color: var(--lore-accent-hover);
+  text-decoration: underline;
+}
+
+.lore-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-block-size: 2.75rem;
+  min-inline-size: 2.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.625rem;
+  font-weight: 600;
+  background-color: var(--lore-surface);
+  color: var(--lore-text);
+  border: 1px solid var(--lore-border);
+  text-decoration: none;
+}
+
+.lore-btn-secondary:hover {
+  background-color: var(--lore-surface-alt);
+  text-decoration: underline;
+}
+
+.lore-link {
+  color: var(--lore-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.lore-link:hover {
+  color: var(--lore-accent-hover);
+}
+
+.lore-input {
+  inline-size: 100%;
+  min-block-size: 2.75rem;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.625rem;
+  background-color: var(--lore-surface);
+  color: var(--lore-text);
+  border: 1.5px solid var(--lore-border);
+}
+
+.lore-input::placeholder {
+  color: var(--lore-text-muted);
+  opacity: 0.85;
+}
+
+/* Accessible Native <details> / <summary> Spoiler Horizon Disclosure */
+details.lore-spoiler {
+  background-color: var(--lore-spoiler-bg);
+  border: 1.5px solid var(--lore-spoiler-border);
+  border-radius: 0.875rem;
+  overflow: hidden;
+}
+
+details.lore-spoiler > summary {
+  cursor: pointer;
+  padding: 0.875rem 1.125rem;
+  min-block-size: 2.75rem;
+  font-weight: 700;
+  color: var(--lore-spoiler-text);
+  user-select: none;
+}
+
+details.lore-spoiler > .lore-spoiler-body {
+  padding: 1rem 1.25rem 1.25rem;
+  background-color: var(--lore-surface);
+  color: var(--lore-text);
+  border-block-start: 1px solid var(--lore-spoiler-border);
+}
+
+/* Prose Color Alignment for Both Light & Dark Themes */
+.lore-prose {
+  color: var(--lore-text);
+}
+
+.lore-prose h2,
+.lore-prose h3,
+.lore-prose h4,
+.lore-prose strong {
+  color: var(--lore-text);
+}
+
+.lore-prose a {
+  color: var(--lore-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Windows High Contrast / Forced Colors Safety */
+@media (forced-colors: active) {
+  .lore-card,
+  .lore-pill,
+  .lore-btn-primary,
+  .lore-btn-secondary,
+  details.lore-spoiler {
+    border: 1px solid ButtonText;
+    forced-color-adjust: auto;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
