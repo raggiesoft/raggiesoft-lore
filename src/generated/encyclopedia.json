@@ -26,7 +26,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 109,
+      "appearanceCount": 110,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -252,6 +252,12 @@
               "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay",
               "date": "2003-01-06",
               "location": "Virginia Beach, VA (Northwood High School & Rental House off Military Highway)"
+            },
+            {
+              "title": "Part 3: The Back Row of Room 204, A Song in My Head, & Cousin Hannah's Green Parka",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-row-of-room-204-a-song-in-my-head-cousin-hannah-s-green-parka",
+              "date": "2003-01-08",
+              "location": "Virginia Beach, VA (Northwood High School — Room 204, Commons Cafeteria, & Bus Loop)"
             },
             {
               "title": "Part 1: Apartment A6 on Greenway Court, Dad's Microwave Cart, & Across-the-Hall Neighbors",
@@ -775,7 +781,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 105,
+      "appearanceCount": 106,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -1001,6 +1007,12 @@
               "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay",
               "date": "2003-01-06",
               "location": "Virginia Beach, VA (Northwood High School & Rental House off Military Highway)"
+            },
+            {
+              "title": "Part 3: The Back Row of Room 204, A Song in My Head, & Cousin Hannah's Green Parka",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-row-of-room-204-a-song-in-my-head-cousin-hannah-s-green-parka",
+              "date": "2003-01-08",
+              "location": "Virginia Beach, VA (Northwood High School — Room 204, Commons Cafeteria, & Bus Loop)"
             },
             {
               "title": "Part 1: Apartment A6 on Greenway Court, Dad's Microwave Cart, & Across-the-Hall Neighbors",
@@ -22314,12 +22326,12 @@
       "firstChapterUrl": "https://books.raggiesoft.com/katie/early-childhood/the-great-afternoon/cartoons-are-for-life-the-secret-password-the-afternoon-sanctuary",
       "stats": {
         "scaleLabel": "Multi-Volume Omnibus",
-        "readingHours": 18.8,
-        "storyPages": 1025,
+        "readingHours": 19,
+        "storyPages": 1037,
         "eraCount": 11,
         "chapterCount": 45,
-        "partCount": 109,
-        "illustrationCount": 130
+        "partCount": 110,
+        "illustrationCount": 131
       },
       "dateSpan": "1994–2044",
       "debutDate": "1994-05-18",
@@ -22394,6 +22406,12 @@
           "subtitle": "Why CVTA Blackballed Nate From TRAC, the Political Folklore of the Newtown Road Transfer, & How an Empty Podium on WHRC TV-15 Triggered the WTGA 790 AM Meltdown",
           "date": "2010-10-28",
           "url": "https://backstage.raggiesoft.com/books/katie/mayor-overton-newtown-road-and-2010-dietz-meltdown"
+        },
+        {
+          "title": "Workstation Three, Cousin Hannah's Green Parka, & Why Heather Knew There Was No Restore Point",
+          "subtitle": "Inside Senior Homeroom 212 on January 6, Five Weeks of Empty Floor in Room 204, & The Cafeteria Lie That Left Heather Sick With Herself",
+          "date": "2003-02-11",
+          "url": "https://backstage.raggiesoft.com/books/katie/room-204-unhandled-exception-and-tylers-cousin-lie"
         },
         {
           "title": "Why the House Page Triplets Bolted From Room 518 & How Uncle Richard Rescued Them",
@@ -23012,8 +23030,8 @@
           "eraNum": 4,
           "title": "Seventeen, Senior Year, & Greenway Court",
           "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court",
-          "wordCount": 19290,
-          "illustrationCount": 11,
+          "wordCount": 22443,
+          "illustrationCount": 12,
           "dateSpan": "2002-04-13 to 2004-06-19",
           "locations": [
             "Virginia Beach, VA (CCHR Transit Hub & Chesapeake Bay Mall on Lynnhaven Parkway)",
@@ -23080,7 +23098,7 @@
               "chapNum": 2,
               "title": "Drunken New Year",
               "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year",
-              "partCount": 2,
+              "partCount": 3,
               "parts": [
                 {
                   "partNum": 1,
@@ -23107,6 +23125,21 @@
                   "readingMinutes": 8,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b004/jan_2003_bedroom_blue_butterfly_twin_sisters_never_walk_away.jpg",
                   "imageAlt": "Sitting side by side on the edge of Katie's bed beneath the framed blue butterfly watercolor print on January 6, 2003, with their two black motorized SwiftChair power wheelchairs parked beside them, 17-year-old Katie Prairie wraps her arms comforting her heartbroken twin brother Nathaniel and laces her fingers through his hand.",
+                  "eraNum": 4,
+                  "eraTitle": "Seventeen, Senior Year, & Greenway Court",
+                  "chapNum": 2,
+                  "chapTitle": "Drunken New Year"
+                },
+                {
+                  "partNum": 3,
+                  "title": "Part 3: The Back Row of Room 204, A Song in My Head, & Cousin Hannah's Green Parka",
+                  "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-row-of-room-204-a-song-in-my-head-cousin-hannah-s-green-parka",
+                  "date": "2003-01-08",
+                  "location": "Virginia Beach, VA (Northwood High School — Room 204, Commons Cafeteria, & Bus Loop)",
+                  "excerpt": "In Room 204 after the crash, Crimson Node plays clear in Nate's mind as Katie holds his hand—until Heather overhears Tyler try the exact same lie again.",
+                  "readingMinutes": 13,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b004/feb_2003_northwood_room_204_unhandled_exception_katie_nate_heather_apart.jpg",
+                  "imageAlt": "Inside the second-floor Room 204 computer lab at Northwood High School in winter 2003 beneath blue-and-gold Northwood Lions and Class of 2003 pennants, seventeen-year-old blonde twins Katie and Nathaniel Prairie sit side by side in matching black SwiftChair power wheelchairs at the back corner table holding inner hands before a three-quarter-angled beige CRT monitor, while two rows ahead Heather Collins sits alone beside two empty wheelchair spaces looking back over her shoulder with pale, stricken regret.",
                   "eraNum": 4,
                   "eraTitle": "Seventeen, Senior Year, & Greenway Court",
                   "chapNum": 2,
