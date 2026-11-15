@@ -26,7 +26,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 110,
+      "appearanceCount": 111,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -258,6 +258,12 @@
               "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-corner-of-room-204-a-song-in-my-head-stairway-a",
               "date": "2003-01-08",
               "location": "Virginia Beach, VA (Northwood High School — Room 204, Commons Cafeteria, & Stairway A Bus Loop)"
+            },
+            {
+              "title": "Part 4: Purple Gowns at the Pavilion, Wesley's Frown, & Why Neither of Us Could Go Back",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-wesley-s-frown-why-neither-of-us-could-go-back",
+              "date": "2003-06-14",
+              "location": "Virginia Beach, VA (Virginia Beach Pavilion — Class of 2003 Commencement)"
             },
             {
               "title": "Part 1: Apartment A6 on Greenway Court, Dad's Microwave Cart, & Across-the-Hall Neighbors",
@@ -781,7 +787,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 106,
+      "appearanceCount": 107,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -1013,6 +1019,12 @@
               "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-corner-of-room-204-a-song-in-my-head-stairway-a",
               "date": "2003-01-08",
               "location": "Virginia Beach, VA (Northwood High School — Room 204, Commons Cafeteria, & Stairway A Bus Loop)"
+            },
+            {
+              "title": "Part 4: Purple Gowns at the Pavilion, Wesley's Frown, & Why Neither of Us Could Go Back",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-wesley-s-frown-why-neither-of-us-could-go-back",
+              "date": "2003-06-14",
+              "location": "Virginia Beach, VA (Virginia Beach Pavilion — Class of 2003 Commencement)"
             },
             {
               "title": "Part 1: Apartment A6 on Greenway Court, Dad's Microwave Cart, & Across-the-Hall Neighbors",
@@ -22326,12 +22338,12 @@
       "firstChapterUrl": "https://books.raggiesoft.com/katie/early-childhood/the-great-afternoon/cartoons-are-for-life-the-secret-password-the-afternoon-sanctuary",
       "stats": {
         "scaleLabel": "Multi-Volume Omnibus",
-        "readingHours": 19.1,
-        "storyPages": 1039,
+        "readingHours": 19.2,
+        "storyPages": 1049,
         "eraCount": 11,
         "chapterCount": 45,
-        "partCount": 110,
-        "illustrationCount": 132
+        "partCount": 111,
+        "illustrationCount": 133
       },
       "dateSpan": "1994–2044",
       "debutDate": "1994-05-18",
@@ -23030,8 +23042,8 @@
           "eraNum": 4,
           "title": "Seventeen, Senior Year, & Greenway Court",
           "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court",
-          "wordCount": 23100,
-          "illustrationCount": 13,
+          "wordCount": 25737,
+          "illustrationCount": 14,
           "dateSpan": "2002-04-13 to 2004-06-19",
           "locations": [
             "Virginia Beach, VA (CCHR Transit Hub & Chesapeake Bay Mall on Lynnhaven Parkway)",
@@ -23098,7 +23110,7 @@
               "chapNum": 2,
               "title": "Drunken New Year",
               "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year",
-              "partCount": 3,
+              "partCount": 4,
               "parts": [
                 {
                   "partNum": 1,
@@ -23140,6 +23152,21 @@
                   "readingMinutes": 16,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b004/feb_2003_northwood_room_204_unhandled_exception_katie_nate_heather_apart.jpg",
                   "imageAlt": "Inside the second-floor Room 204 computer lab at Northwood High School in winter 2003 directly against the painted cinderblock back corner wall beneath Northwood Lions and Class of 2003 pennants, seventeen-year-old blonde twins Katie and Nathaniel Prairie sit side by side in matching black SwiftChair power wheelchairs at two separate side-by-side CRT workstations glowing with word-processor and coding windows while holding inner hands, as rows of students work at lit monitors ahead of them and Heather Collins sits alone two rows forward glancing back with pale regret.",
+                  "eraNum": 4,
+                  "eraTitle": "Seventeen, Senior Year, & Greenway Court",
+                  "chapNum": 2,
+                  "chapTitle": "Drunken New Year"
+                },
+                {
+                  "partNum": 4,
+                  "title": "Part 4: Purple Gowns at the Pavilion, Wesley's Frown, & Why Neither of Us Could Go Back",
+                  "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-wesley-s-frown-why-neither-of-us-could-go-back",
+                  "date": "2003-06-14",
+                  "location": "Virginia Beach, VA (Virginia Beach Pavilion — Class of 2003 Commencement)",
+                  "excerpt": "After rolling across the Northwood High graduation stage at the Virginia Beach Pavilion, Heather tries to apologize while an angry Wesley frowns at his cousin—and Katie and Nate gently hold their boundary.",
+                  "readingMinutes": 11,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_graduation_heather_apology_angry_wesley.jpg",
+                  "imageAlt": "Outside the Virginia Beach Pavilion under blooming crape-myrtle trees after Northwood High School's June 2003 Commencement, eighteen-year-old blonde fraternal twins Katie and Nathaniel Prairie sit side by side in matching compact black SwiftChair power wheelchairs in royal-purple caps and gowns with gold honor cords holding inner hands with guarded, bittersweet expressions as remorseful classmate Heather Collins apologizes to both of them while her sixteen-year-old cousin Wesley folds his arms over his blue silicone ring and frowns angrily at Heather.",
                   "eraNum": 4,
                   "eraTitle": "Seventeen, Senior Year, & Greenway Court",
                   "chapNum": 2,
