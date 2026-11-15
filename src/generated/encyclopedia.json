@@ -26,7 +26,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 111,
+      "appearanceCount": 112,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -260,10 +260,16 @@
               "location": "Virginia Beach, VA (Northwood High School — Room 204, Commons Cafeteria, & Stairway A Bus Loop)"
             },
             {
-              "title": "Part 4: Purple Gowns at the Pavilion, Wesley's Frown, & Why Neither of Us Could Go Back",
-              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-wesley-s-frown-why-neither-of-us-could-go-back",
+              "title": "Part 4: Purple Gowns at the Pavilion, Pomp and Circumstance, & One Chance Strictly for Wesley",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-one-chance-strictly-for-wesley",
               "date": "2003-06-14",
               "location": "Virginia Beach, VA (Virginia Beach Pavilion — Class of 2003 Commencement)"
+            },
+            {
+              "title": "Part 5: Waiting by the Route 15 Stop, If You Walked Away, & Wesley's Laminated Buddy Card",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-5-waiting-by-the-route-15-stop-if-you-walked-away-wesley-s-laminated-buddy-card",
+              "date": "2003-06-28",
+              "location": "Chesapeake, VA (Emerald Creek Mall — CVTA Route 15 Bus Stop & Upstairs Food Court)"
             },
             {
               "title": "Part 1: Apartment A6 on Greenway Court, Dad's Microwave Cart, & Across-the-Hall Neighbors",
@@ -787,7 +793,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 107,
+      "appearanceCount": 108,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -1021,10 +1027,16 @@
               "location": "Virginia Beach, VA (Northwood High School — Room 204, Commons Cafeteria, & Stairway A Bus Loop)"
             },
             {
-              "title": "Part 4: Purple Gowns at the Pavilion, Wesley's Frown, & Why Neither of Us Could Go Back",
-              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-wesley-s-frown-why-neither-of-us-could-go-back",
+              "title": "Part 4: Purple Gowns at the Pavilion, Pomp and Circumstance, & One Chance Strictly for Wesley",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-one-chance-strictly-for-wesley",
               "date": "2003-06-14",
               "location": "Virginia Beach, VA (Virginia Beach Pavilion — Class of 2003 Commencement)"
+            },
+            {
+              "title": "Part 5: Waiting by the Route 15 Stop, If You Walked Away, & Wesley's Laminated Buddy Card",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-5-waiting-by-the-route-15-stop-if-you-walked-away-wesley-s-laminated-buddy-card",
+              "date": "2003-06-28",
+              "location": "Chesapeake, VA (Emerald Creek Mall — CVTA Route 15 Bus Stop & Upstairs Food Court)"
             },
             {
               "title": "Part 1: Apartment A6 on Greenway Court, Dad's Microwave Cart, & Across-the-Hall Neighbors",
@@ -22338,12 +22350,12 @@
       "firstChapterUrl": "https://books.raggiesoft.com/katie/early-childhood/the-great-afternoon/cartoons-are-for-life-the-secret-password-the-afternoon-sanctuary",
       "stats": {
         "scaleLabel": "Multi-Volume Omnibus",
-        "readingHours": 19.3,
-        "storyPages": 1052,
+        "readingHours": 19.5,
+        "storyPages": 1065,
         "eraCount": 11,
         "chapterCount": 45,
-        "partCount": 111,
-        "illustrationCount": 133
+        "partCount": 112,
+        "illustrationCount": 134
       },
       "dateSpan": "1994–2044",
       "debutDate": "1994-05-18",
@@ -23042,8 +23054,8 @@
           "eraNum": 4,
           "title": "Seventeen, Senior Year, & Greenway Court",
           "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court",
-          "wordCount": 26666,
-          "illustrationCount": 14,
+          "wordCount": 29762,
+          "illustrationCount": 15,
           "dateSpan": "2002-04-13 to 2004-06-19",
           "locations": [
             "Virginia Beach, VA (CCHR Transit Hub & Chesapeake Bay Mall on Lynnhaven Parkway)",
@@ -23110,7 +23122,7 @@
               "chapNum": 2,
               "title": "Drunken New Year",
               "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year",
-              "partCount": 4,
+              "partCount": 5,
               "parts": [
                 {
                   "partNum": 1,
@@ -23159,14 +23171,29 @@
                 },
                 {
                   "partNum": 4,
-                  "title": "Part 4: Purple Gowns at the Pavilion, Wesley's Frown, & Why Neither of Us Could Go Back",
-                  "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-wesley-s-frown-why-neither-of-us-could-go-back",
+                  "title": "Part 4: Purple Gowns at the Pavilion, Pomp and Circumstance, & One Chance Strictly for Wesley",
+                  "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-one-chance-strictly-for-wesley",
                   "date": "2003-06-14",
                   "location": "Virginia Beach, VA (Virginia Beach Pavilion — Class of 2003 Commencement)",
-                  "excerpt": "After rolling across the Northwood High graduation stage at the Virginia Beach Pavilion, Heather tries to apologize while an angry Wesley frowns at his cousin—and Katie and Nate gently hold their boundary.",
-                  "readingMinutes": 15,
+                  "excerpt": "After Pomp and Circumstance echoes through Northwood High's graduation at the Virginia Beach Pavilion, Katie and Nate tell Heather they cannot reform their relationship—breaking Wesley's heart until the twins agree to one strictly bounded Saturday at Emerald Creek Mall for Wesley's sake.",
+                  "readingMinutes": 16,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_graduation_heather_apology_angry_wesley.jpg",
                   "imageAlt": "Outside the Virginia Beach Pavilion under blooming crape-myrtle trees after Northwood High School's June 2003 Commencement, eighteen-year-old blonde fraternal twins Katie and Nathaniel Prairie sit side by side in matching compact black SwiftChair power wheelchairs in royal-purple caps and gowns with gold honor cords holding inner hands with guarded, bittersweet expressions as remorseful classmate Heather Collins apologizes to both of them while her sixteen-year-old cousin Wesley folds his arms over his blue silicone ring and frowns angrily at Heather.",
+                  "eraNum": 4,
+                  "eraTitle": "Seventeen, Senior Year, & Greenway Court",
+                  "chapNum": 2,
+                  "chapTitle": "Drunken New Year"
+                },
+                {
+                  "partNum": 5,
+                  "title": "Part 5: Waiting by the Route 15 Stop, If You Walked Away, & Wesley's Laminated Buddy Card",
+                  "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-5-waiting-by-the-route-15-stop-if-you-walked-away-wesley-s-laminated-buddy-card",
+                  "date": "2003-06-28",
+                  "location": "Chesapeake, VA (Emerald Creek Mall — CVTA Route 15 Bus Stop & Upstairs Food Court)",
+                  "excerpt": "Before Heather and Wesley move home to Minnesota, Katie and Nate meet them off CVTA Route 15 at Emerald Creek Mall to give Wesley a proper buddy farewell.",
+                  "readingMinutes": 12,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b004/jun_2003_emerald_creek_mall_food_court_goodbye_wesley_nate_katie_heather.jpg",
+                  "imageAlt": "Inside the sunlit second-floor Food Court of Emerald Creek Mall beneath white tented fabric ceiling cones in June 2003 with Crown Burger and Annie's Pretzels in the background, eighteen-year-old blonde fraternal twins Katie and Nathaniel Prairie sit side by side in matching compact black SwiftChair power wheelchairs holding inner hands while Nate reaches across the table to tap sixteen-year-old Wesley Collins's knuckles beside a miniature toy city bus and soft pretzel tray as Heather Collins sits respectfully half a chair back with her hands folded quietly in her lap.",
                   "eraNum": 4,
                   "eraTitle": "Seventeen, Senior Year, & Greenway Court",
                   "chapNum": 2,
@@ -23271,7 +23298,7 @@
           "eraNum": 5,
           "title": "Six Buses from Williamsburg, Sea Breeze West, & Coming Home to Arvin Road",
           "url": "https://books.raggiesoft.com/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road",
-          "wordCount": 16815,
+          "wordCount": 17328,
           "illustrationCount": 5,
           "dateSpan": "2004-10-15 to 2007-02-15",
           "locations": [
@@ -23295,7 +23322,7 @@
                   "date": "2004-10-15",
                   "location": "Williamsburg, VA (Brandon Mercer's Single-Family House Near North Boundary Street)",
                   "excerpt": "Inside Brandon Mercer's Williamsburg house, slow-building emotional and physical abuse collides with Katie and Nate's three-by-six closet sanctuary.",
-                  "readingMinutes": 7,
+                  "readingMinutes": 8,
                   "image": null,
                   "imageAlt": "",
                   "eraNum": 5,
@@ -23348,7 +23375,7 @@
                   "date": "2004-11-05",
                   "location": "Norfolk, VA (Chapters & Co. at The Admiral Center & Sea Breeze West Apartment 3 on West Ocean View Avenue)",
                   "excerpt": "Weeks after escaping Williamsburg, nineteen-year-old Nate meets Tiffany Sloan at Chapters & Co.—and she invites both twins into her Ocean View flat.",
-                  "readingMinutes": 5,
+                  "readingMinutes": 6,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b004/may_2004_chapters_and_co_computer_books_tiffany_meet_cute.jpg",
                   "imageAlt": "Inside the computer books aisle of Chapters & Co. bookstore at The Admiral Center in Downtown Norfolk in November 2004, nineteen-year-old fraternal twins Nathaniel and Katie Prairie sit side by side in their compact SwiftChair power wheelchairs holding cups of cocoa while twenty-year-old Tiffany Sloan hands Nathaniel a web-design book with a warm smile.",
                   "eraNum": 5,
