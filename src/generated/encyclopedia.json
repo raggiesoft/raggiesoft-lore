@@ -26,7 +26,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 104,
+      "appearanceCount": 108,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -204,6 +204,18 @@
               "url": "https://books.raggiesoft.com/katie/sixteen-summer-sanctuary/the-uncut-curb-at-smoker-s-corner/the-handicap-lot-edge-the-crosswalk-to-grass-on-lions-way-why-brittany-turned-down-the-cigarette",
               "date": "2001-11-08",
               "location": "Virginia Beach, VA (Northwood High School — Student Handicap Parking Lot, Lions Way, & Smoker's Corner)"
+            },
+            {
+              "title": "Part 1: Cousin Wesley at Emerald Creek Mall, Annie's Pretzels, & The Same Deep-Pressure Squeeze",
+              "url": "https://books.raggiesoft.com/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side/part-1-cousin-wesley-at-emerald-creek-mall-annie-s-pretzels-the-same-deep-pressure-squeeze",
+              "date": "2001-11-17",
+              "location": "Chesapeake, VA (Emerald Creek Mall — Glass Elevator & Upstairs Food Court)"
+            },
+            {
+              "title": "Part 2: Two Envelopes at Mrs. DeMarco's Window Table, Three Sugar Cookies, & Coding in Mrs. Periwinkle's Library",
+              "url": "https://books.raggiesoft.com/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side/part-2-two-envelopes-at-mrs-demarco-s-window-table-three-sugar-cookies-coding-in-mrs-periwinkle-s-library",
+              "date": "2002-02-14",
+              "location": "Virginia Beach, VA (Northwood High School — Cafeteria & Library)"
             }
           ]
         },
@@ -211,6 +223,18 @@
           "eraNum": 4,
           "eraTitle": "Seventeen, Senior Year, & Greenway Court",
           "items": [
+            {
+              "title": "Part 1: Two Buses to Chesapeake Bay Mall, The Center Court Carousel, & Seventeen on Four Wheels",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-1-two-buses-to-chesapeake-bay-mall-the-center-court-carousel-seventeen-on-four-wheels",
+              "date": "2002-04-13",
+              "location": "Virginia Beach, VA (CCHR Transit Hub & Chesapeake Bay Mall on Lynnhaven Parkway)"
+            },
+            {
+              "title": "Part 2: Senior Gold Day in Room 204, Paper Snowflakes, & See You After Winter Break",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-2-senior-gold-day-in-room-204-paper-snowflakes-see-you-after-winter-break",
+              "date": "2002-12-20",
+              "location": "Virginia Beach, VA (Northwood High School — Room 204, Cafeteria, & Bus Loop; Arvin Road)"
+            },
             {
               "title": "Part 1: The Gas-Station Run, A Box of Dry Cereal, & Why I Never Had a Twenty-First Birthday Drink",
               "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink",
@@ -745,7 +769,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 100,
+      "appearanceCount": 104,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -923,6 +947,18 @@
               "url": "https://books.raggiesoft.com/katie/sixteen-summer-sanctuary/the-uncut-curb-at-smoker-s-corner/the-handicap-lot-edge-the-crosswalk-to-grass-on-lions-way-why-brittany-turned-down-the-cigarette",
               "date": "2001-11-08",
               "location": "Virginia Beach, VA (Northwood High School — Student Handicap Parking Lot, Lions Way, & Smoker's Corner)"
+            },
+            {
+              "title": "Part 1: Cousin Wesley at Emerald Creek Mall, Annie's Pretzels, & The Same Deep-Pressure Squeeze",
+              "url": "https://books.raggiesoft.com/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side/part-1-cousin-wesley-at-emerald-creek-mall-annie-s-pretzels-the-same-deep-pressure-squeeze",
+              "date": "2001-11-17",
+              "location": "Chesapeake, VA (Emerald Creek Mall — Glass Elevator & Upstairs Food Court)"
+            },
+            {
+              "title": "Part 2: Two Envelopes at Mrs. DeMarco's Window Table, Three Sugar Cookies, & Coding in Mrs. Periwinkle's Library",
+              "url": "https://books.raggiesoft.com/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side/part-2-two-envelopes-at-mrs-demarco-s-window-table-three-sugar-cookies-coding-in-mrs-periwinkle-s-library",
+              "date": "2002-02-14",
+              "location": "Virginia Beach, VA (Northwood High School — Cafeteria & Library)"
             }
           ]
         },
@@ -930,6 +966,18 @@
           "eraNum": 4,
           "eraTitle": "Seventeen, Senior Year, & Greenway Court",
           "items": [
+            {
+              "title": "Part 1: Two Buses to Chesapeake Bay Mall, The Center Court Carousel, & Seventeen on Four Wheels",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-1-two-buses-to-chesapeake-bay-mall-the-center-court-carousel-seventeen-on-four-wheels",
+              "date": "2002-04-13",
+              "location": "Virginia Beach, VA (CCHR Transit Hub & Chesapeake Bay Mall on Lynnhaven Parkway)"
+            },
+            {
+              "title": "Part 2: Senior Gold Day in Room 204, Paper Snowflakes, & See You After Winter Break",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-2-senior-gold-day-in-room-204-paper-snowflakes-see-you-after-winter-break",
+              "date": "2002-12-20",
+              "location": "Virginia Beach, VA (Northwood High School — Room 204, Cafeteria, & Bus Loop; Arvin Road)"
+            },
             {
               "title": "Part 1: The Gas-Station Run, A Box of Dry Cereal, & Why I Never Had a Twenty-First Birthday Drink",
               "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink",
@@ -22254,12 +22302,12 @@
       "firstChapterUrl": "https://books.raggiesoft.com/katie/early-childhood/the-great-afternoon/cartoons-are-for-life-the-secret-password-the-afternoon-sanctuary",
       "stats": {
         "scaleLabel": "Multi-Volume Omnibus",
-        "readingHours": 18.3,
-        "storyPages": 999,
+        "readingHours": 18.7,
+        "storyPages": 1020,
         "eraCount": 11,
-        "chapterCount": 43,
-        "partCount": 104,
-        "illustrationCount": 124
+        "chapterCount": 45,
+        "partCount": 108,
+        "illustrationCount": 128
       },
       "dateSpan": "1994–2044",
       "debutDate": "1994-05-18",
@@ -22647,9 +22695,9 @@
           "eraNum": 3,
           "title": "Sixteen & Summer Sanctuary",
           "url": "https://books.raggiesoft.com/katie/sixteen-summer-sanctuary",
-          "wordCount": 27874,
-          "illustrationCount": 16,
-          "dateSpan": "2001-05-24 to 2001-11-08",
+          "wordCount": 31279,
+          "illustrationCount": 18,
+          "dateSpan": "2001-05-24 to 2002-02-14",
           "locations": [
             "Virginia Beach, VA (Northwood High School, Macgregory Street, & Earlton Court)",
             "Virginia Beach, VA",
@@ -22907,6 +22955,44 @@
                   "chapTitle": "The Uncut Curb at Smoker's Corner"
                 }
               ]
+            },
+            {
+              "chapNum": 6,
+              "title": "Cousin Wesley, Annie's Pretzels, & Coding Side by Side",
+              "url": "https://books.raggiesoft.com/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side",
+              "partCount": 2,
+              "parts": [
+                {
+                  "partNum": 1,
+                  "title": "Part 1: Cousin Wesley at Emerald Creek Mall, Annie's Pretzels, & The Same Deep-Pressure Squeeze",
+                  "url": "https://books.raggiesoft.com/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side/part-1-cousin-wesley-at-emerald-creek-mall-annie-s-pretzels-the-same-deep-pressure-squeeze",
+                  "date": "2001-11-17",
+                  "location": "Chesapeake, VA (Emerald Creek Mall — Glass Elevator & Upstairs Food Court)",
+                  "excerpt": "Heather brings her cousin Wesley to Emerald Creek Mall for soft pretzels, showing why she understands Nate and Katie's twin bond effortlessly.",
+                  "readingMinutes": 7,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b003/nov_2001_emerald_creek_mall_annies_pretzels_wesley_heather_katie_nate.jpg",
+                  "imageAlt": "Inside the sunlit second-floor food court of Emerald Creek Mall beneath white tented fabric ceiling cones in November 2001 with Annie's Pretzels visible behind them, sixteen-year-old blonde fraternal twins Katie and Nathaniel Prairie sit side by side in their compact black motorized SwiftChair power wheelchairs holding inner hands across from Heather Collins and her fourteen-year-old developmentally disabled cousin Wesley sharing warm soft pretzels and juice",
+                  "eraNum": 3,
+                  "eraTitle": "Sixteen & Summer Sanctuary",
+                  "chapNum": 6,
+                  "chapTitle": "Cousin Wesley, Annie's Pretzels, & Coding Side by Side"
+                },
+                {
+                  "partNum": 2,
+                  "title": "Part 2: Two Envelopes at Mrs. DeMarco's Window Table, Three Sugar Cookies, & Coding in Mrs. Periwinkle's Library",
+                  "url": "https://books.raggiesoft.com/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side/part-2-two-envelopes-at-mrs-demarco-s-window-table-three-sugar-cookies-coding-in-mrs-periwinkle-s-library",
+                  "date": "2002-02-14",
+                  "location": "Virginia Beach, VA (Northwood High School — Cafeteria & Library)",
+                  "excerpt": "On Valentine's Day at Northwood High, Heather surprises both Nate and Katie at Mrs. DeMarco's table before coding together in the library.",
+                  "readingMinutes": 7,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b003/feb_2002_northwood_library_valentines_coding_heather_katie_nate.jpg",
+                  "imageAlt": "Inside the quiet oak-lined Northwood High School Library beneath the purple-and-gold school banners in February 2002, sixteen-year-old blonde fraternal twins Katie and Nathaniel Prairie sit side by side in their compact black motorized SwiftChair power wheelchairs holding inner hands at a wide oak reference table while Heather Collins sits right beside Nate holding his other hand as all three lean warmly over their open Quantum Basic coding notebook and two cream Valentine cards",
+                  "eraNum": 3,
+                  "eraTitle": "Sixteen & Summer Sanctuary",
+                  "chapNum": 6,
+                  "chapTitle": "Cousin Wesley, Annie's Pretzels, & Coding Side by Side"
+                }
+              ]
             }
           ]
         },
@@ -22914,19 +23000,57 @@
           "eraNum": 4,
           "title": "Seventeen, Senior Year, & Greenway Court",
           "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court",
-          "wordCount": 15338,
-          "illustrationCount": 7,
-          "dateSpan": "2002-12-31 to 2004-06-19",
+          "wordCount": 17874,
+          "illustrationCount": 9,
+          "dateSpan": "2002-04-13 to 2004-06-19",
           "locations": [
+            "Virginia Beach, VA (CCHR Transit Hub & Chesapeake Bay Mall on Lynnhaven Parkway)",
+            "Virginia Beach, VA (Northwood High School — Room 204, Cafeteria, & Bus Loop; Arvin Road)",
             "Virginia Beach, VA (Rental House off Military Highway & Indian River Road)",
             "Virginia Beach, VA (Northwood High School & Rental House off Military Highway)",
-            "Norfolk, VA (Greenway Court, Apartment A6 — West Ghent)",
-            "Norfolk, VA (Greenway Court, Apartment A6)",
-            "Norfolk, VA (Greenway Court, Apartment A6) & Virginia Beach, VA (Arvin Road)"
+            "Norfolk, VA (Greenway Court, Apartment A6 — West Ghent)"
           ],
           "chapters": [
             {
               "chapNum": 1,
+              "title": "Seventeen at Chesapeake Bay Mall & Senior Fall With Heather",
+              "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather",
+              "partCount": 2,
+              "parts": [
+                {
+                  "partNum": 1,
+                  "title": "Part 1: Two Buses to Chesapeake Bay Mall, The Center Court Carousel, & Seventeen on Four Wheels",
+                  "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-1-two-buses-to-chesapeake-bay-mall-the-center-court-carousel-seventeen-on-four-wheels",
+                  "date": "2002-04-13",
+                  "location": "Virginia Beach, VA (CCHR Transit Hub & Chesapeake Bay Mall on Lynnhaven Parkway)",
+                  "excerpt": "Turning seventeen, Nate and Katie take their first two-bus powerchair trip to Chesapeake Bay Mall to celebrate by the Center Court carousel with Heather.",
+                  "readingMinutes": 5,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b004/apr_2002_chesapeake_bay_mall_carousel_scenic_elevator_heather_katie_nate.jpg",
+                  "imageAlt": "Inside Center Court of Chesapeake Bay Mall in Virginia Beach beneath barrel-vaulted glass skylights on earth-tone sandstone ceramic tile in April 2002, seventeen-year-old blonde fraternal twins Katie and Nathaniel Prairie sit side by side in their compact black motorized SwiftChair power wheelchairs holding inner hands beside the vintage double-decker carousel and dark-bronze-and-glass scenic elevator while Heather Collins stands on Nate's right holding his hand and a birthday gift bag",
+                  "eraNum": 4,
+                  "eraTitle": "Seventeen, Senior Year, & Greenway Court",
+                  "chapNum": 1,
+                  "chapTitle": "Seventeen at Chesapeake Bay Mall & Senior Fall With Heather"
+                },
+                {
+                  "partNum": 2,
+                  "title": "Part 2: Senior Gold Day in Room 204, Paper Snowflakes, & See You After Winter Break",
+                  "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-2-senior-gold-day-in-room-204-paper-snowflakes-see-you-after-winter-break",
+                  "date": "2002-12-20",
+                  "location": "Virginia Beach, VA (Northwood High School — Room 204, Cafeteria, & Bus Loop; Arvin Road)",
+                  "excerpt": "On the final Friday before senior winter break in Room 204, Katie, Nate, and Heather compile their semester project and share a warm holiday goodbye.",
+                  "readingMinutes": 6,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b004/dec_2002_northwood_room_204_senior_winter_break_heather_katie_nate.jpg",
+                  "imageAlt": "Inside Room 204 Computer Lab on the second floor of Northwood High School on Friday morning, December 20, 2002 before winter break, seventeen-year-old blonde fraternal twins Katie and Nathaniel Prairie sit side by side in their compact black motorized SwiftChair power wheelchairs holding inner hands at an accessible beige CRT workstation while Heather Collins sits beside Nate in a green winter sweater smiling warmly at their compiled bus-map program with paper snowflakes on the classroom window behind them",
+                  "eraNum": 4,
+                  "eraTitle": "Seventeen, Senior Year, & Greenway Court",
+                  "chapNum": 1,
+                  "chapTitle": "Seventeen at Chesapeake Bay Mall & Senior Fall With Heather"
+                }
+              ]
+            },
+            {
+              "chapNum": 2,
               "title": "Drunken New Year",
               "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/drunken-new-year",
               "partCount": 2,
@@ -22943,7 +23067,7 @@
                   "imageAlt": "Inside Katie's lamp-lit bedroom behind the locked white bedroom door on New Year's Eve 2002, seventeen-year-old blonde fraternal twins Nathaniel and Katie Prairie sit side by side in their compact SwiftChair power wheelchairs holding hands beside a desk with an unbranded box of dry toasted oat cereal and two green cans of ginger ale",
                   "eraNum": 4,
                   "eraTitle": "Seventeen, Senior Year, & Greenway Court",
-                  "chapNum": 1,
+                  "chapNum": 2,
                   "chapTitle": "Drunken New Year"
                 },
                 {
@@ -22958,13 +23082,13 @@
                   "imageAlt": "Sitting side by side on the edge of Katie's bed beneath the framed blue butterfly watercolor print on January 6, 2003, with their two black motorized SwiftChair power wheelchairs parked beside them, 17-year-old Katie Prairie wraps her arms comforting her heartbroken twin brother Nathaniel and laces her fingers through his hand.",
                   "eraNum": 4,
                   "eraTitle": "Seventeen, Senior Year, & Greenway Court",
-                  "chapNum": 1,
+                  "chapNum": 2,
                   "chapTitle": "Drunken New Year"
                 }
               ]
             },
             {
-              "chapNum": 2,
+              "chapNum": 3,
               "title": "Greenway Court, Apartment A6 & The Square Closet Sanctuary",
               "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary",
               "partCount": 3,
@@ -22981,7 +23105,7 @@
                   "imageAlt": "Inside Apartment A6 at Greenway Court in West Ghent, Norfolk in July 2003, eighteen-year-old fraternal twins Nathaniel and Katie Prairie sit side by side in their compact SwiftChair power wheelchairs holding hands in front of their rear window and full-sized bed while their father David Prairie stands beside the standalone rolling microwave-and-toaster cart holding his travel mug of coffee",
                   "eraNum": 4,
                   "eraTitle": "Seventeen, Senior Year, & Greenway Court",
-                  "chapNum": 2,
+                  "chapNum": 3,
                   "chapTitle": "Greenway Court, Apartment A6 & The Square Closet Sanctuary"
                 },
                 {
@@ -22996,7 +23120,7 @@
                   "imageAlt": "Inside the compact square closet of Apartment A6 at Greenway Court in August 2003, eighteen-year-old fraternal twins Nathaniel and Katie Prairie in modest long-sleeved shirts are cuddled up close together inside their single shared navy-blue sleeping bag on the carpeted closet floor",
                   "eraNum": 4,
                   "eraTitle": "Seventeen, Senior Year, & Greenway Court",
-                  "chapNum": 2,
+                  "chapNum": 3,
                   "chapTitle": "Greenway Court, Apartment A6 & The Square Closet Sanctuary"
                 },
                 {
@@ -23011,13 +23135,13 @@
                   "imageAlt": "Outside the Greenway Court apartment building in Norfolk on Wednesday afternoon, September 17, 2003 ahead of Hurricane Isabel under overcast gray skies and rising wind, eighteen-year-old fraternal twins Nathaniel and Katie Prairie sit side by side in their black motorized SwiftChair power wheelchairs holding hands while their father David Prairie steadies their chairs on the front walkway as Michael Ragsdale waves goodbye with his backpack on the sidewalk.",
                   "eraNum": 4,
                   "eraTitle": "Seventeen, Senior Year, & Greenway Court",
-                  "chapNum": 2,
+                  "chapNum": 3,
                   "chapTitle": "Greenway Court, Apartment A6 & The Square Closet Sanctuary"
                 }
               ]
             },
             {
-              "chapNum": 3,
+              "chapNum": 4,
               "title": "The Admiral Center Patio & Moving Together to Williamsburg",
               "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court/the-admiral-center-patio-moving-together-to-williamsburg",
               "partCount": 2,
@@ -23034,7 +23158,7 @@
                   "imageAlt": "On the brick outdoor café patio of The Admiral Center in Norfolk in May 2004, nineteen-year-old fraternal twins Nathaniel and Katie Prairie sit side by side in their black motorized SwiftChair power wheelchairs as twenty-two-year-old Brandon Mercer leans across the wrought-iron patio table to shake Nate's hand with a polite, gentlemanly smile.",
                   "eraNum": 4,
                   "eraTitle": "Seventeen, Senior Year, & Greenway Court",
-                  "chapNum": 3,
+                  "chapNum": 4,
                   "chapTitle": "The Admiral Center Patio & Moving Together to Williamsburg"
                 },
                 {
@@ -23049,7 +23173,7 @@
                   "imageAlt": "Inside Apartment A6 at Greenway Court in Norfolk in June 2004, nineteen-year-old fraternal twins Katie and Nathaniel Prairie sit side by side in their black motorized SwiftChair power wheelchairs holding hands across their armrests while their father David Prairie and Brandon Mercer pack moving boxes behind them.",
                   "eraNum": 4,
                   "eraTitle": "Seventeen, Senior Year, & Greenway Court",
-                  "chapNum": 3,
+                  "chapNum": 4,
                   "chapTitle": "The Admiral Center Patio & Moving Together to Williamsburg"
                 }
               ]
@@ -42283,7 +42407,7 @@
       "region": "Chesapeake & Norfolk, Virginia",
       "debutNote": "Twin 1981 Tidewater shopping centers serving as key CVTA bus transfer hubs and teen gathering landmarks across Southside Hampton Roads.",
       "shortDescription": "Twin 1981 Tidewater shopping centers serving as key CVTA bus transfer hubs and teen gathering landmarks across Southside Hampton Roads.",
-      "bodyMarkdown": "# Hampton Roads 1981 Regional Malls: *Emerald Creek Mall* & *Chesapeake Bay Mall*\n\nThis universal lore reference locks in the architectural floor plans, 1981–2001 interior finishes, elevator/escalator placements, anchor store portals, and CVTA transit connections for the two premier 1981 enclosed regional malls in South Hampton Roads across /books/katie, /books/rachel, /books/aubrie, and /books/paige.\n\n---\n\n## 1. Emerald Creek Mall *(Real-Life Baseline: Greenbrier Mall, Chesapeake, VA — Opened 1981)*\n\n### A. Floor Plan & Architectural Geometry\n- **Linear East–West Concourse Spine (90-Degree Cross-Corridors)**:\n  - The main mall hallway (**main retail concourse**) runs in a straight east–west line (180 degrees), with short 90-degree perpendicular north/south anchor stub courts.\n  - **No \"V-Shaped\" Hallways**: All intersections between the Food Court wing, anchor courts, and the main retail concourse are **strict 90-degree perpendicular T-intersections**.\n- **Anchor Department Store Mall Entrances (Narrow Recessed Portals)**:\n  - Anchor department stores—including **Wellington's Department Store** (*Hecht's*, located on the south side of the main concourse directly opposite the Food Court wing, in the footprint where *Regal Cinemas 18* sits on modern maps)—do **NOT** span the full width of the interior concourse wall.\n  - Instead, each anchor store connects to the main concourse through a **~30–40 foot wide recessed two-story entrance portal** (with a single centered **WELLINGTON'S** sign over the portal), while regular **inline mall retail storefronts** (such as *The Literary Alcove*, *Oak & Iron Outfitters*, jewelry stores, and apparel shops—corresponding to units 2014 and 2010 on the upper-level plan) wrap right up to the left and right edges of the anchor portal along the straight concourse wall.\n  - Outside, the CVTA Route 15 bus stop sits on the outer ring road straight across the parking lot from the first-floor exterior entrance of **Wellington's**.\n\n### B. Interior Colors, Materials, & 1981 Original Elevator\n- **Walkway Flooring**: **8x8 warm terracotta / reddish-brown square quarry tile** along the main concourse and Food Court wing landings (with light cream/grey circular tile inlays in the lower courts).\n- **Mezzanine Balcony Railings**: **Polished brass tubular top-rails and upright posts with clear tempered glass infill panels** mounted on a low terracotta-brick curb around the second-floor atrium cutouts.\n- **Main Concourse Roof & Skylights**: **White painted open steel space-frame trusses** supporting pitched skylights and continuous rectangular clerestory windows above warm cream/almond-beige upper wall soffits.\n- **The Freestanding Early-1980s Scenic Glass Elevator**:\n  - Located on the **main retail concourse** right at the 90-degree T-intersection between the **second-floor Food Court wing** (north side) and the **recessed WELLINGTON'S entrance portal** (south side).\n  - **Colors & Construction**: Original 1981 freestanding vertical shaft framed by **four warm cream / almond-beige structural corner columns** and **multi-pane clear glass curtain walls** with cream/white mullions, topped by a **four-sided glass pyramid skylight cap**.\n  - **Doors & Controls**: **Warm brushed-brass / bronze center-opening glass sliding doors** that open **flush onto the flat, level second-floor terracotta-tile landing** (zero stairs!), with a **polished brass call-button panel** (round illuminated buttons) on the right column and an early-1980s **amber digital floor indicator** (1 / 2) above the header.\n- **The Second-Floor Food Court Wing**:\n  - Branches off the north side of the main concourse directly behind the scenic glass elevator.\n  - Topped by a **high white peaked fabric tent canopy ceiling** surrounded by perimeter skylights.\n  - In the center of the Food Court floor opening sit the **twin chrome-and-glass food court escalators**: looking into the Food Court wing from the elevator landing, the **UP escalator** (first floor to second floor) is on the **left**, and the **DOWN escalator** (second floor to first floor) is on the **right**, with four-top food court tables arranged on the terracotta tile landing right between the two escalators (flanked by *Crown Burger* on the left and *Annie's Pretzels* on the right).\n  - At the far back of the second-floor Food Court wing, exterior glass exit doors open directly onto a **graded upper section of the mall parking lot** that gently slopes up to the second-floor level.\n\n### C. Narrative Role in *Katie & Nathaniel* (books/katie)\n- **Nate & Katie's Favorite Regular Hangout**: Because Nate and Katie can catch **CVTA Route 15** half a block from their rented single-story brick ranch off **Military Highway & Indian River Road** and ride a **single bus (no transfers)** straight to the Emerald Creek Mall ring road on Mondays through Saturdays, Emerald Creek Mall is their favorite regular teenage hangout both before and after transitioning to their compact **SwiftChair** power wheelchairs in September 2001.\n\n---\n\n## 2. Chesapeake Bay Mall *(Real-Life Baseline: Lynnhaven Mall, Virginia Beach, VA — Opened 1981)*\n\n### A. Floor Plan & Architectural Geometry\n- **Sprawling Cruciform / Multi-Wing Super-Regional Layout**:\n  - Located along Lynnhaven Parkway in Virginia Beach, VA (opened in 1981 as one of the largest two-level enclosed malls on the East Coast).\n  - Designed with long intersecting concourse wings radiating from a grand two-story **Center Court** and a separate vaulted glass-atrium **Food Court wing**.\n- **Interior Colors, Materials, & Landmarks (1981–2001 Era)**:\n  - **Walkway Flooring**: **Earth-tone sandstone, tan, and cream ceramic tile** walkways with decorative geometric court borders and indoor ficus/palm tree planters in the lower courts.\n  - **Mezzanine Balcony Railings**: **Dark bronze and oak/brass glass-panel railings** overlooking the two-story courts.\n  - **Roof & Skylights**: **Continuous barrel-vaulted and pitched glass skylights** running down the length of the concourse spines over warm cream stucco bulkheads.\n  - **Center Court Carousel & Scenic Elevator**: Features the iconic **double-decker vintage carousel** in Center Court alongside the main center-court escalators and a **freestanding glass-and-bronze hydraulic scenic elevator**.\n\n### B. Narrative Role in *Katie & Nathaniel* (books/katie)\n- **The \"Big Trip\" Favorite Mall**: While Emerald Creek Mall is their one-bus neighborhood hangout, **Chesapeake Bay Mall** is Nate and Katie's favorite **\"big trip\" mall** (requiring a multi-bus transfer across Virginia Beach).\n- **Chronological Powerchair Milestone**: Nate and Katie went to both **Emerald Creek Mall** and **Chesapeake Bay Mall** all the time before their legs gave out in September 2001. As of October 2001 (books/katie/e003/c004), **they have not yet been to Chesapeake Bay Mall since getting their powerchairs**.",
+      "bodyMarkdown": "# Hampton Roads 1981 Regional Malls: *Emerald Creek Mall* & *Chesapeake Bay Mall*\n\nThis universal lore reference locks in the architectural floor plans, 1981–2001 interior finishes, elevator/escalator placements, anchor store portals, and CVTA transit connections for the two premier 1981 enclosed regional malls in South Hampton Roads across /books/katie, /books/rachel, /books/aubrie, and /books/paige.\n\n---\n\n## 1. Emerald Creek Mall *(Real-Life Baseline: Greenbrier Mall, Chesapeake, VA — Opened 1981)*\n\n### A. Floor Plan & Architectural Geometry\n- **Linear East–West Concourse Spine (90-Degree Cross-Corridors)**:\n  - The main mall hallway (**main retail concourse**) runs in a straight east–west line (180 degrees), with short 90-degree perpendicular north/south anchor stub courts.\n  - **No \"V-Shaped\" Hallways**: All intersections between the Food Court wing, anchor courts, and the main retail concourse are **strict 90-degree perpendicular T-intersections**.\n- **Anchor Department Store Mall Entrances (Narrow Recessed Portals)**:\n  - Anchor department stores—including **Wellington's Department Store** (*Hecht's*, located on the south side of the main concourse directly opposite the Food Court wing, in the footprint where *Regal Cinemas 18* sits on modern maps)—do **NOT** span the full width of the interior concourse wall.\n  - Instead, each anchor store connects to the main concourse through a **~30–40 foot wide recessed two-story entrance portal** (with a single centered **WELLINGTON'S** sign over the portal), while regular **inline mall retail storefronts** (such as *The Literary Alcove*, *Oak & Iron Outfitters*, jewelry stores, and apparel shops—corresponding to units 2014 and 2010 on the upper-level plan) wrap right up to the left and right edges of the anchor portal along the straight concourse wall.\n  - Outside, the CVTA Route 15 bus stop sits on the outer ring road straight across the parking lot from the first-floor exterior entrance of **Wellington's**.\n\n### B. Interior Colors, Materials, & 1981 Original Elevator\n- **Walkway Flooring**: **8x8 warm terracotta / reddish-brown square quarry tile** along the main concourse and Food Court wing landings (with light cream/grey circular tile inlays in the lower courts).\n- **Mezzanine Balcony Railings**: **Polished brass tubular top-rails and upright posts with clear tempered glass infill panels** mounted on a low terracotta-brick curb around the second-floor atrium cutouts.\n- **Main Concourse Roof & Skylights**: **White painted open steel space-frame trusses** supporting pitched skylights and continuous rectangular clerestory windows above warm cream/almond-beige upper wall soffits.\n- **The Freestanding Early-1980s Scenic Glass Elevator**:\n  - Located on the **main retail concourse** right at the 90-degree T-intersection between the **second-floor Food Court wing** (north side) and the **recessed WELLINGTON'S entrance portal** (south side).\n  - **Colors & Construction**: Original 1981 freestanding vertical shaft framed by **four warm cream / almond-beige structural corner columns** and **multi-pane clear glass curtain walls** with cream/white mullions, topped by a **four-sided glass pyramid skylight cap**.\n  - **Doors & Controls**: **Warm brushed-brass / bronze center-opening glass sliding doors** that open **flush onto the flat, level second-floor terracotta-tile landing** (zero stairs!), with a **polished brass call-button panel** (round illuminated buttons) on the right column and an early-1980s **amber digital floor indicator** (1 / 2) above the header.\n- **The Second-Floor Food Court Wing**:\n  - Branches off the north side of the main concourse directly behind the scenic glass elevator.\n  - Topped by a **high white peaked fabric tent canopy ceiling** surrounded by perimeter skylights.\n  - In the center of the Food Court floor opening sit the **twin chrome-and-glass food court escalators**: looking into the Food Court wing from the elevator landing, the **UP escalator** (first floor to second floor) is on the **left**, and the **DOWN escalator** (second floor to first floor) is on the **right**, with four-top food court tables arranged on the terracotta tile landing right between the two escalators (flanked by *Crown Burger* on the left and *Annie's Pretzels* on the right).\n  - At the far back of the second-floor Food Court wing, exterior glass exit doors open directly onto a **graded upper section of the mall parking lot** that gently slopes up to the second-floor level.\n\n### C. Narrative Role in *Katie & Nathaniel* (books/katie)\n- **Nate & Katie's Favorite Regular Hangout**: Because Nate and Katie can catch **CVTA Route 15** half a block from their rented single-story brick ranch off **Military Highway & Indian River Road** and ride a **single bus (no transfers)** straight to the Emerald Creek Mall ring road on Mondays through Saturdays, Emerald Creek Mall is their favorite regular teenage hangout both before and after transitioning to their compact **SwiftChair** power wheelchairs in September 2001.\n\n---\n\n## 2. Chesapeake Bay Mall *(Real-Life Baseline: Lynnhaven Mall, Virginia Beach, VA — Opened 1981)*\n\n### A. Floor Plan & Architectural Geometry\n- **Sprawling Cruciform / Multi-Wing Super-Regional Layout**:\n  - Located along Lynnhaven Parkway in Virginia Beach, VA (opened in 1981 as one of the largest two-level enclosed malls on the East Coast).\n  - Designed with long intersecting concourse wings radiating from a grand two-story **Center Court** and a separate vaulted glass-atrium **Food Court wing**.\n- **Interior Colors, Materials, & Landmarks (1981–2001 Era)**:\n  - **Walkway Flooring**: **Earth-tone sandstone, tan, and cream ceramic tile** walkways with decorative geometric court borders and indoor ficus/palm tree planters in the lower courts.\n  - **Mezzanine Balcony Railings**: **Dark bronze and oak/brass glass-panel railings** overlooking the two-story courts.\n  - **Roof & Skylights**: **Continuous barrel-vaulted and pitched glass skylights** running down the length of the concourse spines over warm cream stucco bulkheads.\n  - **Center Court Carousel & Scenic Elevator**: Features the iconic **double-decker vintage carousel** in Center Court alongside the main center-court escalators and a **freestanding glass-and-bronze hydraulic scenic elevator**.\n\n### B. Narrative Role in *Katie & Nathaniel* (books/katie)\n- **The \"Big Trip\" Favorite Mall**: While Emerald Creek Mall is their one-bus neighborhood hangout, **Chesapeake Bay Mall** is Nate and Katie's favorite **\"big trip\" mall** (requiring a multi-bus transfer across Virginia Beach).\n- **Chronological Powerchair Milestone**: Nate and Katie went to both **Emerald Creek Mall** and **Chesapeake Bay Mall** all the time before their legs gave out in September 2001. As of October 2001 (books/katie/e003/c004), they have not yet been to Chesapeake Bay Mall since getting their powerchairs; they complete their first two-bus powerchair trip (CVTA Route 12 to CCHR → CVTA Route 29 up Lynnhaven Parkway) to **Chesapeake Bay Mall** on **Saturday, April 13, 2002** (books/katie/e004/c001/p001.md) to celebrate their seventeenth birthday by the Center Court carousel with **Heather Collins**.",
       "relatedBookSlugs": [
         "rachel",
         "katie"
@@ -43823,7 +43947,7 @@
           "year": "2001",
           "kind": "Later Storyline Era",
           "title": "Katie & Nathaniel — Sixteen & Summer Sanctuary",
-          "summary": "5 chapters set across Virginia Beach, VA (Northwood High School, Macgregory Street, & Earlton Court), Virginia Beach, VA, Port Canaveral, FL & Aboard the M/S Sunward Tropics",
+          "summary": "6 chapters set across Virginia Beach, VA (Northwood High School, Macgregory Street, & Earlton Court), Virginia Beach, VA, Port Canaveral, FL & Aboard the M/S Sunward Tropics",
           "internalHref": "/books/katie",
           "externalUrl": "https://books.raggiesoft.com/katie/sixteen-summer-sanctuary",
           "externalLabel": "Open Era in Book Reader",
@@ -43902,6 +44026,18 @@
           "isSpoiler": true
         },
         {
+          "id": "book-katie-e4",
+          "date": "2002-04-13",
+          "year": "2002",
+          "kind": "Later Storyline Era",
+          "title": "Katie & Nathaniel — Seventeen, Senior Year, & Greenway Court",
+          "summary": "4 chapters set across Virginia Beach, VA (CCHR Transit Hub & Chesapeake Bay Mall on Lynnhaven Parkway), Virginia Beach, VA (Northwood High School — Room 204, Cafeteria, & Bus Loop; Arvin Road), Virginia Beach, VA (Rental House off Military Highway & Indian River Road)",
+          "internalHref": "/books/katie",
+          "externalUrl": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court",
+          "externalLabel": "Open Era in Book Reader",
+          "isSpoiler": true
+        },
+        {
           "id": "book-luna-leo-e7",
           "date": "2002-09-15",
           "year": "2002",
@@ -43922,18 +44058,6 @@
           "summary": "5 chapters set across Virginia Dominion University (VDU), Norfolk, VA, Norfolk, VA (Greenway Court, Unit A5) & Virginia Beach, VA (Kemps River Drive & Cousin Maria's House)",
           "internalHref": "/books/rachel",
           "externalUrl": "https://books.raggiesoft.com/rachel/michael-s-senior-year",
-          "externalLabel": "Open Era in Book Reader",
-          "isSpoiler": true
-        },
-        {
-          "id": "book-katie-e4",
-          "date": "2002-12-31",
-          "year": "2002",
-          "kind": "Later Storyline Era",
-          "title": "Katie & Nathaniel — Seventeen, Senior Year, & Greenway Court",
-          "summary": "3 chapters set across Virginia Beach, VA (Rental House off Military Highway & Indian River Road), Virginia Beach, VA (Northwood High School & Rental House off Military Highway), Norfolk, VA (Greenway Court, Apartment A6 — West Ghent)",
-          "internalHref": "/books/katie",
-          "externalUrl": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court",
           "externalLabel": "Open Era in Book Reader",
           "isSpoiler": true
         },
