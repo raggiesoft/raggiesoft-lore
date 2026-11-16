@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15",
+  "generatedAt": "2026-11-16",
   "stats": {
     "totalEntries": 114,
     "characterCount": 31,
@@ -26,7 +26,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 112,
+      "appearanceCount": 113,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -470,10 +470,16 @@
               "location": "Virginia Beach, VA (Kempsville Post Office & Our Home on Arvin Road)"
             },
             {
-              "title": "Associate Degrees in Hand, 'Not the Right Skill Match,' & Putting Our Virginia LLC to Work",
-              "url": "https://books.raggiesoft.com/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-from-arvin-road/associate-degrees-in-hand-not-the-right-skill-match-putting-our-virginia-llc-to-work",
+              "title": "Part 1: Associate Degrees in Hand, 'Not the Right Skill Match,' & Putting Our Virginia LLC to Work",
+              "url": "https://books.raggiesoft.com/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-the-arvin-road-networking-closet/part-1-associate-degrees-in-hand-not-the-right-skill-match-putting-our-virginia-llc-to-work",
               "date": "2007-06-14",
               "location": "Virginia Beach, VA (Virginia Beach Boulevard Office Park & Our Dual-Desk Home Office on Arvin Road)"
+            },
+            {
+              "title": "Part 2: The Arvin Road Networking Closet, A Fail-Safe Thermostat Relay, & Sheer Random Luck on StreamTube",
+              "url": "https://books.raggiesoft.com/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-the-arvin-road-networking-closet/part-2-the-arvin-road-networking-closet-a-fail-safe-thermostat-relay-sheer-random-luck-on-streamtube",
+              "date": "2007-08-18",
+              "location": "Virginia Beach, VA (Our Dual-Desk Home Office & Networking Closet on Arvin Road)"
             }
           ]
         },
@@ -793,7 +799,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 108,
+      "appearanceCount": 109,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -1225,10 +1231,16 @@
               "location": "Virginia Beach, VA (Kempsville Post Office & Our Home on Arvin Road)"
             },
             {
-              "title": "Associate Degrees in Hand, 'Not the Right Skill Match,' & Putting Our Virginia LLC to Work",
-              "url": "https://books.raggiesoft.com/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-from-arvin-road/associate-degrees-in-hand-not-the-right-skill-match-putting-our-virginia-llc-to-work",
+              "title": "Part 1: Associate Degrees in Hand, 'Not the Right Skill Match,' & Putting Our Virginia LLC to Work",
+              "url": "https://books.raggiesoft.com/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-the-arvin-road-networking-closet/part-1-associate-degrees-in-hand-not-the-right-skill-match-putting-our-virginia-llc-to-work",
               "date": "2007-06-14",
               "location": "Virginia Beach, VA (Virginia Beach Boulevard Office Park & Our Dual-Desk Home Office on Arvin Road)"
+            },
+            {
+              "title": "Part 2: The Arvin Road Networking Closet, A Fail-Safe Thermostat Relay, & Sheer Random Luck on StreamTube",
+              "url": "https://books.raggiesoft.com/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-the-arvin-road-networking-closet/part-2-the-arvin-road-networking-closet-a-fail-safe-thermostat-relay-sheer-random-luck-on-streamtube",
+              "date": "2007-08-18",
+              "location": "Virginia Beach, VA (Our Dual-Desk Home Office & Networking Closet on Arvin Road)"
             }
           ]
         },
@@ -22350,12 +22362,12 @@
       "firstChapterUrl": "https://books.raggiesoft.com/katie/early-childhood/the-great-afternoon/cartoons-are-for-life-the-secret-password-the-afternoon-sanctuary",
       "stats": {
         "scaleLabel": "Multi-Volume Omnibus",
-        "readingHours": 19.5,
-        "storyPages": 1066,
+        "readingHours": 19.7,
+        "storyPages": 1074,
         "eraCount": 11,
         "chapterCount": 45,
-        "partCount": 112,
-        "illustrationCount": 134
+        "partCount": 113,
+        "illustrationCount": 135
       },
       "dateSpan": "1994–2044",
       "debutDate": "1994-05-18",
@@ -23582,9 +23594,9 @@
           "eraNum": 7,
           "title": "Unofficial Homeowners: Back Home in Virginia Beach (2007–2008)",
           "url": "https://books.raggiesoft.com/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008",
-          "wordCount": 19488,
-          "illustrationCount": 14,
-          "dateSpan": "2007-03-18 to 2007-06-14",
+          "wordCount": 21520,
+          "illustrationCount": 15,
+          "dateSpan": "2007-03-18 to 2007-08-18",
           "locations": [
             "Virginia Beach, VA (Kempsville — Single-Story Brick Ranch on Arvin Road off Indian River Road & Military Highway)",
             "Virginia Beach, VA (Kempsville — Dr. Evelyn Carter's Family Medicine Office, Arvin Road, Indian River Road & Military Highway, & Market Square Supermarket)",
@@ -23784,14 +23796,14 @@
             },
             {
               "chapNum": 4,
-              "title": "Associate Degrees in Hand, 'Not the Right Skill Match,' & Launching Prairie Twin Interactive From Arvin Road",
-              "url": "https://books.raggiesoft.com/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-from-arvin-road",
-              "partCount": 1,
+              "title": "Associate Degrees in Hand, 'Not the Right Skill Match,' Launching Prairie Twin Interactive, & The Arvin Road Networking Closet",
+              "url": "https://books.raggiesoft.com/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-the-arvin-road-networking-closet",
+              "partCount": 2,
               "parts": [
                 {
                   "partNum": 1,
-                  "title": "Associate Degrees in Hand, 'Not the Right Skill Match,' & Putting Our Virginia LLC to Work",
-                  "url": "https://books.raggiesoft.com/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-from-arvin-road/associate-degrees-in-hand-not-the-right-skill-match-putting-our-virginia-llc-to-work",
+                  "title": "Part 1: Associate Degrees in Hand, 'Not the Right Skill Match,' & Putting Our Virginia LLC to Work",
+                  "url": "https://books.raggiesoft.com/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-the-arvin-road-networking-closet/part-1-associate-degrees-in-hand-not-the-right-skill-match-putting-our-virginia-llc-to-work",
                   "date": "2007-06-14",
                   "location": "Virginia Beach, VA (Virginia Beach Boulevard Office Park & Our Dual-Desk Home Office on Arvin Road)",
                   "excerpt": "\"Your PHP database queries and your Associate of Applied Science transcripts from the Community College of Hampton Roads are certainly impressive on paper,\" the human-resources director said in a smooth…",
@@ -23801,7 +23813,22 @@
                   "eraNum": 7,
                   "eraTitle": "Unofficial Homeowners: Back Home in Virginia Beach (2007–2008)",
                   "chapNum": 4,
-                  "chapTitle": "Associate Degrees in Hand, 'Not the Right Skill Match,' & Launching Prairie Twin Interactive From Arvin Road"
+                  "chapTitle": "Associate Degrees in Hand, 'Not the Right Skill Match,' Launching Prairie Twin Interactive, & The Arvin Road Networking Closet"
+                },
+                {
+                  "partNum": 2,
+                  "title": "Part 2: The Arvin Road Networking Closet, A Fail-Safe Thermostat Relay, & Sheer Random Luck on StreamTube",
+                  "url": "https://books.raggiesoft.com/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-the-arvin-road-networking-closet/part-2-the-arvin-road-networking-closet-a-fail-safe-thermostat-relay-sheer-random-luck-on-streamtube",
+                  "date": "2007-08-18",
+                  "location": "Virginia Beach, VA (Our Dual-Desk Home Office & Networking Closet on Arvin Road)",
+                  "excerpt": "Wiring a fail-safe thermostat for their Arvin Road networking closet, Nate randomly finds a StreamTube turtle video that makes him think of Chelsea.",
+                  "readingMinutes": 9,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b006/aug_2007_arvin_road_networking_closet_thermostat_streamtube_turtle_video.jpg",
+                  "imageAlt": "Inside Katie and Nathaniel Prairie's sunlit dual-desk home office on Arvin Road in August 2007 beneath their framed Prairie Twin Interactive, LLC certificate—with their open three-by-six office closet beside them newly converted into a ventilated networking closet holding a Linux server tower, blinking 24-port gigabit switch, blue patch cables, UPS battery backup, exhaust fan, and digital thermostat—twenty-two-year-old fraternal twins Katie and Nate sit side by side in matching black SwiftChair power wheelchairs holding inner hands as they smile warmly over their shoulders at an angled StreamTube monitor showing black-nitrile-gloved hands arranging basking stones for a painted turtle.",
+                  "eraNum": 7,
+                  "eraTitle": "Unofficial Homeowners: Back Home in Virginia Beach (2007–2008)",
+                  "chapNum": 4,
+                  "chapTitle": "Associate Degrees in Hand, 'Not the Right Skill Match,' Launching Prairie Twin Interactive, & The Arvin Road Networking Closet"
                 }
               ]
             }
