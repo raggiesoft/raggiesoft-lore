@@ -26,7 +26,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 120,
+      "appearanceCount": 121,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -656,6 +656,12 @@
               "location": "Maplewood, MN (North Lion Scales & Tails Education Classroom & Route 64 Front Plaza)"
             },
             {
+              "title": "Part 5: Chelsea's Magical First Non-Family Hug, Riding Route 54 to Terminal 2, & A Three-Way Hug Outside TSA",
+              "url": "https://books.raggiesoft.com/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-5-chelsea-s-magical-first-non-family-hug-riding-route-54-to-terminal-2-a-three-way-hug-outside-tsa",
+              "date": "2018-06-16",
+              "location": "Maplewood & Minneapolis–Saint Paul, MN (North Lion Scales & Tails Plaza, TCT Route 54, & MSP Terminal 2 TSA Checkpoint)"
+            },
+            {
               "title": "Flipping the Seventh Senate District, Custom-Milling the Mahogany Senate Ramp, & Swearing In as Madam Chair",
               "url": "https://books.raggiesoft.com/katie/across-the-rotunda-the-senate-of-virginia/flipping-the-seventh-senate-district-the-mahogany-senate-ramp-madam-chair/flipping-the-seventh-senate-district-custom-milling-the-mahogany-senate-ramp-swearing-in-as-madam-chair",
               "date": "2019-11-05",
@@ -841,7 +847,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 116,
+      "appearanceCount": 117,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -1457,6 +1463,12 @@
               "url": "https://books.raggiesoft.com/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-4-behind-the-education-classroom-door-fifteen-years-off-our-chests-cutting-the-ribbon-on-route-64",
               "date": "2018-06-16",
               "location": "Maplewood, MN (North Lion Scales & Tails Education Classroom & Route 64 Front Plaza)"
+            },
+            {
+              "title": "Part 5: Chelsea's Magical First Non-Family Hug, Riding Route 54 to Terminal 2, & A Three-Way Hug Outside TSA",
+              "url": "https://books.raggiesoft.com/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-5-chelsea-s-magical-first-non-family-hug-riding-route-54-to-terminal-2-a-three-way-hug-outside-tsa",
+              "date": "2018-06-16",
+              "location": "Maplewood & Minneapolis–Saint Paul, MN (North Lion Scales & Tails Plaza, TCT Route 54, & MSP Terminal 2 TSA Checkpoint)"
             },
             {
               "title": "Flipping the Seventh Senate District, Custom-Milling the Mahogany Senate Ramp, & Swearing In as Madam Chair",
@@ -22446,12 +22458,12 @@
       "firstChapterUrl": "https://books.raggiesoft.com/katie/early-childhood/the-great-afternoon/cartoons-are-for-life-the-secret-password-the-afternoon-sanctuary",
       "stats": {
         "scaleLabel": "Multi-Volume Omnibus",
-        "readingHours": 20.7,
-        "storyPages": 1128,
+        "readingHours": 20.8,
+        "storyPages": 1136,
         "eraCount": 11,
         "chapterCount": 45,
-        "partCount": 120,
-        "illustrationCount": 143
+        "partCount": 121,
+        "illustrationCount": 145
       },
       "dateSpan": "1994–2044",
       "debutDate": "1994-05-18",
@@ -24351,22 +24363,22 @@
           "eraNum": 10,
           "title": "Across the Rotunda: The Senate of Virginia",
           "url": "https://books.raggiesoft.com/katie/across-the-rotunda-the-senate-of-virginia",
-          "wordCount": 25529,
-          "illustrationCount": 13,
+          "wordCount": 27756,
+          "illustrationCount": 15,
           "dateSpan": "2018-02-22 to 2026-09-19",
           "locations": [
             "Richmond & Virginia Beach, VA (Senate Room A, Capitol Rotunda, & Our House off Military Highway in Kempsville)",
             "Maplewood, MN (Twin Cities Transit Route 64 & North Lion Scales & Tails Public Supply Store)",
             "Maplewood, MN (North Lion Scales & Tails Skylit Reptile Zoo & Painted-Turtle Lagoon)",
             "Maplewood, MN (North Lion Scales & Tails Education Classroom & Route 64 Front Plaza)",
-            "Virginia Beach & Richmond, VA (Kempsville Headquarters & The Senate of Virginia Chamber at the State Capitol)"
+            "Maplewood & Minneapolis–Saint Paul, MN (North Lion Scales & Tails Plaza, TCT Route 54, & MSP Terminal 2 TSA Checkpoint)"
           ],
           "chapters": [
             {
               "chapNum": 1,
               "title": "Watching Senator Ward Kill Our Bills Across the Rotunda, The 250-Signature Petition, & Cutting the Ribbon on Route 64 in Maplewood",
               "url": "https://books.raggiesoft.com/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood",
-              "partCount": 4,
+              "partCount": 5,
               "parts": [
                 {
                   "partNum": 1,
@@ -24423,6 +24435,21 @@
                   "readingMinutes": 12,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b005/jun_2018_maplewood_north_lion_classroom_fifteen_years_talk_nate_katie_heather.jpg",
                   "imageAlt": "Inside the quiet, sunlit Education Classroom of North Lion Scales & Tails in Maplewood, Minnesota on Saturday morning, June 16, 2018 with the solid oak door closed so Staff Member Wesley remains happily out at the turtle lagoon, thirty-three-year-old Katie Prairie and Nathaniel Prairie sit side by side in their black SwiftChairs holding inner hands across a wheelchair-accessible oak table opposite thirty-three-year-old Heather Lindstrom in her forest-green North Lion polo shirt and magnetic HEATHER badge, reaching hands across the tabletop with cathartic tears, a tissue box, and fifteen years of unspoken truth finally laid to rest.",
+                  "eraNum": 10,
+                  "eraTitle": "Across the Rotunda: The Senate of Virginia",
+                  "chapNum": 1,
+                  "chapTitle": "Watching Senator Ward Kill Our Bills Across the Rotunda, The 250-Signature Petition, & Cutting the Ribbon on Route 64 in Maplewood"
+                },
+                {
+                  "partNum": 5,
+                  "title": "Part 5: Chelsea's Magical First Non-Family Hug, Riding Route 54 to Terminal 2, & A Three-Way Hug Outside TSA",
+                  "url": "https://books.raggiesoft.com/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-5-chelsea-s-magical-first-non-family-hug-riding-route-54-to-terminal-2-a-three-way-hug-outside-tsa",
+                  "date": "2018-06-16",
+                  "location": "Maplewood & Minneapolis–Saint Paul, MN (North Lion Scales & Tails Plaza, TCT Route 54, & MSP Terminal 2 TSA Checkpoint)",
+                  "excerpt": "Chelsea hugs someone outside her family for the first time, Heather and Wesley ride to MSP, and Katie surprises everyone with a three-way hug at TSA.",
+                  "readingMinutes": 9,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b005/jun_2018_msp_airport_tsa_three_way_hug_katie_nate_heather_wesley_chelsea.jpg",
+                  "imageAlt": "Inside the sunlit public departure concourse right outside the Security Checkpoint stanchions at Minneapolis–Saint Paul Airport Terminal 2 on Saturday late afternoon, June 16, 2018, thirty-three-year-old Katie Prairie and Nathaniel Prairie parked hub-to-hub in their black SwiftChairs and kneeling thirty-three-year-old Heather Lindstrom in her forest-green North Lion polo shirt and magnetic HEATHER badge share an emotional, unprecedented three-way hug on the left while thirty-one-year-old Staff Member Wesley Collins and thirty-six-year-old Chelsea with plush Shelly Turtle and her green treat bag hug goodbye one last time beside Brittany on the right.",
                   "eraNum": 10,
                   "eraTitle": "Across the Rotunda: The Senate of Virginia",
                   "chapNum": 1,
