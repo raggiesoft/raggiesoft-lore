@@ -20921,7 +20921,7 @@
       "stats": {
         "scaleLabel": "Short Fiction",
         "readingHours": 0.2,
-        "storyPages": 12,
+        "storyPages": 13,
         "eraCount": 1,
         "chapterCount": 1,
         "partCount": 2,
@@ -20940,7 +20940,7 @@
           "eraNum": 1,
           "title": "Scales, Tails, and Safe People",
           "url": "https://books.raggiesoft.com/heather/scales-tails-and-safe-people",
-          "wordCount": 3368,
+          "wordCount": 3489,
           "illustrationCount": 2,
           "dateSpan": "2003-01-11 to 2003-02-15",
           "locations": [
@@ -20976,7 +20976,7 @@
                   "date": "2003-02-15",
                   "location": "Chesapeake & Virginia Beach, VA (Aunt Linda's House & Northwood High School)",
                   "excerpt": "Four days after watching Kristen Bauer demolish Tyler's double-down lie about Cousin Hannah in the Northwood cafeteria, Heather faces Wesley's weekly plea to go apologize to Nate and Katie.",
-                  "readingMinutes": 5,
+                  "readingMinutes": 6,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/heather/e001/jan_2003_chesapeake_living_room_wesley_photo_blowout_heather.jpg",
                   "imageAlt": "On a sunlit winter morning inside Aunt Linda's Chesapeake split-level living room, fifteen-year-old non-verbal Wesley Collins cradles the oak-framed Emerald Creek Mall snapshot protectively against his chest while pointing emphatically toward the front door as seventeen-year-old Heather Collins looks on in quiet remorse.",
                   "eraNum": 1,
@@ -22616,7 +22616,7 @@
       "stats": {
         "scaleLabel": "Multi-Volume Omnibus",
         "readingHours": 21.6,
-        "storyPages": 1179,
+        "storyPages": 1180,
         "eraCount": 11,
         "chapterCount": 47,
         "partCount": 127,
@@ -23355,7 +23355,7 @@
           "eraNum": 4,
           "title": "Seventeen, Senior Year, & Greenway Court",
           "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court",
-          "wordCount": 30355,
+          "wordCount": 30543,
           "illustrationCount": 15,
           "dateSpan": "2002-04-13 to 2004-06-19",
           "locations": [
