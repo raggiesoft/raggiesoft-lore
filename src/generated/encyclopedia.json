@@ -26,7 +26,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 127,
+      "appearanceCount": 130,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -795,21 +795,33 @@
             },
             {
               "title": "Part 1: The South Lawn Tirade, The Norfolk Carrier Leak, & Why the Order of the Trials Matters",
-              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-1-the-south-lawn-tirade-the-norfolk-carrier-leak-why-the-order-of-the-trials-matters",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-1-the-south-lawn-tirade-the-norfolk-carrier-leak-why-the-order-of-the-trials-matters",
               "date": "2027-03-18",
               "location": "Washington, D.C. (Room 511 of the Dirksen Senate Office Building & The Senate Commerce Committee)"
             },
             {
               "title": "Part 2: Route 36 to Timberline Shopping Center, Lunch at Don Miller Subs, Retro Games at Neat Stuff, & Suite 756",
-              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-2-route-36-to-timberline-shopping-center-lunch-at-don-miller-subs-retro-games-at-neat-stuff-suite-756",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-2-route-36-to-timberline-shopping-center-lunch-at-don-miller-subs-retro-games-at-neat-stuff-suite-756",
               "date": "2027-04-03",
               "location": "Virginia Beach, VA (CVTA Route 36 on State Route 410 / Holland Road & Timberline Shopping Center, Suites 732–756)"
             },
             {
-              "title": "Part 3: The Words of Mason, Madison, and Lincoln, Three Guilty Votes, & From Capitol Police Protection Back to Normal Life at Pleasure House Road",
-              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-3-the-words-of-mason-madison-and-lincoln-three-guilty-votes-from-capitol-police-protection-back-to-normal-life-at-pleasure-house-road",
+              "title": "Part 3: The Words of Mason, Madison, and Lincoln, Three Guilty Votes, & Swearing In President Clara Morales",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-3-the-words-of-mason-madison-and-lincoln-three-guilty-votes-swearing-in-president-clara-morales",
+              "date": "2027-04-16",
+              "location": "Washington, D.C. (The United States Senate Chamber, The Mansfield Room, & Dirksen Room 511)"
+            },
+            {
+              "title": "Part 4: Why Isn't Katie Home in May?, Senator Prairie's Capitol Tour, & Holding Hands in the Senate Gallery",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-4-why-isn-t-katie-home-in-may-senator-prairie-s-capitol-tour-holding-hands-in-the-senate-gallery",
+              "date": "2027-05-20",
+              "location": "Washington, D.C. (Dirksen Senate Subway, The U.S. Capitol Crypt, Rotunda, National Statuary Hall, & The U.S. Senate Gallery)"
+            },
+            {
+              "title": "Part 5: Standing Down the Detail & Rolling Off Route 913 at Shore Drive and Pleasure House Road",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-5-standing-down-the-detail-rolling-off-route-913-at-shore-drive-and-pleasure-house-road",
               "date": "2027-07-17",
-              "location": "Washington, D.C. (The United States Senate Chamber & The Mansfield Room at the U.S. Capitol)"
+              "location": "Washington, D.C. & Virginia Beach / Cape Charles, VA (Dirksen Room 511, Chesapeake Bay Bridge-Tunnel, & Shore Drive and Pleasure House Road)"
             },
             {
               "title": "ARTS Train 51 to Staunton, Street Clothes on the Route 250 Connector, & Calling Governor Langford From Fishersville",
@@ -834,6 +846,12 @@
               "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-2-dad-s-1991-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden",
               "date": "2028-06-20",
               "location": "Alexandria, VA & Washington, D.C. (Sunset Drive, Capital Transit Yellow Line, & The Restored White House Rose Garden)"
+            },
+            {
+              "title": "Part 3: Three Identical Pocket Doors: Moving Wesley and Chelsea Into Their Connected In-Law Suites in Virginia Beach, Alexandria, & Maplewood",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-3-three-identical-pocket-doors-moving-wesley-and-chelsea-into-their-connected-in-law-suites-in-virginia-beach-alexandria-maplewood",
+              "date": "2029-03-10",
+              "location": "Virginia Beach, VA (737 Arvin Road), Alexandria, VA (Sunset Drive), & Maplewood, MN (Route 64 Breezeway Suite)"
             },
             {
               "title": "Part 1: Refusing the 2045 Presidency From Home, Five Statutory Shields Against the Bubble, & Out of the Closet Into Our Four-Person Nest",
@@ -883,7 +901,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 123,
+      "appearanceCount": 125,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -1640,9 +1658,15 @@
             },
             {
               "title": "Part 1: The South Lawn Tirade, The Norfolk Carrier Leak, & Why the Order of the Trials Matters",
-              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-1-the-south-lawn-tirade-the-norfolk-carrier-leak-why-the-order-of-the-trials-matters",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-1-the-south-lawn-tirade-the-norfolk-carrier-leak-why-the-order-of-the-trials-matters",
               "date": "2027-03-18",
               "location": "Washington, D.C. (Room 511 of the Dirksen Senate Office Building & The Senate Commerce Committee)"
+            },
+            {
+              "title": "Part 4: Why Isn't Katie Home in May?, Senator Prairie's Capitol Tour, & Holding Hands in the Senate Gallery",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-4-why-isn-t-katie-home-in-may-senator-prairie-s-capitol-tour-holding-hands-in-the-senate-gallery",
+              "date": "2027-05-20",
+              "location": "Washington, D.C. (Dirksen Senate Subway, The U.S. Capitol Crypt, Rotunda, National Statuary Hall, & The U.S. Senate Gallery)"
             },
             {
               "title": "ARTS Train 51 to Staunton, Street Clothes on the Route 250 Connector, & Calling Governor Langford From Fishersville",
@@ -1667,6 +1691,12 @@
               "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-2-dad-s-1991-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden",
               "date": "2028-06-20",
               "location": "Alexandria, VA & Washington, D.C. (Sunset Drive, Capital Transit Yellow Line, & The Restored White House Rose Garden)"
+            },
+            {
+              "title": "Part 3: Three Identical Pocket Doors: Moving Wesley and Chelsea Into Their Connected In-Law Suites in Virginia Beach, Alexandria, & Maplewood",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-3-three-identical-pocket-doors-moving-wesley-and-chelsea-into-their-connected-in-law-suites-in-virginia-beach-alexandria-maplewood",
+              "date": "2029-03-10",
+              "location": "Virginia Beach, VA (737 Arvin Road), Alexandria, VA (Sunset Drive), & Maplewood, MN (Route 64 Breezeway Suite)"
             },
             {
               "title": "Part 1: Refusing the 2045 Presidency From Home, Five Statutory Shields Against the Bubble, & Out of the Closet Into Our Four-Person Nest",
@@ -22615,12 +22645,12 @@
       "firstChapterUrl": "https://books.raggiesoft.com/katie/early-childhood/the-great-afternoon/cartoons-are-for-life-the-secret-password-the-afternoon-sanctuary",
       "stats": {
         "scaleLabel": "Multi-Volume Omnibus",
-        "readingHours": 21.7,
-        "storyPages": 1182,
+        "readingHours": 21.9,
+        "storyPages": 1196,
         "eraCount": 11,
         "chapterCount": 47,
-        "partCount": 127,
-        "illustrationCount": 151
+        "partCount": 130,
+        "illustrationCount": 153
       },
       "dateSpan": "1994–2044",
       "debutDate": "1994-05-18",
@@ -22763,9 +22793,9 @@
           "url": "https://backstage.raggiesoft.com/books/katie/what-if-minnesota-marriage-and-the-unrescued-cousins"
         },
         {
-          "title": "Alternate 'What If' Dossier: Two Ground-Floor In-Law Suites — Virginia Beach & Maplewood",
-          "subtitle": "What If Chelsea and Wesley Were Allowed to Live Together Year-Round Across Matching Guardian-Connected Suites at 737 Arvin Road and Heather & Dan's Minnesota Home?",
-          "date": "2028-09-15",
+          "title": "Architectural & Family Guide: Three Mirrored Ground-Floor In-Law Suites — Virginia Beach, Alexandria, & Maplewood",
+          "subtitle": "How Both Guardian Families Built Identical Zero-Step Connected Suites at 737 Arvin Road, Sunset Drive, and Route 64 Once Senator Katie Prairie's 2028 Reform Law Took Effect",
+          "date": "2029-03-10",
           "url": "https://backstage.raggiesoft.com/books/katie/what-if-wesley-and-chelsea-two-in-law-suites"
         }
       ],
@@ -24812,8 +24842,8 @@
           "eraNum": 11,
           "title": "The Senator from Virginia",
           "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia",
-          "wordCount": 80390,
-          "illustrationCount": 37,
+          "wordCount": 84265,
+          "illustrationCount": 39,
           "dateSpan": "2026-11-03 to 2044-02-18",
           "locations": [
             "Virginia Beach, VA (Kempsville & The Virginia Beach Convention Ballroom)",
@@ -25014,14 +25044,14 @@
             },
             {
               "chapNum": 4,
-              "title": "The Norfolk Carrier Leak, Suite 756 at Timberline Shopping Center, & Three Convictions in the Senate",
-              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate",
-              "partCount": 3,
+              "title": "The Norfolk Carrier Leak, Three Convictions, Senator Prairie's Capitol Tour, & Route 913 Across the Bay",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay",
+              "partCount": 5,
               "parts": [
                 {
                   "partNum": 1,
                   "title": "Part 1: The South Lawn Tirade, The Norfolk Carrier Leak, & Why the Order of the Trials Matters",
-                  "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-1-the-south-lawn-tirade-the-norfolk-carrier-leak-why-the-order-of-the-trials-matters",
+                  "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-1-the-south-lawn-tirade-the-norfolk-carrier-leak-why-the-order-of-the-trials-matters",
                   "date": "2027-03-18",
                   "location": "Washington, D.C. (Room 511 of the Dirksen Senate Office Building & The Senate Commerce Committee)",
                   "excerpt": "After Thorne's South Lawn tirade, Halverson's Tomb of the Unknown Soldier disgrace, and the Norfolk carrier leak, Katie sets an impeachment trial trap.",
@@ -25031,12 +25061,12 @@
                   "eraNum": 11,
                   "eraTitle": "The Senator from Virginia",
                   "chapNum": 4,
-                  "chapTitle": "The Norfolk Carrier Leak, Suite 756 at Timberline Shopping Center, & Three Convictions in the Senate"
+                  "chapTitle": "The Norfolk Carrier Leak, Three Convictions, Senator Prairie's Capitol Tour, & Route 913 Across the Bay"
                 },
                 {
                   "partNum": 2,
                   "title": "Part 2: Route 36 to Timberline Shopping Center, Lunch at Don Miller Subs, Retro Games at Neat Stuff, & Suite 756",
-                  "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-2-route-36-to-timberline-shopping-center-lunch-at-don-miller-subs-retro-games-at-neat-stuff-suite-756",
+                  "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-2-route-36-to-timberline-shopping-center-lunch-at-don-miller-subs-retro-games-at-neat-stuff-suite-756",
                   "date": "2027-04-03",
                   "location": "Virginia Beach, VA (CVTA Route 36 on State Route 410 / Holland Road & Timberline Shopping Center, Suites 732–756)",
                   "excerpt": "Riding Route 36 with Nate, Dad, Brittany, and Chelsea for birthday subs and retro games, Senator Katie Prairie steps into Suite 756—and faces Brenda.",
@@ -25046,22 +25076,52 @@
                   "eraNum": 11,
                   "eraTitle": "The Senator from Virginia",
                   "chapNum": 4,
-                  "chapTitle": "The Norfolk Carrier Leak, Suite 756 at Timberline Shopping Center, & Three Convictions in the Senate"
+                  "chapTitle": "The Norfolk Carrier Leak, Three Convictions, Senator Prairie's Capitol Tour, & Route 913 Across the Bay"
                 },
                 {
                   "partNum": 3,
-                  "title": "Part 3: The Words of Mason, Madison, and Lincoln, Three Guilty Votes, & From Capitol Police Protection Back to Normal Life at Pleasure House Road",
-                  "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-3-the-words-of-mason-madison-and-lincoln-three-guilty-votes-from-capitol-police-protection-back-to-normal-life-at-pleasure-house-road",
-                  "date": "2027-07-17",
-                  "location": "Washington, D.C. (The United States Senate Chamber & The Mansfield Room at the U.S. Capitol)",
-                  "excerpt": "Watched by Nate, Dad, Brittany, and Chelsea, Senator Katie Prairie votes Guilty to remove Halverson, Drayton, and Thorne—and rides CBBT transit home.",
-                  "readingMinutes": 25,
+                  "title": "Part 3: The Words of Mason, Madison, and Lincoln, Three Guilty Votes, & Swearing In President Clara Morales",
+                  "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-3-the-words-of-mason-madison-and-lincoln-three-guilty-votes-swearing-in-president-clara-morales",
+                  "date": "2027-04-16",
+                  "location": "Washington, D.C. (The United States Senate Chamber, The Mansfield Room, & Dirksen Room 511)",
+                  "excerpt": "Watched by Nate, Dad, Brittany, and Chelsea, Senator Katie Prairie votes Guilty to remove Halverson, Drayton, and Thorne—and witnesses former Speaker Clara Morales sworn in as President.",
+                  "readingMinutes": 18,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b006/apr_2027_us_senate_impeachment_guilty_vote_katie_nate_david.jpg",
                   "imageAlt": "Inside the United States Senate Chamber on April 16, 2027, 42-year-old U.S. Senator Katie Prairie sits at her custom-height mahogany floor desk in her black motorized SwiftChair power wheelchair casting her historic Guilty vote in the impeachment trial while her twin brother Nate (in his SwiftChair) and their father David watch proudly from the Senate Family Gallery.",
                   "eraNum": 11,
                   "eraTitle": "The Senator from Virginia",
                   "chapNum": 4,
-                  "chapTitle": "The Norfolk Carrier Leak, Suite 756 at Timberline Shopping Center, & Three Convictions in the Senate"
+                  "chapTitle": "The Norfolk Carrier Leak, Three Convictions, Senator Prairie's Capitol Tour, & Route 913 Across the Bay"
+                },
+                {
+                  "partNum": 4,
+                  "title": "Part 4: Why Isn't Katie Home in May?, Senator Prairie's Capitol Tour, & Holding Hands in the Senate Gallery",
+                  "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-4-why-isn-t-katie-home-in-may-senator-prairie-s-capitol-tour-holding-hands-in-the-senate-gallery",
+                  "date": "2027-05-20",
+                  "location": "Washington, D.C. (Dirksen Senate Subway, The U.S. Capitol Crypt, Rotunda, National Statuary Hall, & The U.S. Senate Gallery)",
+                  "excerpt": "Five weeks after Speaker Clara Morales becomes President, Heather's family flies in from Minnesota for Katie's personal Capitol tour—as Wesley tries to figure out Katie's year-round Senate job and holds Chelsea's hand in the Senate Gallery.",
+                  "readingMinutes": 11,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b006/may_2027_us_senate_gallery_wesley_chelsea_holding_hands_katie_floor.jpg",
+                  "imageAlt": "From inside the elevated brass-railed United States Senate Gallery on Thursday afternoon, May 20, 2027, 40-year-old Wesley Collins in his forest-green collared polo shirt with his blue silicone ring and 45-year-old Chelsea Prairie in her lavender cardigan sit side by side holding hands warmly behind the brass gallery rail—flanked by Nathaniel Prairie in his SwiftChair, David Prairie, Brittany Fletcher, Heather and Dan Lindstrom, fraternal twins Jonas and Nora holding inner hands, and 18-year-old Molly—watching 42-year-old U.S. Senator Katie Prairie speak from her SwiftChair beside her top-tier mahogany desk on the blue Senate carpet below.",
+                  "eraNum": 11,
+                  "eraTitle": "The Senator from Virginia",
+                  "chapNum": 4,
+                  "chapTitle": "The Norfolk Carrier Leak, Three Convictions, Senator Prairie's Capitol Tour, & Route 913 Across the Bay"
+                },
+                {
+                  "partNum": 5,
+                  "title": "Part 5: Standing Down the Detail & Rolling Off Route 913 at Shore Drive and Pleasure House Road",
+                  "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-5-standing-down-the-detail-rolling-off-route-913-at-shore-drive-and-pleasure-house-road",
+                  "date": "2027-07-17",
+                  "location": "Washington, D.C. & Virginia Beach / Cape Charles, VA (Dirksen Room 511, Chesapeake Bay Bridge-Tunnel, & Shore Drive and Pleasure House Road)",
+                  "excerpt": "After Garrett Thorne's post-conviction vendetta collapses under federal felony indictments and a bail gag order, Senator Katie Prairie and her family ride inaugural CBBT Route 913 home.",
+                  "readingMinutes": 7,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b006/jul_2027_cbbt_bus_pleasure_house_road_transfer_family.jpg",
+                  "imageAlt": "At the inland coastal-suburban intersection of Shore Drive and Pleasure House Road in Virginia Beach on a sunny Saturday morning in July 2027—framed by tall Virginia loblolly pines, blooming pink crape myrtles, overhead mast-arm traffic signals, and the brick Bayside Pharmacy across the four-lane divided highway—42-year-old U.S. Senator Katie Prairie and her twin brother Nate sit side by side in their black motorized SwiftChair power wheelchairs holding their cross-honored transit passes on the concrete sidewalk beside low-floor CVTA bus #2514 with its yellow wheelchair ramp deployed and 913 CAPE CHARLES glowing on its amber LED headsign for its next cross-bay departure, surrounded by their father David, cousin Brittany Fletcher in her wire-rimmed glasses, 45-year-old cousin Chelsea smiling warmly in her floral cardigan beside Brittany's canvas tote bag with Shelly the plush sea turtle peeking out, and 25-year-old Hawkins triplets Sam, Mandy, and Sarah by the glass transit shelter.",
+                  "eraNum": 11,
+                  "eraTitle": "The Senator from Virginia",
+                  "chapNum": 4,
+                  "chapTitle": "The Norfolk Carrier Leak, Three Convictions, Senator Prairie's Capitol Tour, & Route 913 Across the Bay"
                 }
               ]
             },
@@ -25115,7 +25175,7 @@
               "chapNum": 7,
               "title": "The Supported Companions, Waiver Portability, & Social Security Solvency Act",
               "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act",
-              "partCount": 2,
+              "partCount": 3,
               "parts": [
                 {
                   "partNum": 1,
@@ -25146,6 +25206,21 @@
                   "eraTitle": "The Senator from Virginia",
                   "chapNum": 7,
                   "chapTitle": "The Supported Companions, Waiver Portability, & Social Security Solvency Act"
+                },
+                {
+                  "partNum": 3,
+                  "title": "Part 3: Three Identical Pocket Doors: Moving Wesley and Chelsea Into Their Connected In-Law Suites in Virginia Beach, Alexandria, & Maplewood",
+                  "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-3-three-identical-pocket-doors-moving-wesley-and-chelsea-into-their-connected-in-law-suites-in-virginia-beach-alexandria-maplewood",
+                  "date": "2029-03-10",
+                  "location": "Virginia Beach, VA (737 Arvin Road), Alexandria, VA (Sunset Drive), & Maplewood, MN (Route 64 Breezeway Suite)",
+                  "excerpt": "With Senator Katie Prairie's landmark law in effect, both guardian families unveil three inch-for-inch mirrored ground-floor in-law suites in Virginia Beach, Alexandria, and Maplewood so Wesley and Chelsea live together year-round.",
+                  "readingMinutes": 5,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b006/mar_2029_three_mirrored_inlaw_suites_wesley_chelsea_sanctuary.jpg",
+                  "imageAlt": "Inside their warm, zero-step ground-floor in-law suite living room with an open solid-oak connecting pocket door to the main family kitchen on the left, a 75-gallon basking turtle habitat on the right-hand oak cabinet, and their cozy shared queen bedroom with Chelsea's two asthma inhalers and Wesley's cedar ring dish on the nightstand visible behind them, forty-two-year-old Wesley Collins in his forest-green North Lion shirt and plaid flannel lounge pants with his blue silicone ring wraps a gentle deep-pressure arm around forty-seven-year-old Chelsea Prairie in modest lavender fleece loungewear holding plush Shelly Turtle on their oatmeal loveseat.",
+                  "eraNum": 11,
+                  "eraTitle": "The Senator from Virginia",
+                  "chapNum": 7,
+                  "chapTitle": "The Supported Companions, Waiver Portability, & Social Security Solvency Act"
                 }
               ]
             },
@@ -25162,7 +25237,7 @@
                   "date": "2043-10-24",
                   "location": "Virginia Beach, VA (Our House on Arvin Rd)",
                   "excerpt": "Surrounded at home by Nate, Brittany, and Chelsea, Senator Katie Prairie uploads a quiet video refusing the 2045 Presidency and Secret Service bubble.",
-                  "readingMinutes": 15,
+                  "readingMinutes": 16,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b006/oct_2043_arvin_road_four_person_cuddle_nest_katie_nate_brittany_chelsea.jpg",
                   "imageAlt": "On a warm October 2043 evening inside their Virginia Beach home on Arvin Road, 58-year-old Nathaniel Prairie relaxes happily in the middle of a custom wheelchair-transfer-height four-person cuddle nest platform bed in cozy grey plaid flannel sleepwear atop a patchwork navy-and-cream quilt, cuddling with the three women he loves—his 61-year-old paternal cousin Chelsea in cream knit sleepwear resting her head contentedly on his right shoulder, his 58-year-old twin sister Katie in lavender knit sleepwear leaning against his left shoulder holding his left hand, and his 58-year-old maternal cousin Brittany in burgundy flannel sleepwear and thin silver wire-rimmed oval glasses hugging Katie's shoulder—while Katie and Nate's two SwiftChair power wheelchairs sit parked beside the bed and Chelsea's two asthma inhalers rest on the headboard shelf.",
                   "eraNum": 11,
