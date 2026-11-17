@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-16",
+  "generatedAt": "2026-11-17",
   "stats": {
-    "totalEntries": 114,
+    "totalEntries": 115,
     "characterCount": 31,
     "bandCount": 8,
     "albumCount": 40,
-    "bookCount": 30,
+    "bookCount": 31,
     "placeCount": 20,
     "organizationCount": 25,
-    "graphNodeCount": 114,
+    "graphNodeCount": 115,
     "graphEdgeCount": 294
   },
   "characters": [
@@ -26,7 +26,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 125,
+      "appearanceCount": 127,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -824,6 +824,18 @@
               "location": "Washington, D.C., Joint Base Andrews, MD, Norfolk, VA, & Alexandria, VA (Dirksen Room 511, Air Force One, Chambers Field & Pier 12 at Naval Station Norfolk, & King Street–Old Town Station)"
             },
             {
+              "title": "Part 1: Form SSA-4178 on Camera, Scrapping the Social Security Cap, & Taxing Billionaires and Windfall Profits",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-1-form-ssa-4178-on-camera-scrapping-the-social-security-cap-taxing-billionaires-and-windfall-profits",
+              "date": "2028-05-11",
+              "location": "Washington, D.C. (Room 124 of the Dirksen Senate Office Building)"
+            },
+            {
+              "title": "Part 2: Dad's 1994 Crew Cab Pickup, First-Time Guests at the White House, & Signing Law Number One in the Restored Rose Garden",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-2-dad-s-1994-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden",
+              "date": "2028-06-20",
+              "location": "Alexandria, VA & Washington, D.C. (Sunset Drive, Capital Transit Yellow Line, & The Restored White House Rose Garden)"
+            },
+            {
               "title": "Part 1: Refusing the 2045 Presidency From Home, Five Statutory Shields Against the Bubble, & Out of the Closet Into Our Four-Person Nest",
               "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-1-refusing-the-2045-presidency-from-home-five-statutory-shields-against-the-bubble-out-of-the-closet-into-our-four-person-nest",
               "date": "2043-10-24",
@@ -871,7 +883,7 @@
       "debutDate": "1994-05-18",
       "debutLocation": "Virginia Beach, VA",
       "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b001/cartoon_afternoon_nathaniel_katie_1994.jpg",
-      "appearanceCount": 121,
+      "appearanceCount": 123,
       "bandSlugs": [],
       "placeSlugs": [
         "coastal-virginia-transit-cvta",
@@ -1643,6 +1655,18 @@
               "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/joint-base-andrews-to-chambers-field-flying-home-on-air-force-one/chambers-field-four-hundred-million-restored-on-pier-12-tapping-in-at-king-street-the-next-morning",
               "date": "2027-10-13",
               "location": "Washington, D.C., Joint Base Andrews, MD, Norfolk, VA, & Alexandria, VA (Dirksen Room 511, Air Force One, Chambers Field & Pier 12 at Naval Station Norfolk, & King Street–Old Town Station)"
+            },
+            {
+              "title": "Part 1: Form SSA-4178 on Camera, Scrapping the Social Security Cap, & Taxing Billionaires and Windfall Profits",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-1-form-ssa-4178-on-camera-scrapping-the-social-security-cap-taxing-billionaires-and-windfall-profits",
+              "date": "2028-05-11",
+              "location": "Washington, D.C. (Room 124 of the Dirksen Senate Office Building)"
+            },
+            {
+              "title": "Part 2: Dad's 1994 Crew Cab Pickup, First-Time Guests at the White House, & Signing Law Number One in the Restored Rose Garden",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-2-dad-s-1994-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden",
+              "date": "2028-06-20",
+              "location": "Alexandria, VA & Washington, D.C. (Sunset Drive, Capital Transit Yellow Line, & The Restored White House Rose Garden)"
             },
             {
               "title": "Part 1: Refusing the 2045 Presidency From Home, Five Statutory Shields Against the Bubble, & Out of the Closet Into Our Four-Person Nest",
@@ -20882,6 +20906,91 @@
       ]
     },
     {
+      "slug": "heather",
+      "title": "The Story of Heather Lindstrom",
+      "coverImage": "https://assets.raggiesoft.com/raggiesoft-books/images/covers/2x3/heather.jpg",
+      "heroImage": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/heather/e001/jan_2003_chesapeake_living_room_wesley_photo_blowout_heather.jpg",
+      "heroImageAlt": "On a sunlit Saturday morning in January 2003 inside Aunt Linda's Chesapeake split-level living room, fifteen-year-old non-verbal Wesley Collins in a navy-blue fleece quarter-zip pullover and blue jeans with his blue silicone ring on his wrist cradles the oak-framed Emerald Creek Mall snapshot protectively inward against his chest while pointing emphatically toward the closed front door in heartbroken teenage fury, as seventeen-year-old Heather Collins sits stricken and remorseful on the bottom stair step beside her car keys and Aunt Linda watches quietly from the oak bookshelf.",
+      "debutIntro": "Five days after ending things with Nate outside Room 204, seventeen-year-old Heather tells fifteen-year-old Wesley they aren't meeting Nate at Emerald Creek Mall—triggering a furious, heartbroken blowout.",
+      "debutSettingNote": "Opens in Scales, Tails, and Safe People (2003-01-11) in Chesapeake, VA (Aunt Linda & Uncle Greg Collins's Split-Level Home)",
+      "shortDescription": "Five days after ending things with Nate outside Room 204, seventeen-year-old Heather tells fifteen-year-old Wesley they aren't meeting Nate at…",
+      "fullSeriesSynopsis": "The Story of Heather Lindstrom: Scales, Tails, and Safe People follows Heather Lindstrom (née Collins) from Chesapeake and Virginia Beach to Maplewood, Minnesota. When seventeen-year-old Heather panics over a classmate's malicious rumor in January 2003 and ends her relationship with sixteen-year-old Nathaniel Prairie without letting him speak, her fifteen-year-old non-verbal cousin Wesley erupts in furious, terrified heartbreak at losing his very first guy friend. Stepping up at nineteen as Wesley's legal guardian, marrying wildlife biologist Dan Lindstrom, raising severely disabled fraternal twins Jonas and Nora alongside fiercely protective younger daughter Molly, and spending ten quiet years behind the camera lens before opening the barrier-free North Lion Scales & Tails Reptile Zoo, Heather learns what it truly takes to become a safe person.",
+      "bookReaderUrl": "https://books.raggiesoft.com/heather",
+      "tocUrl": "https://books.raggiesoft.com/heather/toc",
+      "firstChapterUrl": "https://books.raggiesoft.com/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-1-the-empty-pretzel-table-the-oak-frame-off-the-shelf-why-wesley-blew-up",
+      "stats": {
+        "scaleLabel": "Short Fiction",
+        "readingHours": 0.2,
+        "storyPages": 12,
+        "eraCount": 1,
+        "chapterCount": 1,
+        "partCount": 2,
+        "illustrationCount": 2
+      },
+      "dateSpan": "2003–2003",
+      "debutDate": "2003-01-11",
+      "primaryLocations": [
+        "Chesapeake, VA (Aunt Linda & Uncle Greg Collins's Split-Level Home)",
+        "Chesapeake & Virginia Beach, VA (Aunt Linda's House & Northwood High School)"
+      ],
+      "relatedBands": [],
+      "backstageDossiers": [],
+      "eras": [
+        {
+          "eraNum": 1,
+          "title": "Scales, Tails, and Safe People",
+          "url": "https://books.raggiesoft.com/heather/scales-tails-and-safe-people",
+          "wordCount": 3163,
+          "illustrationCount": 2,
+          "dateSpan": "2003-01-11 to 2003-02-15",
+          "locations": [
+            "Chesapeake, VA (Aunt Linda & Uncle Greg Collins's Split-Level Home)",
+            "Chesapeake & Virginia Beach, VA (Aunt Linda's House & Northwood High School)"
+          ],
+          "chapters": [
+            {
+              "chapNum": 1,
+              "title": "Saturday Pretzel Day, The Empty Shelf, & The Boy Without a Phone Bridge",
+              "url": "https://books.raggiesoft.com/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge",
+              "partCount": 2,
+              "parts": [
+                {
+                  "partNum": 1,
+                  "title": "Part 1: The Empty Pretzel Table, The Oak Frame Off the Shelf, & Why Wesley Blew Up",
+                  "url": "https://books.raggiesoft.com/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-1-the-empty-pretzel-table-the-oak-frame-off-the-shelf-why-wesley-blew-up",
+                  "date": "2003-01-11",
+                  "location": "Chesapeake, VA (Aunt Linda & Uncle Greg Collins's Split-Level Home)",
+                  "excerpt": "Five days after ending things with Nate outside Room 204, seventeen-year-old Heather tells fifteen-year-old Wesley they aren't meeting Nate at Emerald Creek Mall—triggering a furious, heartbroken blowout.",
+                  "readingMinutes": 9,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/heather/e001/jan_2003_chesapeake_living_room_wesley_photo_blowout_heather.jpg",
+                  "imageAlt": "On a sunlit Saturday morning in January 2003 inside Aunt Linda's Chesapeake split-level living room, fifteen-year-old non-verbal Wesley Collins in a navy-blue fleece quarter-zip pullover and blue jeans with his blue silicone ring on his wrist cradles the oak-framed Emerald Creek Mall snapshot protectively inward against his chest while pointing emphatically toward the closed front door in heartbroken teenage fury, as seventeen-year-old Heather Collins sits stricken and remorseful on the bottom stair step beside her car keys and Aunt Linda watches quietly from the oak bookshelf.",
+                  "eraNum": 1,
+                  "eraTitle": "Scales, Tails, and Safe People",
+                  "chapNum": 1,
+                  "chapTitle": "Saturday Pretzel Day, The Empty Shelf, & The Boy Without a Phone Bridge"
+                },
+                {
+                  "partNum": 2,
+                  "title": "Part 2: Two Taps on the Glass Every Saturday & Five Months of Frozen Pride",
+                  "url": "https://books.raggiesoft.com/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-2-two-taps-on-the-glass-every-saturday-five-months-of-frozen-pride",
+                  "date": "2003-02-15",
+                  "location": "Chesapeake & Virginia Beach, VA (Aunt Linda's House & Northwood High School)",
+                  "excerpt": "Four days after watching Megan demolish Tyler's lie about Cousin Hannah in the Northwood cafeteria, Heather faces Wesley's weekly plea to go apologize to Nate and Katie.",
+                  "readingMinutes": 4,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/heather/e001/jan_2003_chesapeake_living_room_wesley_photo_blowout_heather.jpg",
+                  "imageAlt": "On a sunlit winter morning inside Aunt Linda's Chesapeake split-level living room, fifteen-year-old non-verbal Wesley Collins cradles the oak-framed Emerald Creek Mall snapshot protectively against his chest while pointing emphatically toward the front door as seventeen-year-old Heather Collins looks on in quiet remorse.",
+                  "eraNum": 1,
+                  "eraTitle": "Scales, Tails, and Safe People",
+                  "chapNum": 1,
+                  "chapTitle": "Saturday Pretzel Day, The Empty Shelf, & The Boy Without a Phone Bridge"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "jack-sarah",
       "title": "Jack & Sarah",
       "coverImage": "https://assets.raggiesoft.com/raggiesoft-books/images/covers/2x3/jack-sarah.jpg",
@@ -22506,12 +22615,12 @@
       "firstChapterUrl": "https://books.raggiesoft.com/katie/early-childhood/the-great-afternoon/cartoons-are-for-life-the-secret-password-the-afternoon-sanctuary",
       "stats": {
         "scaleLabel": "Multi-Volume Omnibus",
-        "readingHours": 21.3,
-        "storyPages": 1160,
+        "readingHours": 21.5,
+        "storyPages": 1174,
         "eraCount": 11,
-        "chapterCount": 46,
-        "partCount": 125,
-        "illustrationCount": 149
+        "chapterCount": 47,
+        "partCount": 127,
+        "illustrationCount": 151
       },
       "dateSpan": "1994–2044",
       "debutDate": "1994-05-18",
@@ -22565,7 +22674,7 @@
         },
         {
           "title": "The $14 Million DSCC Primary Shock, Opposing Leader Schuman, The 211–204 Lame-Duck False Dawn, & The Senate Wheelchair Caucus",
-          "subtitle": "Inside Retiring Senator Martin Warren's Office, Uncle Richard's Live Beacon News Takedown, Forcing a Ballot Against Charles Schuman, Bret Halverson's Premature Pentagon Victory Lap, & VPOTUS Conrad Drayton's Fury in S-216",
+          "subtitle": "Inside Retiring Senator Martin Warren's Office, Uncle Richard's Live Beacon News Takedown, Backing Chris Van Deren to Unseat Charles Schuman 29–26, Bret Halverson's Premature Pentagon Victory Lap, & VPOTUS Conrad Drayton's Fury in S-216",
           "date": "2027-01-03",
           "url": "https://backstage.raggiesoft.com/books/katie/dscc-holloway-primary-and-senate-wheelchair-caucus"
         },
@@ -22636,6 +22745,12 @@
           "url": "https://backstage.raggiesoft.com/books/katie/sunward-tropics-divorce-and-maiden-name-order"
         },
         {
+          "title": "Five Red X's on the Wall Calendar: Wesley's Perspective on the Morning He Thought He Lost Nate Forever",
+          "subtitle": "From Fifteen-Year-Old Non-Verbal Wesley Collins's Third-Person Limited Point of View — Why Heather's Breakup Felt Like Losing His Only Guy Friend on Earth",
+          "date": "2003-01-11",
+          "url": "https://backstage.raggiesoft.com/books/katie/wesley-blowout-at-heather-losing-his-friend-nate"
+        },
+        {
           "title": "Thirteen Hundred Miles Away in Maplewood: Missing Postcards, Seeing Katie on TV, & A Very Cautious Request",
           "subtitle": "Why Twenty-Eight-Year-Old Wesley Was Overjoyed Watching Meet the Nation, How Heather Explained State Government Without Big Words, & Ten Quiet Weeks Waiting in Filtered Requests",
           "date": "2016-02-07",
@@ -22646,6 +22761,12 @@
           "subtitle": "What Would Have Happened If Tyler's 2003 Lie Never Ended Nate and Heather—and the Hidden Cost Two Cousins Back East Would Have Paid",
           "date": "2018-06-16",
           "url": "https://backstage.raggiesoft.com/books/katie/what-if-minnesota-marriage-and-the-unrescued-cousins"
+        },
+        {
+          "title": "Alternate 'What If' Dossier: Two Ground-Floor In-Law Suites — Virginia Beach & Maplewood",
+          "subtitle": "What If Chelsea and Wesley Were Allowed to Live Together Year-Round Across Matching Guardian-Connected Suites at 737 Arvin Road and Heather & Dan's Minnesota Home?",
+          "date": "2028-09-15",
+          "url": "https://backstage.raggiesoft.com/books/katie/what-if-wesley-and-chelsea-two-in-law-suites"
         }
       ],
       "eras": [
@@ -23234,7 +23355,7 @@
           "eraNum": 4,
           "title": "Seventeen, Senior Year, & Greenway Court",
           "url": "https://books.raggiesoft.com/katie/seventeen-senior-year-greenway-court",
-          "wordCount": 29985,
+          "wordCount": 30011,
           "illustrationCount": 15,
           "dateSpan": "2002-04-13 to 2004-06-19",
           "locations": [
@@ -23478,7 +23599,7 @@
           "eraNum": 5,
           "title": "Six Buses from Williamsburg, Sea Breeze West, & Coming Home to Arvin Road",
           "url": "https://books.raggiesoft.com/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road",
-          "wordCount": 17806,
+          "wordCount": 17821,
           "illustrationCount": 5,
           "dateSpan": "2004-10-15 to 2007-02-15",
           "locations": [
@@ -24691,8 +24812,8 @@
           "eraNum": 11,
           "title": "The Senator from Virginia",
           "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia",
-          "wordCount": 76239,
-          "illustrationCount": 35,
+          "wordCount": 80224,
+          "illustrationCount": 37,
           "dateSpan": "2026-11-03 to 2044-02-18",
           "locations": [
             "Virginia Beach, VA (Kempsville & The Virginia Beach Convention Ballroom)",
@@ -24745,7 +24866,7 @@
                   "date": "2026-11-16",
                   "location": "Washington, D.C. (Capitol South Station, The Kennedy Caucus Room, The U.S. Senate Floor, & The President's Room S-216)",
                   "excerpt": "Arriving on Capitol Hill via public transit for U.S. Senate New Member Orientation after defeating retiring Senator Martin Warren's handpicked corporate stooge in the primary and winning the general election by nine points, Senator-Elect Katie Prairie and Nate meet Senator Tess Dunmore of Illinois on the Senate floor, claim Room 511 in the Dirksen Building, and confront Vice President Conrad Drayton face-to-face over her upcoming secular affirmation on the U.S. Constitution.",
-                  "readingMinutes": 25,
+                  "readingMinutes": 26,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b006/jan_2027_capitol_south_elevator_plaza_arrival_katie_nate_david.jpg",
                   "imageAlt": "Arriving on Capitol Hill via the Capitol South Capital Transit elevator in their black motorized SwiftChair power wheelchairs with their father David walking beside them, 41-year-old U.S. Senator-Elect Katie Prairie and her twin brother Nate roll past the chartered VIP motorcoaches toward the Russell and Dirksen Senate Office Buildings for New Member Orientation.",
                   "eraNum": 11,
@@ -24759,7 +24880,7 @@
                   "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-4-opposing-leader-schuman-the-211-204-lame-duck-false-dawn-in-the-dirksen-basement-home-across-the-fenwick-bridge",
                   "date": "2026-12-01",
                   "location": "Washington, D.C. & Alexandria, VA (The U.S. Capitol, Dirksen Basement Transition Suite SD-B14, Charles R. Fenwick Bridge, & Sunset Drive)",
-                  "excerpt": "Senator-Elect Katie Prairie opposes Leader Charles Schuman, watches SecDef Halverson survive a 211-204 vote, and rides home over the Fenwick Bridge.",
+                  "excerpt": "Senator-Elect Katie Prairie backs Challenger Chris Van Deren to unseat Leader Charles Schuman 29-26, watches SecDef Halverson survive a 211-204 vote, and rides home over the Fenwick Bridge.",
                   "readingMinutes": 15,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b006/dec_2026_dirksen_basement_transition_211_204_vote_katie_nate.jpg",
                   "imageAlt": "Inside their cramped, windowless basement Senator-Elect transition cubicle in the Dirksen Senate Office Building surrounded by unpacked cardboard boxes of Senate procedure manuals and stacks of staff applications, 41-year-old Senator-Elect Katie Prairie and her twin brother Nate sit side by side in their compact silver-and-black motorized SwiftChair power wheelchairs holding hands as they watch a muted split-screen broadcast of the 211-to-204 House impeachment referral vote and Defense Secretary Bret Halverson's premature Pentagon victory press conference.",
@@ -24904,7 +25025,7 @@
                   "date": "2027-03-18",
                   "location": "Washington, D.C. (Room 511 of the Dirksen Senate Office Building & The Senate Commerce Committee)",
                   "excerpt": "After Thorne's South Lawn tirade, Halverson's Tomb of the Unknown Soldier disgrace, and the Norfolk carrier leak, Katie sets an impeachment trial trap.",
-                  "readingMinutes": 11,
+                  "readingMinutes": 12,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b006/mar_2027_capitol_succession_flowchart_katie_nate_morales.jpg",
                   "imageAlt": "Inside a high-ceilinged committee conference room in the U.S. Capitol on March 25, 2027, 41-year-old U.S. Senator Katie Prairie and her twin brother Nate sit side by side in their black motorized SwiftChair power wheelchairs presenting the three-step constitutional impeachment trial sequence on Nate's MagnaBook Pro to Speaker of the House Clara Morales and the Senate Majority Leader.",
                   "eraNum": 11,
@@ -24992,6 +25113,44 @@
             },
             {
               "chapNum": 7,
+              "title": "The Supported Companions, Waiver Portability, & Social Security Solvency Act",
+              "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act",
+              "partCount": 2,
+              "parts": [
+                {
+                  "partNum": 1,
+                  "title": "Part 1: Form SSA-4178 on Camera, Scrapping the Social Security Cap, & Taxing Billionaires and Windfall Profits",
+                  "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-1-form-ssa-4178-on-camera-scrapping-the-social-security-cap-taxing-billionaires-and-windfall-profits",
+                  "date": "2028-05-11",
+                  "location": "Washington, D.C. (Room 124 of the Dirksen Senate Office Building)",
+                  "excerpt": "Holding up federal Form SSA-4178 in Dirksen Room 124, Senator Katie Prairie unveils landmark disability marriage equality, waiver portability, and billionaire tax reform.",
+                  "readingMinutes": 8,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b006/jun_2028_restored_rose_garden_supported_companions_signing.jpg",
+                  "imageAlt": "On the lush emerald-green living grass lawn of the newly restored White House Rose Garden framed by blooming pink, crimson, and yellow heirloom roses and flowering crabapple trees, President Clara Morales signs Senator Katie Prairie's landmark Supported Companions, Waiver Portability, and Social Security Solvency Act at an oak desk beside Katie and Nathaniel Prairie in their SwiftChair power wheelchairs, Senators Tess Dunmore and Josh Novak in manual wheelchairs, Majority Leader Chris Van Deren, David Prairie, Brittany Fletcher, Wesley Collins holding his blue silicone ring, Chelsea Prairie holding Shelly Turtle, and Heather and Dan Lindstrom with Jonas, Nora, and Molly on their very first visit to the White House.",
+                  "eraNum": 11,
+                  "eraTitle": "The Senator from Virginia",
+                  "chapNum": 7,
+                  "chapTitle": "The Supported Companions, Waiver Portability, & Social Security Solvency Act"
+                },
+                {
+                  "partNum": 2,
+                  "title": "Part 2: Dad's 1994 Crew Cab Pickup, First-Time Guests at the White House, & Signing Law Number One in the Restored Rose Garden",
+                  "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-2-dad-s-1994-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden",
+                  "date": "2028-06-20",
+                  "location": "Alexandria, VA & Washington, D.C. (Sunset Drive, Capital Transit Yellow Line, & The Restored White House Rose Garden)",
+                  "excerpt": "After passing the Senate 57-43, Chelsea, Brittany, and Heather's entire family visit the White House for the first time as President Morales signs Katie's landmark law in the restored Rose Garden.",
+                  "readingMinutes": 8,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/katie/b006/jun_2028_restored_rose_garden_supported_companions_signing.jpg",
+                  "imageAlt": "On the lush emerald-green living grass lawn of the newly restored White House Rose Garden framed by blooming pink, crimson, and yellow heirloom roses and flowering crabapple trees, President Clara Morales signs Senator Katie Prairie's landmark Supported Companions, Waiver Portability, and Social Security Solvency Act at an oak desk beside Katie and Nathaniel Prairie in their SwiftChair power wheelchairs, Senators Tess Dunmore and Josh Novak in manual wheelchairs, Majority Leader Chris Van Deren, David Prairie, Brittany Fletcher, Wesley Collins holding his blue silicone ring, Chelsea Prairie holding Shelly Turtle, and Heather and Dan Lindstrom with Jonas, Nora, and Molly on their very first visit to the White House.",
+                  "eraNum": 11,
+                  "eraTitle": "The Senator from Virginia",
+                  "chapNum": 7,
+                  "chapTitle": "The Supported Companions, Waiver Portability, & Social Security Solvency Act"
+                }
+              ]
+            },
+            {
+              "chapNum": 8,
               "title": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop",
               "url": "https://books.raggiesoft.com/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop",
               "partCount": 5,
@@ -25008,7 +25167,7 @@
                   "imageAlt": "On a warm October 2043 evening inside their Virginia Beach home on Arvin Road, 58-year-old Nathaniel Prairie relaxes happily in the middle of a custom wheelchair-transfer-height four-person cuddle nest platform bed in cozy grey plaid flannel sleepwear atop a patchwork navy-and-cream quilt, cuddling with the three women he loves—his 61-year-old paternal cousin Chelsea in cream knit sleepwear resting her head contentedly on his right shoulder, his 58-year-old twin sister Katie in lavender knit sleepwear leaning against his left shoulder holding his left hand, and his 58-year-old maternal cousin Brittany in burgundy flannel sleepwear and thin silver wire-rimmed oval glasses hugging Katie's shoulder—while Katie and Nate's two SwiftChair power wheelchairs sit parked beside the bed and Chelsea's two asthma inhalers rest on the headboard shelf.",
                   "eraNum": 11,
                   "eraTitle": "The Senator from Virginia",
-                  "chapNum": 7,
+                  "chapNum": 8,
                   "chapTitle": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop"
                 },
                 {
@@ -25023,7 +25182,7 @@
                   "imageAlt": "Inside the sunlit dining room of Katie and Nate's brick ranch house on Arvin Road in Virginia Beach in late January 2044, 58-year-old Senator Katie Prairie and her twin brother Nate sit side by side in their brushed-silver and black SwiftChair power wheelchairs as 41-year-old triplets Sam Hawkins and his identical twin sisters Mandy and Sarah Hawkins trace a four-seat CVTA bus and light-rail transit loop across a paper system map spread on the wooden table.",
                   "eraNum": 11,
                   "eraTitle": "The Senator from Virginia",
-                  "chapNum": 7,
+                  "chapNum": 8,
                   "chapTitle": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop"
                 },
                 {
@@ -25038,7 +25197,7 @@
                   "imageAlt": "At CVTA Stop #0812 on the corner of Military Highway and Indian River Road in Virginia Beach in February 2044, 61-year-old Governor Harrison Caldwell stands on the concrete sidewalk in an expensive tailored navy suit holding a thick leather policy binder, staring in utter shock at the open front doors and deployed aluminum ramp of a regularly scheduled CVTA Route 15 city bus behind 58-year-old Senator Katie Prairie and her twin brother Nate in their brushed-silver and black SwiftChair power wheelchairs.",
                   "eraNum": 11,
                   "eraTitle": "The Senator from Virginia",
-                  "chapNum": 7,
+                  "chapNum": 8,
                   "chapTitle": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop"
                 },
                 {
@@ -25053,7 +25212,7 @@
                   "imageAlt": "Aboard CVTA Route 25 on Tuesday morning, February 16, 2044, 44-year-old presidential candidate Congressman Devon Pierce leans across the center aisle in a tailored charcoal suit without a tie, talking over the head of 19-year-old CCHR computer-science student Marcus in his wheelchair to address Marcus's 22-year-old sister Jasmine in her royal-blue CCHR nursing polo shirt, while 58-year-old Senator Katie Prairie, her twin brother Nate, Marcus, Jasmine, and the surrounding bus passengers look on.",
                   "eraNum": 11,
                   "eraTitle": "The Senator from Virginia",
-                  "chapNum": 7,
+                  "chapNum": 8,
                   "chapTitle": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop"
                 },
                 {
@@ -25068,7 +25227,7 @@
                   "imageAlt": "Aboard a regularly scheduled Coastal Virginia Transit Authority bus in Virginia Beach on Thursday morning, February 18, 2044, 58-year-old three-term U.S. Senator Katie Prairie and her twin brother Nate sit side by side in their brushed-silver and black SwiftChair power wheelchairs in the front ADA securement bays as Nate films on his mPhone while Katie encourages everyday bus passengers—a hospital worker in teal scrubs, a shipyard tradesman, and a CCHR college student in a wheelchair—to ask unscripted questions directly to 54-year-old Governor Elena Delgado seated across the aisle.",
                   "eraNum": 11,
                   "eraTitle": "The Senator from Virginia",
-                  "chapNum": 7,
+                  "chapNum": 8,
                   "chapTitle": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop"
                 }
               ]
@@ -44342,6 +44501,18 @@
           "isSpoiler": false
         },
         {
+          "id": "book-heather-e1",
+          "date": "2003-01-11",
+          "year": "2003",
+          "kind": "Series Debut Era",
+          "title": "The Story of Heather Lindstrom — Scales, Tails, and Safe People",
+          "summary": "Five days after ending things with Nate outside Room 204, seventeen-year-old Heather tells fifteen-year-old Wesley they aren't meeting Nate at Emerald Creek Mall—triggering a furious, heartbroken blowout.",
+          "internalHref": "/books/heather",
+          "externalUrl": "https://books.raggiesoft.com/heather/scales-tails-and-safe-people",
+          "externalLabel": "Read Opening Era",
+          "isSpoiler": false
+        },
+        {
           "id": "album-the-stardust-engine-2004-progress-street",
           "date": "2004-01-01",
           "year": "2004",
@@ -45505,7 +45676,7 @@
           "year": "2026",
           "kind": "Later Storyline Era",
           "title": "Katie & Nathaniel — The Senator from Virginia",
-          "summary": "7 chapters set across Virginia Beach, VA (Kempsville & The Virginia Beach Convention Ballroom), Virginia Beach, VA (Katie & Nate's 50–50 Home in Kempsville), Washington, D.C. (Capitol South Station, The Kennedy Caucus Room, The U.S. Senate Floor, & The President's Room S-216)",
+          "summary": "8 chapters set across Virginia Beach, VA (Kempsville & The Virginia Beach Convention Ballroom), Virginia Beach, VA (Katie & Nate's 50–50 Home in Kempsville), Washington, D.C. (Capitol South Station, The Kennedy Caucus Room, The U.S. Senate Floor, & The President's Room S-216)",
           "internalHref": "/books/katie",
           "externalUrl": "https://books.raggiesoft.com/katie/the-senator-from-virginia",
           "externalLabel": "Open Era in Book Reader",
@@ -46115,6 +46286,18 @@
         "externalLabel": "Open in Book Reader",
         "summary": "A mind-bending thriller where protagonists piece together fragmented realities and shifting shards of truth.",
         "subtitle": "Lore & Outline • 5 Eras"
+      },
+      {
+        "id": "book:heather",
+        "slug": "heather",
+        "name": "The Story of Heather Lindstrom",
+        "group": "book",
+        "val": 9,
+        "href": "/books/heather",
+        "externalUrl": "https://books.raggiesoft.com/heather",
+        "externalLabel": "Open in Book Reader",
+        "summary": "Five days after ending things with Nate outside Room 204, seventeen-year-old Heather tells fifteen-year-old Wesley they aren't meeting Nate at Emerald Creek Mall—triggering a furious, heartbroken blowout.",
+        "subtitle": "Short Fiction • 1 Eras"
       },
       {
         "id": "book:jack-sarah",
