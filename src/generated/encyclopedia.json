@@ -21082,12 +21082,12 @@
       "tocUrl": "https://books.raggiesoft.com/jack-sarah/toc",
       "firstChapterUrl": "https://books.raggiesoft.com/jack-sarah/life-at-fairlawn/the-end-of-a-war/the-discovery-the-alliance",
       "stats": {
-        "scaleLabel": "Epic Novel",
-        "readingHours": 8.7,
-        "storyPages": 476,
+        "scaleLabel": "Full-Length Novel",
+        "readingHours": 5.4,
+        "storyPages": 296,
         "eraCount": 3,
-        "chapterCount": 49,
-        "partCount": 63,
+        "chapterCount": 33,
+        "partCount": 41,
         "illustrationCount": 0
       },
       "dateSpan": "2005–2007",
@@ -22693,12 +22693,12 @@
       "firstChapterUrl": "https://books.raggiesoft.com/katie/early-childhood/the-great-afternoon/cartoons-are-for-life-the-secret-password-the-afternoon-sanctuary",
       "stats": {
         "scaleLabel": "Multi-Volume Omnibus",
-        "readingHours": 23.6,
-        "storyPages": 1290,
+        "readingHours": 22.5,
+        "storyPages": 1229,
         "eraCount": 11,
-        "chapterCount": 54,
-        "partCount": 148,
-        "illustrationCount": 162
+        "chapterCount": 48,
+        "partCount": 134,
+        "illustrationCount": 156
       },
       "dateSpan": "1994–2044",
       "debutDate": "1994-05-18",
@@ -22835,6 +22835,12 @@
           "url": "https://backstage.raggiesoft.com/books/katie/wesley-sees-katie-on-tv-and-cautious-grid-request"
         },
         {
+          "title": "Alternate 'What If' Dossier: Hanging Up on Smoker's Corner — What If Brittany Respected Uncle David's No-Company Rule on New Year's Eve 2002?",
+          "subtitle": "How One Deadbolted Door on December 31, 2002 Saves Brittany From Thirteen Lost Years, Prevents Tyler's Locker Lie, Puts Four Purple Gowns at the Pavilion, and Launches Her 1991 L-1-2-3-R Truck Channel With Uncle David",
+          "date": "2002-12-31",
+          "url": "https://backstage.raggiesoft.com/books/katie/what-if-brittany-respected-no-company-new-years-2002"
+        },
+        {
           "title": "Alternate 'What If' Dossier: Marriage in the North Star State — And Why Brittany & Chelsea Would Never Have Been Rescued",
           "subtitle": "What Would Have Happened If Tyler's 2003 Lie Never Ended Nate and Heather—and the Hidden Cost Two Cousins Back East Would Have Paid",
           "date": "2018-06-16",
@@ -22853,9 +22859,9 @@
           "url": "https://backstage.raggiesoft.com/books/katie/what-if-rrc-unlocked-closet-ending-b-six-forty-am-stealth"
         },
         {
-          "title": "Story Crossroads Dossier: Virginia Domicile, Touring Warwick University on Route 112 NNTC, & Keeping Wesley, Katie's Career, and Both Rescues",
-          "subtitle": "How Staying in Virginia on In-State Tuition Domicile Lets Heather Drive Nate, Katie, and Wesley to Warwick University, Eliminates Tiffany, Stops Brandon Cold, and Preserves Katie's Senate Career and Both Cousin Rescues",
-          "date": "2005-10-15",
+          "title": "Alternate 'What If' Dossier: Virginia Domicile, Touring Ten Campuses for Wesley, & Keeping Katie's Career and Both Rescues",
+          "subtitle": "How Staying in Virginia on In-State Tuition Domicile Lets Heather Take Rising-Junior Wesley on a Ten-Campus Tour, Eliminates Tiffany, Stops Brandon Cold, and Preserves Katie's Senate Career and Both Cousin Rescues",
+          "date": "2003-07-12",
           "url": "https://backstage.raggiesoft.com/books/katie/what-if-virginia-domicile-unbroken-trust-and-both-rescues"
         },
         {
@@ -25460,11 +25466,11 @@
       "firstChapterUrl": "https://books.raggiesoft.com/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival/birthday-morning-and-the-grandparents-arrival-birthday-cake-and-sweet-memories-on-ludlow-road",
       "stats": {
         "scaleLabel": "Multi-Volume Omnibus",
-        "readingHours": 22.2,
-        "storyPages": 1212,
+        "readingHours": 22.1,
+        "storyPages": 1203,
         "eraCount": 16,
-        "chapterCount": 86,
-        "partCount": 171,
+        "chapterCount": 84,
+        "partCount": 168,
         "illustrationCount": 3
       },
       "dateSpan": "1987–2004",
@@ -25486,7 +25492,14 @@
           "listeningRoomUrl": "https://music.raggiesoft.com/the-paper-wall"
         }
       ],
-      "backstageDossiers": [],
+      "backstageDossiers": [
+        {
+          "title": "Alternate 'What If' Dossier: What If Luna Screamed 'GET OUT!' and Threw Delores Out During the Sibling Weekend?",
+          "subtitle": "How Reclaiming the October 2003 Three-Sibling Weekend Spares Leo the Four-Day Pathfinder Bus Nightmare to Washington—and Changes Robyn & Delores's Motive in Jack & Sarah",
+          "date": "2003-10-11",
+          "url": "https://backstage.raggiesoft.com/books/luna-leo/what-if-luna-threw-delores-out-during-sibling-weekend"
+        }
+      ],
       "eras": [
         {
           "eraNum": 1,
@@ -46519,7 +46532,7 @@
         "externalUrl": "https://books.raggiesoft.com/jack-sarah",
         "externalLabel": "Open in Book Reader",
         "summary": "The October evening was quiet, the house still. Jack and Sarah were in their respective rooms, focused on homework or relaxing after a long week. Downstairs, Jermaine sat at the family computer, the glow of the…",
-        "subtitle": "Epic Novel • 3 Eras"
+        "subtitle": "Full-Length Novel • 3 Eras"
       },
       {
         "id": "book:julian",
