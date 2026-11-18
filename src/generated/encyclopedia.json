@@ -5592,6 +5592,24 @@
               "location": "Norfolk, VA"
             },
             {
+              "title": "Part 1: The Hijacked Plan & MagnaByte Conflict",
+              "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare/the-hijacked-plan/part-1-the-hijacked-plan-magnabyte-conflict",
+              "date": "2003-10-10",
+              "location": "Stella's House, Virginia Beach, VA"
+            },
+            {
+              "title": "Part 2: Printer Rage, Guardianship Questions, and the Flute Signal",
+              "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-the-flute-signal",
+              "date": "2003-10-11",
+              "location": "Stella's House, Virginia Beach, VA"
+            },
+            {
+              "title": "Part 3: A Forceful Kiss, Locked Doors, & Tuesday Morning Departure",
+              "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare/the-hijacked-plan/part-3-a-forceful-kiss-locked-doors-tuesday-morning-departure",
+              "date": "2003-10-11",
+              "location": "Stella's House, Virginia Beach, VA"
+            },
+            {
               "title": "Part 2: Confronting Quantum & A Long-Distance Lifeline",
               "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare/a-grieving-start/part-2-confronting-quantum-a-long-distance-lifeline",
               "date": "2003-11-01",
@@ -5606,24 +5624,6 @@
             {
               "title": "Part 2: A Sleepless Resolve & A Fragile Normalcy",
               "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare/the-tutor/part-2-a-sleepless-resolve-a-fragile-normalcy",
-              "date": "2003-11-01",
-              "location": "Kent, WA"
-            },
-            {
-              "title": "Part 1: The Hijacked Plan & MagnaByte Conflict",
-              "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare/the-hijacked-plan/part-1-the-hijacked-plan-magnabyte-conflict",
-              "date": "2003-11-01",
-              "location": "Kent, WA"
-            },
-            {
-              "title": "Part 2: Printer Rage, Guardianship Questions, and a Forceful Kiss & Leftovers, Bus Schedules, and Locked Doors",
-              "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-a-forceful-kiss-leftovers-bus-schedules-and-locked-doors",
-              "date": "2003-11-01",
-              "location": "Kent, WA"
-            },
-            {
-              "title": "Part 3: A Day Under Duress & Tuesday Morning Departure",
-              "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare/the-hijacked-plan/part-3-a-day-under-duress-tuesday-morning-departure",
               "date": "2003-11-01",
               "location": "Kent, WA"
             },
@@ -21082,12 +21082,12 @@
       "tocUrl": "https://books.raggiesoft.com/jack-sarah/toc",
       "firstChapterUrl": "https://books.raggiesoft.com/jack-sarah/life-at-fairlawn/the-end-of-a-war/the-discovery-the-alliance",
       "stats": {
-        "scaleLabel": "Full-Length Novel",
-        "readingHours": 5.4,
-        "storyPages": 296,
+        "scaleLabel": "Epic Novel",
+        "readingHours": 8.7,
+        "storyPages": 476,
         "eraCount": 3,
-        "chapterCount": 33,
-        "partCount": 41,
+        "chapterCount": 49,
+        "partCount": 63,
         "illustrationCount": 0
       },
       "dateSpan": "2005–2007",
@@ -25460,11 +25460,11 @@
       "firstChapterUrl": "https://books.raggiesoft.com/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival/birthday-morning-and-the-grandparents-arrival-birthday-cake-and-sweet-memories-on-ludlow-road",
       "stats": {
         "scaleLabel": "Multi-Volume Omnibus",
-        "readingHours": 22.3,
-        "storyPages": 1218,
+        "readingHours": 22.2,
+        "storyPages": 1212,
         "eraCount": 16,
-        "chapterCount": 84,
-        "partCount": 168,
+        "chapterCount": 86,
+        "partCount": 171,
         "illustrationCount": 3
       },
       "dateSpan": "1987–2004",
@@ -27451,12 +27451,13 @@
           "eraNum": 12,
           "title": "The Delores Nightmare",
           "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare",
-          "wordCount": 47172,
+          "wordCount": 43165,
           "illustrationCount": 1,
           "dateSpan": "2003-08-25 to 2003-11-27",
           "locations": [
             "Norfolk, VA",
             "Kent, WA",
+            "Stella's House, Virginia Beach, VA",
             "Virginia Beach, VA"
           ],
           "chapters": [
@@ -27546,8 +27547,8 @@
                   "partNum": 1,
                   "title": "Part 1: The Hijacked Plan & MagnaByte Conflict",
                   "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare/the-hijacked-plan/part-1-the-hijacked-plan-magnabyte-conflict",
-                  "date": "2003-11-01",
-                  "location": "Kent, WA",
+                  "date": "2003-10-10",
+                  "location": "Stella's House, Virginia Beach, VA",
                   "excerpt": "Fall 2003 arrived, and with it, the approach of the mid-October long weekend many colleges observed as Fall Break around Columbus Day. The silences from Leo were becoming longer, the phone calls shorter and more…",
                   "readingMinutes": 15,
                   "image": null,
@@ -27559,12 +27560,12 @@
                 },
                 {
                   "partNum": 2,
-                  "title": "Part 2: Printer Rage, Guardianship Questions, and a Forceful Kiss & Leftovers, Bus Schedules, and Locked Doors",
-                  "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-a-forceful-kiss-leftovers-bus-schedules-and-locked-doors",
-                  "date": "2003-11-01",
-                  "location": "Kent, WA",
+                  "title": "Part 2: Printer Rage, Guardianship Questions, and the Flute Signal",
+                  "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-the-flute-signal",
+                  "date": "2003-10-11",
+                  "location": "Stella's House, Virginia Beach, VA",
                   "excerpt": "Despite the earlier interruption, Luna and Leo Porter resolutely turned back to their MagnaBytes, determined to finish their English assignment. They worked steadily for another hour. Finally, Luna stretched…",
-                  "readingMinutes": 14,
+                  "readingMinutes": 4,
                   "image": null,
                   "imageAlt": "",
                   "eraNum": 12,
@@ -27574,12 +27575,12 @@
                 },
                 {
                   "partNum": 3,
-                  "title": "Part 3: A Day Under Duress & Tuesday Morning Departure",
-                  "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare/the-hijacked-plan/part-3-a-day-under-duress-tuesday-morning-departure",
-                  "date": "2003-11-01",
-                  "location": "Kent, WA",
-                  "excerpt": "Monday – Columbus Day – dawned with the heavy weight of unspoken resentment settling even deeper over Stella's small house. Delores emerged late, clearly furious about being trapped there for another day due to…",
-                  "readingMinutes": 11,
+                  "title": "Part 3: A Forceful Kiss, Locked Doors, & Tuesday Morning Departure",
+                  "url": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare/the-hijacked-plan/part-3-a-forceful-kiss-locked-doors-tuesday-morning-departure",
+                  "date": "2003-10-11",
+                  "location": "Stella's House, Virginia Beach, VA",
+                  "excerpt": "Despite Leo's internal alarm and a subtle tensing, Delores's grip on his arms was unyielding. With surprising force that brooked no argument, she maneuvered him out of his wheelchair, pulling him onto the sofa…",
+                  "readingMinutes": 5,
                   "image": null,
                   "imageAlt": "",
                   "eraNum": 12,
@@ -45041,7 +45042,7 @@
           "year": "2003",
           "kind": "Later Storyline Era",
           "title": "Luna & Leo — The Delores Nightmare",
-          "summary": "5 chapters set across Norfolk, VA, Kent, WA, Virginia Beach, VA",
+          "summary": "5 chapters set across Norfolk, VA, Kent, WA, Stella's House, Virginia Beach, VA",
           "internalHref": "/books/luna-leo",
           "externalUrl": "https://books.raggiesoft.com/luna-leo/the-delores-nightmare",
           "externalLabel": "Open Era in Book Reader",
@@ -46518,7 +46519,7 @@
         "externalUrl": "https://books.raggiesoft.com/jack-sarah",
         "externalLabel": "Open in Book Reader",
         "summary": "The October evening was quiet, the house still. Jack and Sarah were in their respective rooms, focused on homework or relaxing after a long week. Downstairs, Jermaine sat at the family computer, the glow of the…",
-        "subtitle": "Full-Length Novel • 3 Eras"
+        "subtitle": "Epic Novel • 3 Eras"
       },
       {
         "id": "book:julian",
