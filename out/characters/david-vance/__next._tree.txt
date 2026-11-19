@@ -1,8 +1,8 @@
 :HL["/_next/static/chunks/0-imc4apzbysm.css","style"]
 :HL["/_next/static/media/07a39a8a4660cc7c-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/605ce01b664af129-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261115h","style"]
+:HL["https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261118a","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"david-vance","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"characters","h":131136,"c":"$Q2"}]]
-0:{"b":"vvlKW2YyHIpx1vrtijE61","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
+0:{"b":"RgtuNbWUJfJ7N64xLuhJ1","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}

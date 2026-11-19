@@ -121,10 +121,10 @@ export default function RootLayout({
         />
         <link
           rel="stylesheet"
-          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261115h"
+          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261118a"
         />
         <script
-          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261115h"
+          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261118a"
           defer
         ></script>
       </head>
@@ -163,7 +163,7 @@ export default function RootLayout({
                   type="button"
                   className="rs-network-dropdown-toggle"
                   aria-expanded="false"
-                  aria-haspopup="true"
+                  aria-controls="rs-static-err-menu"
                 >
                   <span aria-hidden="true">⚙️</span>
                   <span>Engine Room</span>
@@ -172,38 +172,32 @@ export default function RootLayout({
                   </span>
                 </button>
                 <ul
+                  id="rs-static-err-menu"
                   className="rs-network-dropdown-menu"
-                  role="menu"
                   aria-label="Engine Room Records & Band Roster"
                 >
-                  <li role="none">
-                    <a role="menuitem" href="https://engineroom.raggiesoft.com">
+                  <li>
+                    <a href="https://engineroom.raggiesoft.com">
                       ⚙️ Engine Room Records Hub
                     </a>
                   </li>
-                  <li role="none">
-                    <a role="menuitem" href="https://music.raggiesoft.com">
+                  <li>
+                    <a href="https://music.raggiesoft.com">
                       🎧 The Listening Room
                     </a>
                   </li>
-                  <li role="none">
-                    <a
-                      role="menuitem"
-                      href="https://engineroom.raggiesoft.com/artists"
-                    >
+                  <li>
+                    <a href="https://engineroom.raggiesoft.com/artists">
                       🎸 All Artists Directory
                     </a>
                   </li>
-                  <li role="none">
-                    <a
-                      role="menuitem"
-                      href="https://engineroom.raggiesoft.com/isrc"
-                    >
+                  <li>
+                    <a href="https://engineroom.raggiesoft.com/isrc">
                       🏷️ Official ISRC Registry (QTAHP)
                     </a>
                   </li>
-                  <li role="none">
-                    <a role="menuitem" href="https://stardust.raggiesoft.com">
+                  <li>
+                    <a href="https://stardust.raggiesoft.com">
                       🚀 The Stardust Engine
                     </a>
                   </li>
@@ -216,7 +210,7 @@ export default function RootLayout({
                 <a href="https://storetrainer.raggiesoft.com">💾 StoreTrainer</a>
               </li>
               <li>
-                <a href="https://michaelpragsdale.com">👔 Michael P. Ragsdale</a>
+                <a href="https://michaelpragsdale.com">👔 Portfolio &amp; Resume</a>
               </li>
             </ul>
           </div>
