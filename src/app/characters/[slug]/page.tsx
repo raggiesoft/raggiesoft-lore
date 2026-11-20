@@ -3,11 +3,23 @@
  * ============================================================================
  * src/app/characters/[slug]/page.tsx — Static Character Profile & Spoiler Guard
  * ============================================================================
- * Architectural Overview:
- * Pre-rendered static character guide (`output: "export"`). Displays the
- * character's spoiler-safe debut introduction, cross-links to bands, places,
- * and chosen-family companions, shows Era 1 opening chapters directly, and
- * wraps Era 2+ storyline milestones inside native `<details>` disclosures.
+ * Plain-English Overview (Read-Along Guide):
+ *   - WHAT `[slug]` MEANS: Next.js App Router **Dynamic Route Segment** generating
+ *     one static HTML page per character (`/characters/katie-prairie`,
+ *     `/characters/ryan-oconnell`, `/characters/claire-manning`, etc.) during
+ *     `next build` (`output: "export"`).
+ *   - WHEN IT RUNS: Build-time **React Server Component**. Zero client-side
+ *     JavaScript is needed to render or expand anything on this page!
+ *   - WHAT DATA FEEDS INTO IT: Looks up `getCharacterBySlug(slug)` and resolves
+ *     connected Bands (`getBandBySlug`), Places (`getPlaceBySlug`), Chosen-Family
+ *     companions (`getCharacterBySlug`), and Era-grouped POV chapter appearances.
+ *   - HOW SPOILER PROTECTION WORKS ON CHARACTER PROFILES:
+ *       1. Visible Immediately: Spoiler-safe `debutSummary`, debut timeline/setting
+ *          anchors, family/band/place cross-links, and **Era 1** opening appearances
+ *          (`openingEras`).
+ *       2. Behind Native `<details className="lore-spoiler">`: Extended archival
+ *          notes (`<MarkdownProse />`) and **Era 2+** storyline milestones
+ *          (`spoilerEras`).
  * ============================================================================
  */
 
@@ -24,12 +36,21 @@ import {
 } from "@/lib/encyclopedia";
 import MarkdownProse from "@/components/MarkdownProse";
 
+// Only serve slugs returned by `generateStaticParams()` (404 on unknown slugs).
 export const dynamicParams = false;
 
+/**
+ * Supplies every compiled character `{ slug }` to `next build` so each profile
+ * is pre-rendered into static HTML inside `out/characters/`.
+ */
 export function generateStaticParams() {
   return getCharacters().map((c) => ({ slug: c.slug }));
 }
 
+/**
+ * Builds per-character `<title>`, `<meta name="description">`, canonical URL,
+ * and OpenGraph (`type: "profile"`) / Twitter social preview metadata.
+ */
 export async function generateMetadata({
   params,
 }: {
@@ -68,10 +89,12 @@ export default async function CharacterDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  // 1. Unwrap asynchronous `params` and look up the character (404 if missing).
   const { slug } = await params;
   const char = getCharacterBySlug(slug);
   if (!char) notFound();
 
+  // 2. Resolve related Bands, Places, and Family/Chosen-Family Characters from their slugs.
   const relatedBands = char.bandSlugs
     .map((s) => getBandBySlug(s))
     .filter((b): b is NonNullable<typeof b> => Boolean(b));
@@ -82,9 +105,14 @@ export default async function CharacterDetailPage({
     .map((s) => getCharacterBySlug(s))
     .filter((c): c is NonNullable<typeof c> => Boolean(c));
 
+  // 3. Partition chapter appearances across the Spoiler Horizon (`eraNum === 1` vs `eraNum > 1`).
   const openingEras = char.eraMilestones.filter((e) => e.eraNum === 1);
   const spoilerEras = char.eraMilestones.filter((e) => e.eraNum > 1);
 
+  // 4. Build Schema.org `BreadcrumbList` + `ProfilePage` JSON-LD.
+  //    Notice the conditional object spread `...(relatedBands.length > 0 ? { memberOf: ... } : {})`:
+  //    if the character belongs to one or more bands, `...` merges `memberOf` into `mainEntity`;
+  //    otherwise `{}` spreads nothing!
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -139,11 +167,13 @@ export default async function CharacterDetailPage({
 
   return (
     <article className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-10 space-y-10">
+      {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* Breadcrumb Trail (`Lore Home / Characters / <Character Name>`) */}
       <nav aria-label="Breadcrumb" className="text-sm">
         <ol className="flex flex-wrap items-center gap-2 list-none p-0 m-0">
           <li>
@@ -164,7 +194,7 @@ export default async function CharacterDetailPage({
         </ol>
       </nav>
 
-      {/* Spoiler-Safe Debut Header */}
+      {/* Spoiler-Safe Debut Header Card */}
       <header className="lore-card p-6 sm:p-8 space-y-5">
         <div className="flex flex-wrap items-center gap-2">
           <span className="lore-pill">
@@ -196,6 +226,7 @@ export default async function CharacterDetailPage({
 
         <p className="text-base leading-relaxed">{char.debutSummary}</p>
 
+        {/* Semantic `<dl>` Description List for Debut Date & Opening Setting */}
         {(char.debutDate || char.debutLocation) && (
           <dl
             className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3 border-t text-sm"
@@ -226,6 +257,7 @@ export default async function CharacterDetailPage({
           </dl>
         )}
 
+        {/* Primary Action Buttons (Book Reader debut chapter, Lore Series Guide, Listening Room) */}
         <div className="flex flex-wrap gap-3 pt-2">
           {char.firstAppearanceUrl && (
             <a href={char.firstAppearanceUrl} className="lore-btn-primary text-sm">
@@ -251,7 +283,7 @@ export default async function CharacterDetailPage({
         </div>
       </header>
 
-      {/* Connected Family, Bands, and Settings */}
+      {/* Connected Family, Bands, and Settings Grid */}
       {(relatedCharacters.length > 0 ||
         relatedBands.length > 0 ||
         relatedPlaces.length > 0) && (
@@ -330,7 +362,7 @@ export default async function CharacterDetailPage({
         </section>
       )}
 
-      {/* Era 1 Opening Chapters (Spoiler-Safe) */}
+      {/* Era 1 Opening Chapters (Shown Directly — Spoiler-Safe) */}
       {openingEras.length > 0 && (
         <section aria-labelledby="opening-chapters-heading" className="space-y-4">
           <h2 id="opening-chapters-heading" className="text-2xl font-bold">
@@ -370,7 +402,9 @@ export default async function CharacterDetailPage({
         </section>
       )}
 
-      {/* Spoiler Horizon: Later Storyline Milestones & Extended Archival Notes */}
+      {/* Spoiler Horizon: Extended Archival Notes & Era 2+ Storyline Milestones
+          Wrapped inside native HTML5 `<details className="lore-spoiler">` so readers
+          explicitly choose when to expand later-era character developments! */}
       {(spoilerEras.length > 0 || Boolean(char.extendedBioMarkdown)) && (
         <section aria-labelledby="later-milestones-heading" className="space-y-4">
           <h2 id="later-milestones-heading" className="text-2xl font-bold">

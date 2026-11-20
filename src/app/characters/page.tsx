@@ -3,9 +3,17 @@
  * ============================================================================
  * src/app/characters/page.tsx — Static Character Encyclopedia Directory
  * ============================================================================
- * Architectural Overview:
- * Pre-rendered directory of protagonists, musicians, siblings, and chosen-family
- * figures across Ocean View Archives and Engine Room Records.
+ * Plain-English Overview (Read-Along Guide):
+ *   - WHAT THIS FILE IS: File-based Next.js App Router page for `/characters`
+ *     (`https://lore.raggiesoft.com/characters`).
+ *   - WHEN IT RUNS: Build-time **React Server Component** (`next build` renders
+ *     all protagonist, twin, musician, and chosen-family cards directly into
+ *     static HTML).
+ *   - WHAT DATA FEEDS INTO IT: Calls `getCharacters()` from `src/lib/encyclopedia.ts`,
+ *     reading spoiler-safe `debutSummary` introductions and debut Book Reader links.
+ *   - WHAT UI IT PRODUCES: Breadcrumb navigation, accessible `<header>`, and
+ *     `<DirectoryFilter />` so visitors can browse every character profile in
+ *     static HTML or search instantaneously in the browser.
  * ============================================================================
  */
 
@@ -20,6 +28,7 @@ import DirectoryFilter, {
   type DirectoryCardItem,
 } from "@/components/DirectoryFilter";
 
+// Prepare SEO `<title>` (<= 60 chars) and `<meta name="description">` (<= 155 chars).
 const title = buildSeoTitle("Characters & Protagonists");
 const description = buildSeoDescription(
   "Meet the protagonists, twins, musicians, and chosen families across Ocean View Archives novels and Engine Room Records bands."
@@ -43,8 +52,13 @@ export const metadata: Metadata = {
 };
 
 export default function CharactersIndexPage() {
+  // Read all compiled `CharacterEntry` profiles synchronously at build time.
   const characters = getCharacters();
 
+  // Convert each `CharacterEntry` (`c`) into a uniform `DirectoryCardItem` object.
+  // Notice the JavaScript `||` ("logical OR fallback") operator:
+  // `c.firstAppearanceUrl || c.primaryBookUrl` picks `firstAppearanceUrl` if present,
+  // or falls back to `primaryBookUrl` if `firstAppearanceUrl` is `null` or empty.
   const items: DirectoryCardItem[] = characters.map((c) => ({
     slug: c.slug,
     href: `/characters/${c.slug}`,
@@ -59,6 +73,7 @@ export default function CharactersIndexPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10 space-y-8">
+      {/* Breadcrumb Trail */}
       <nav aria-label="Breadcrumb" className="text-sm">
         <ol className="flex flex-wrap items-center gap-2 list-none p-0 m-0">
           <li>
@@ -73,6 +88,7 @@ export default function CharactersIndexPage() {
         </ol>
       </nav>
 
+      {/* Page Hero Header with single `<h1>` */}
       <header className="space-y-3">
         <span className="lore-pill">
           <span aria-hidden="true">●</span>
@@ -91,6 +107,7 @@ export default function CharactersIndexPage() {
         </p>
       </header>
 
+      {/* Progressive-enhancement `<search>` bar + static HTML card grid */}
       <DirectoryFilter
         label="Search Characters by Name, Series, Band, or Role"
         placeholder="e.g., Ryan O'Connell, Katie Prairie, Claire Manning, Jordan…"

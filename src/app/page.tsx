@@ -3,13 +3,22 @@
  * ============================================================================
  * src/app/page.tsx — RaggieSoft Lore Encyclopedia Hub & Constellation Map
  * ============================================================================
- * Architectural Overview:
- * Static Server Component entry point for `https://lore.raggiesoft.com/`.
- * Combines:
- *   1. Direct static HTML directory hubs (`/characters`, `/bands`, `/books`,
- *      `/places`, `/organizations`, `/timeline`) so search engines and readers
- *      can browse every pillar immediately, and
- *   2. The interactive 2D Constellation Graph (`<LoreGraphWrapper />`).
+ * Plain-English Overview (Read-Along Guide):
+ *   - WHAT THIS FILE IS: In Next.js App Router, `src/app/page.tsx` maps directly
+ *     to the home page URL `/` (`https://lore.raggiesoft.com/`), wrapped inside
+ *     `src/app/layout.tsx`.
+ *   - WHEN IT RUNS: Build-time **React Server Component** (`next build` executes
+ *     `Home()` in Node.js and writes the resulting HTML into `out/index.html`).
+ *   - WHAT DATA FEEDS INTO IT: Calls `getEncyclopedia()` from `src/lib/encyclopedia.ts`
+ *     to read universe counts (`stats`), top bands/characters/books, and the
+ *     full `graph` (`nodes` + `links`).
+ *   - HOW SERVER & CLIENT COMPONENTS COOPERATE HERE:
+ *       1. The Hero Banner, 6 Category Pillar Cards, and Featured Starting Points
+ *          render as 100% zero-JavaScript static HTML—giving instant page load
+ *          and direct `<a href>` crawlability for search engines.
+ *       2. In the middle section, `<LoreGraphWrapper data={graph} />` hands the
+ *          serializable `graph` JSON across the Server -> Client boundary so the
+ *          browser can mount the interactive 2D Constellation `<canvas>`.
  * ============================================================================
  */
 
@@ -18,9 +27,14 @@ import { getEncyclopedia } from "@/lib/encyclopedia";
 import LoreGraphWrapper from "@/components/LoreGraphWrapper";
 
 export default function Home() {
+  // Read the pre-compiled encyclopedia object synchronously at build time
+  // and unpack ("destructure") the five properties we need on the home page.
   const enc = getEncyclopedia();
   const { stats, graph, bands, characters, books } = enc;
 
+  // Data-driven UI array for the 6 Encyclopedia Category Pillar cards.
+  // Storing structured objects in an array and rendering them with `.map()` below
+  // avoids repeating identical card HTML 6 times!
   const hubs = [
     {
       href: "/characters",
@@ -68,7 +82,7 @@ export default function Home() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10 space-y-12">
-      {/* Hero Banner */}
+      {/* Section 1: Hero Banner with single page `<h1>` and primary quick-action buttons */}
       <section className="space-y-4">
         <span className="lore-pill">
           <span aria-hidden="true">✦</span>
@@ -104,15 +118,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Six Encyclopedia Pillar Cards */}
+      {/* Section 2: Six Encyclopedia Pillar Cards
+          `aria-labelledby` links this `<section>` landmark directly to its `<h2>` heading
+          so screen-reader landmark menus announce "Browse the Encyclopedia by Category, region". */}
       <section aria-labelledby="encyclopedia-pillars-heading" className="space-y-4">
         <h2 id="encyclopedia-pillars-heading" className="text-2xl font-bold">
           Browse the Encyclopedia by Category
         </h2>
+        {/* `role="list"` preserves VoiceOver list semantics on CSS Grid `<ul>` elements with `list-none` */}
         <ul
           role="list"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0"
         >
+          {/* React `.map()` loop: transforms each `hub` object into an `<li>` card.
+              React requires a unique `key={hub.href}` prop on list items to track elements cleanly. */}
           {hubs.map((hub) => (
             <li key={hub.href} className="lore-card p-5 flex flex-col justify-between">
               <div>
@@ -139,7 +158,7 @@ export default function Home() {
         </ul>
       </section>
 
-      {/* Interactive 2D Constellation Map */}
+      {/* Section 3: Interactive 2D Constellation Map (Client Component island hydrated in browser) */}
       <section aria-labelledby="constellation-map-heading" className="space-y-3">
         <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
           <h2 id="constellation-map-heading" className="text-2xl font-bold">
@@ -150,7 +169,8 @@ export default function Home() {
         <LoreGraphWrapper data={graph} />
       </section>
 
-      {/* Featured Direct Entry Links for Fast Reader/Search Discovery */}
+      {/* Section 4: Featured Direct Entry Links for Fast Reader & Search Engine Discovery
+          (`.slice(0, 10)` displays the first 10 protagonists and flagship book series) */}
       <section aria-labelledby="featured-guides-heading" className="space-y-4">
         <h2 id="featured-guides-heading" className="text-2xl font-bold">
           Featured Starting Points

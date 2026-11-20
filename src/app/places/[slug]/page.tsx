@@ -3,10 +3,19 @@
  * ============================================================================
  * src/app/places/[slug]/page.tsx — Static Gazetteer & Transit Guide
  * ============================================================================
- * Architectural Overview:
- * Pre-rendered worldbuilding guide (`output: "export"`) with Schema.org `Place`
- * structured data, sanitized worldbuilding prose, and cross-links to every
- * novel series, band, and character anchored in that setting.
+ * Plain-English Overview (Read-Along Guide):
+ *   - WHAT `[slug]` MEANS: Next.js App Router **Dynamic Route Segment** generating
+ *     one static HTML page per setting (`/places/commonwealth-polytechnic-institute`,
+ *     `/places/coastal-virginia-transit-cvta`, `/places/uscss-ad-astra-and-caelum-iv`,
+ *     etc.) at build time (`output: "export"`).
+ *   - WHEN IT RUNS: Build-time **React Server Component** (`next build` pre-renders
+ *     all gazetteer guides into `out/places/` with zero client-side JS).
+ *   - WHAT DATA FEEDS INTO IT: Looks up `getPlaceBySlug(slug)` and resolves
+ *     cross-references to every Book Series (`getBookBySlug`), Band (`getBandBySlug`),
+ *     and Character (`getCharacters`) anchored in that setting.
+ *   - WHAT UI & METADATA IT PRODUCES: Schema.org `BreadcrumbList` + `Place`
+ *     JSON-LD, setting & region pills, cross-linked Book/Character/Band cards,
+ *     and sanitized worldbuilding Markdown rendered via `<MarkdownProse />`.
  * ============================================================================
  */
 
@@ -24,12 +33,20 @@ import {
 } from "@/lib/encyclopedia";
 import MarkdownProse from "@/components/MarkdownProse";
 
+// Only serve slugs returned by `generateStaticParams()` (404 on unknown slugs).
 export const dynamicParams = false;
 
+/**
+ * Supplies every compiled place `{ slug }` to `next build` for static export.
+ */
 export function generateStaticParams() {
   return getPlaces().map((p) => ({ slug: p.slug }));
 }
 
+/**
+ * Builds per-place `<title>`, `<meta name="description">`, canonical URL,
+ * and OpenGraph (`type: "article"`) / Twitter social preview tags.
+ */
 export async function generateMetadata({
   params,
 }: {
@@ -66,10 +83,12 @@ export default async function PlaceDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  // 1. Unwrap asynchronous `params` and look up the place entry (404 if missing).
   const { slug } = await params;
   const place = getPlaceBySlug(slug);
   if (!place) notFound();
 
+  // 2. Resolve related Books, Bands, and Characters connected to this location.
   const relatedBooks = place.relatedBookSlugs
     .map((s) => getBookBySlug(s))
     .filter((b): b is NonNullable<typeof b> => Boolean(b));
@@ -80,6 +99,7 @@ export default async function PlaceDetailPage({
     c.placeSlugs.includes(place.slug)
   );
 
+  // 3. Build Schema.org `BreadcrumbList` + `Place` structured data for search crawlers.
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -119,11 +139,13 @@ export default async function PlaceDetailPage({
 
   return (
     <article className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-10 space-y-10">
+      {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* Breadcrumb Trail (`Lore Home / Places & Transit / <Place Name>`) */}
       <nav aria-label="Breadcrumb" className="text-sm">
         <ol className="flex flex-wrap items-center gap-2 list-none p-0 m-0">
           <li>
@@ -144,6 +166,7 @@ export default async function PlaceDetailPage({
         </ol>
       </nav>
 
+      {/* Place Hero Card */}
       <header className="lore-card p-6 sm:p-8 space-y-4">
         <div className="flex flex-wrap items-center gap-2">
           <span className="lore-pill">
@@ -169,6 +192,7 @@ export default async function PlaceDetailPage({
         )}
       </header>
 
+      {/* Cross-Linked Books, Characters & Bands Anchored in This Setting */}
       {(relatedBooks.length > 0 ||
         relatedCharacters.length > 0 ||
         relatedBands.length > 0) && (
@@ -227,6 +251,7 @@ export default async function PlaceDetailPage({
         </section>
       )}
 
+      {/* Sanitized Gazetteer & Worldbuilding Markdown Body rendered at build time */}
       <section aria-labelledby="gazetteer-notes-heading" className="lore-card p-6 sm:p-8 space-y-4">
         <h2 id="gazetteer-notes-heading" className="text-2xl font-bold">
           Gazetteer &amp; Worldbuilding Notes

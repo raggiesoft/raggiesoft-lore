@@ -3,11 +3,21 @@
  * ============================================================================
  * src/app/timeline/page.tsx — Chronological Universe Timeline (1978–49601)
  * ============================================================================
- * Architectural Overview:
- * Pre-rendered decade-by-decade chronology uniting Engine Room Records album
- * releases and Ocean View Archives story eras. Opening story debuts and album
- * releases appear immediately, while Era 2+ storyline milestones are tucked
- * inside per-decade collapsible `<details>` spoiler disclosures.
+ * Plain-English Overview (Read-Along Guide):
+ *   - WHAT THIS FILE IS: File-based route in Next.js App Router: placing `page.tsx`
+ *     inside `src/app/timeline/` automatically creates the `/timeline` URL
+ *     (`https://lore.raggiesoft.com/timeline`).
+ *   - WHEN IT RUNS: Build-time **React Server Component** (`next build` pre-renders
+ *     all 5 decade sections into static HTML with zero client-side JavaScript!).
+ *   - WHAT DATA FEEDS INTO IT: Calls `getTimelineBuckets()` from `src/lib/encyclopedia.ts`,
+ *     which returns chronological decade buckets (`1978–1989`, `1990–1999`, `2000–2009`,
+ *     `2010–2019`, and `2020–Stardate 49601`).
+ *   - HOW SPOILER PROTECTION WORKS ON `/timeline`:
+ *       1. `bucket.debutEvents` (all 40 album releases + Book Era 1 opening debuts)
+ *          render openly in semantic ordered lists (`<ol role="list">`).
+ *       2. `bucket.spoilerEvents` (Book Era 2+ storyline milestones) stay tucked
+ *          inside native HTML5 `<details className="lore-spoiler">` disclosures so
+ *          new readers never hit involuntary plot spoilers while browsing by year!
  * ============================================================================
  */
 
@@ -19,6 +29,7 @@ import {
   getTimelineBuckets,
 } from "@/lib/encyclopedia";
 
+// Format page-specific SEO `<title>` (<= 60 chars) and `<meta name="description">` (<= 155 chars).
 const title = buildSeoTitle("Chronological Universe Timeline");
 const description = buildSeoDescription(
   "Follow the RaggieSoft universe timeline from 1978 through Stardate 49601 across 40 Engine Room Records albums and 30 Ocean View Archives novel series."
@@ -42,10 +53,15 @@ export const metadata: Metadata = {
 };
 
 export default function TimelinePage() {
+  // Fetch pre-sorted decade buckets synchronously at build time.
   const buckets = getTimelineBuckets();
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-10 space-y-10">
+      {/* Accessible Breadcrumb Navigation:
+          Uses an ordered list (`<ol>`) because breadcrumb steps have a strict hierarchy
+          (`Lore Home` -> `Timeline`), with `aria-hidden="true"` on the `/` separator
+          and `aria-current="page"` on the active final crumb. */}
       <nav aria-label="Breadcrumb" className="text-sm">
         <ol className="flex flex-wrap items-center gap-2 list-none p-0 m-0">
           <li>
@@ -60,6 +76,7 @@ export default function TimelinePage() {
         </ol>
       </nav>
 
+      {/* Page Header & Decade Anchor Jump Bar */}
       <header className="space-y-3">
         <span className="lore-pill">
           <span aria-hidden="true">⏳</span>
@@ -79,7 +96,8 @@ export default function TimelinePage() {
           published by Engine Room Records.)
         </p>
 
-        {/* Quick Jump Links */}
+        {/* Quick In-Page Jump Links: `href="#1990s"` scrolls directly to `<section id="1990s">`.
+            `b.label.split(":")[0]` extracts the short prefix like `"1990–1999"` from the full heading. */}
         <nav aria-label="Jump to Timeline Decade" className="pt-2">
           <ul
             role="list"
@@ -96,6 +114,7 @@ export default function TimelinePage() {
         </nav>
       </header>
 
+      {/* Chronological Decade Sections */}
       <div className="space-y-12">
         {buckets.map((bucket) => (
           <section
@@ -108,6 +127,7 @@ export default function TimelinePage() {
               {bucket.label}
             </h2>
 
+            {/* Spoiler-Safe Events (`<ol>` = Ordered List because chronological order carries meaning!) */}
             {bucket.debutEvents.length > 0 && (
               <ol role="list" className="space-y-3 list-none p-0 m-0">
                 {bucket.debutEvents.map((ev) => (
@@ -144,6 +164,9 @@ export default function TimelinePage() {
               </ol>
             )}
 
+            {/* Collapsible Spoiler Horizon Disclosure (`<details>` + `<summary>`):
+                Collapsed by default in HTML; expands on click or keyboard `Enter`/`Space`
+                without needing any client-side React state! */}
             {bucket.spoilerEvents.length > 0 && (
               <details className="lore-spoiler">
                 <summary>

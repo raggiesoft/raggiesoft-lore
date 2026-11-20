@@ -3,13 +3,24 @@
  * ============================================================================
  * src/app/books/[slug]/page.tsx — Static Book Series Guide & Spoiler Horizon
  * ============================================================================
- * Architectural Overview:
- * Pre-rendered Ocean View Archives series guide (`output: "export"`).
- * Enforces the Spoiler Horizon:
- *   - Top of page: Era 1 / Part 1 opening premise, reading stats, protagonists,
- *     companion bands, Backstage archival dossiers, and Era 1 chapters.
- *   - Collapsible `<details>` disclosure: Full multi-era series synopsis and
- *     Era 2+ chapter/part outlines.
+ * Plain-English Overview (Read-Along Guide):
+ *   - WHAT `[slug]` MEANS: Next.js App Router **Dynamic Route Segment**. During
+ *     `next build`, `generateStaticParams()` supplies all 30 public book series
+ *     slugs (`"katie"`, `"stardust-engine"`, `"ad-astra"`, `"aubrie"`, etc.) so
+ *     Next.js pre-renders 30 standalone static HTML reading guides inside `out/books/`.
+ *   - WHEN IT RUNS: Build-time **React Server Component** (`output: "export"`).
+ *     Zero client-side JavaScript is required to read or expand sections on this page!
+ *   - WHAT DATA FEEDS INTO IT: Looks up `getBookBySlug(slug)` and cross-links
+ *     matching Protagonists (`getCharacters`), Featured Places (`getPlaces`),
+ *     Companion Bands (`book.relatedBands`), and Backstage Dossiers (`book.backstageDossiers`).
+ *   - HOW THE SPOILER HORIZON ARCHITECTURE WORKS:
+ *       1. Top of page (100% Spoiler-Safe): Displays ONLY the opening chapter
+ *          premise (`book.debutIntro`), reading stats (`<dl>`), protagonists,
+ *          companion music, settings, and **Era 1** chapters (`eraOne`).
+ *       2. Bottom of page (Opt-In Native `<details className="lore-spoiler">`):
+ *          Wraps `book.fullSeriesSynopsis` and all **Era 2+** chapter outlines
+ *          (`laterEras`) inside a native HTML5 collapsible disclosure so new
+ *          readers never stumble onto later-era plot twists uninvited!
  * ============================================================================
  */
 
@@ -25,12 +36,22 @@ import {
   getPlaces,
 } from "@/lib/encyclopedia";
 
+// Reject any URL slug not returned by `generateStaticParams()` with a 404.
 export const dynamicParams = false;
 
+/**
+ * Enumerates all 30 public Ocean View Archives book slugs at build time so
+ * `next build` statically exports every `/books/<slug>` route.
+ */
 export function generateStaticParams() {
   return getBooks().map((b) => ({ slug: b.slug }));
 }
 
+/**
+ * Generates per-book `<title>`, `<meta name="description">`, canonical link,
+ * and OpenGraph (`type: "book"`) / Twitter social preview cards at build time.
+ * (`await params` unwraps Next.js 16's asynchronous route parameter `Promise`.)
+ */
 export async function generateMetadata({
   params,
 }: {
@@ -69,10 +90,12 @@ export default async function BookDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  // 1. Unwrap `slug` and fetch the compiled `BookEntry` (or trigger a 404 if missing).
   const { slug } = await params;
   const book = getBookBySlug(slug);
   if (!book) notFound();
 
+  // 2. Find characters whose primary novel is this book, plus places featured in it.
   const protagonists = getCharacters().filter(
     (c) => c.primaryBookSlug === book.slug
   );
@@ -80,9 +103,14 @@ export default async function BookDetailPage({
     p.relatedBookSlugs.includes(book.slug)
   );
 
+  // 3. Split story Eras across the Spoiler Horizon:
+  //    - `eraOne`: shown openly so prospective readers can sample the opening arc.
+  //    - `laterEras`: tucked inside `<details className="lore-spoiler">` below.
   const eraOne = book.eras.find((e) => e.eraNum === 1) || book.eras[0] || null;
   const laterEras = book.eras.filter((e) => e !== eraOne);
 
+  // 4. Construct Schema.org `BreadcrumbList` + `BookSeries` JSON-LD with author,
+  //    publisher (`Ocean View Archives`), `sameAs` reader links, and CC BY-SA 4.0 license.
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -135,11 +163,13 @@ export default async function BookDetailPage({
 
   return (
     <article className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-10 space-y-10">
+      {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* Breadcrumb Trail (`Lore Home / Books / <Series Title>`) */}
       <nav aria-label="Breadcrumb" className="text-sm">
         <ol className="flex flex-wrap items-center gap-2 list-none p-0 m-0">
           <li>
@@ -160,7 +190,7 @@ export default async function BookDetailPage({
         </ol>
       </nav>
 
-      {/* Spoiler-Safe Opening Hero */}
+      {/* Spoiler-Safe Opening Hero Card */}
       <header className="lore-card p-6 sm:p-8 space-y-5">
         <div className="flex flex-wrap items-center gap-2">
           <span className="lore-pill">
@@ -195,6 +225,7 @@ export default async function BookDetailPage({
           <p className="text-base leading-relaxed">{book.debutIntro}</p>
         </div>
 
+        {/* Semantic `<dl>` Description List for Series Statistics */}
         <dl
           className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-3 border-t text-sm"
           style={{ borderColor: "var(--lore-border-subtle)" }}
@@ -227,6 +258,7 @@ export default async function BookDetailPage({
           </div>
         </dl>
 
+        {/* Direct Deep Links into RaggieSoft Book Reader (`https://books.raggiesoft.com`) */}
         <div className="flex flex-wrap gap-3 pt-2">
           <a href={book.firstChapterUrl} className="lore-btn-primary text-sm">
             📖 Start Reading Opening Chapter ↗
@@ -338,7 +370,7 @@ export default async function BookDetailPage({
         </section>
       )}
 
-      {/* Era 1 Opening Chapters (Visible Without Spoilers) */}
+      {/* Era 1 Opening Chapters (Visible Immediately Without Spoilers) */}
       {eraOne && (
         <section aria-labelledby="era-one-heading" className="space-y-4">
           <h2 id="era-one-heading" className="text-2xl font-bold">
@@ -376,7 +408,9 @@ export default async function BookDetailPage({
         </section>
       )}
 
-      {/* Spoiler Horizon: Full Multi-Era Synopsis & Era 2+ Outlines */}
+      {/* Spoiler Horizon: Full Multi-Era Synopsis & Era 2+ Outlines
+          Uses native HTML5 `<details className="lore-spoiler">` + `<summary>` so
+          keyboard, mouse, and screen-reader users can expand later eras on demand! */}
       {(laterEras.length > 0 || Boolean(book.fullSeriesSynopsis)) && (
         <section aria-labelledby="spoiler-horizon-heading" className="space-y-4">
           <h2 id="spoiler-horizon-heading" className="text-2xl font-bold">

@@ -1,31 +1,45 @@
 /**
  * @license MIT
  * ============================================================================
- * ARCHITECTURAL OVERVIEW: GLOBAL STYLES & ACCESSIBLE LIGHT/DARK THEME TOKENS
+ * src/app/globals.css — Global Styles, Tailwind CSS v4 & Accessible Themes
  * ============================================================================
- * File: src/app/globals.css
- * Property: https://lore.raggiesoft.com (RaggieSoft Lore Graph & Encyclopedia)
- *
- * Design & Accessibility Architecture:
- * 1. Native Dual-Scheme Support (`color-scheme: light dark` on `:root`):
- *    Ensures browser scrollbars, form controls, and `<details>` disclosures
- *    adapt automatically to the visitor's OS light/dark preference.
- * 2. Progressive Color Tokens (`@media (prefers-color-scheme: dark)` + `light-dark()`):
- *    Every foreground/background pair exceeds 4.5:1 contrast, and interactive
- *    component boundaries (`--lore-border`) exceed 3:1 contrast in both modes.
- * 3. Keyboard, Touch, Reduced-Motion & Forced-Colors Safety:
- *    Provides an accessible `.skip-link`, high-visibility `3px` `:focus-visible`
- *    rings, >= 24x24px interactive hit areas, and Windows High Contrast support.
+ * Plain-English Overview (Read-Along Guide):
+ *   - WHAT THIS FILE IS: The single global stylesheet imported by `src/app/layout.tsx`
+ *     so its rules apply across every page of `https://lore.raggiesoft.com`.
+ *   - WHEN IT RUNS: Processed at build time by `@tailwindcss/turbopack` (configured
+ *     in `next.config.ts`) into a static `.css` stylesheet downloaded by the
+ *     visitor's browser—requiring zero JavaScript to style pages or switch themes!
+ *   - KEY WEB & ACCESSIBILITY CONCEPTS INSIDE THIS FILE:
+ *       1. Tailwind CSS v4 (`@import "tailwindcss";`): Generates utility classes
+ *          like `flex`, `max-w-7xl`, and `text-lg` directly from CSS without a
+ *          separate `tailwind.config.js` file.
+ *       2. CSS Custom Properties (`--lore-bg`, `--lore-text`, etc.): Variables in
+ *          CSS! Changing `--lore-bg` in Dark Mode updates every card, button, and
+ *          page background automatically via `var(--lore-bg)`.
+ *       3. Dual Light/Dark OS Theme Parity (`color-scheme: light dark`,
+ *          `@media (prefers-color-scheme: dark)`, and modern CSS `light-dark()`):
+ *          Every foreground/background pair exceeds 4.5:1 contrast for readable
+ *          text, and interactive borders exceed 3:1 contrast in both Light & Dark Mode.
+ *       4. Keyboard, Touch, High-Contrast & Reduced-Motion Safety:
+ *          Includes `.skip-link`, `3px` `:focus-visible` keyboard focus rings,
+ *          `2.75rem` (`44px`) touch targets, Windows High Contrast (`forced-colors`),
+ *          and vestibular motion protection (`prefers-reduced-motion: reduce`).
  * ============================================================================
  */
 
+/* Load Tailwind CSS v4 core utilities and the official `@tailwindcss/typography`
+   plugin (which powers the `.prose` class used inside `<MarkdownProse />`). */
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* `:root` selects the top-level `<html>` element so CSS variables declared here
+   are inherited by every element on the page. */
 :root {
+  /* Tells the browser's built-in UI (scrollbars, form inputs, `<details>` disclosure
+     triangles) to automatically match the visitor's OS Light or Dark Mode! */
   color-scheme: light dark;
 
-  /* Light Mode Semantic Palette (>= 4.5:1 text, >= 3:1 UI boundaries) */
+  /* Light Mode Semantic Palette (>= 4.5:1 text contrast, >= 3:1 UI boundary contrast) */
   --lore-bg: #f8fafc;
   --lore-surface: #ffffff;
   --lore-surface-alt: #f1f5f9;
@@ -43,9 +57,11 @@
   --lore-spoiler-text: #78350f;
 }
 
+/* Media Query Fallback: When the visitor's operating system or browser is set to
+   Dark Mode, override the `:root` variables above with high-contrast dark colors. */
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Dark Mode Semantic Palette (>= 4.5:1 text, >= 3:1 UI boundaries) */
+    /* Dark Mode Semantic Palette (>= 4.5:1 text contrast, >= 3:1 UI boundary contrast) */
     --lore-bg: #090d16;
     --lore-surface: #111827;
     --lore-surface-alt: #1e293b;
@@ -64,6 +80,9 @@
   }
 }
 
+/* Modern CSS Progressive Enhancement (`@supports`):
+   Browsers that support the modern CSS `light-dark(lightValue, darkValue)` color
+   function resolve both schemes natively from `color-scheme: light dark`. */
 @supports (color: light-dark(white, black)) {
   :root {
     --lore-bg: light-dark(#f8fafc, #090d16);
@@ -84,6 +103,8 @@
   }
 }
 
+/* Tailwind CSS v4 `@theme inline` block: registers our custom CSS variables
+   with Tailwind's design token system (including Geist Sans & Mono fonts from `layout.tsx`). */
 @theme inline {
   --color-background: var(--lore-bg);
   --color-foreground: var(--lore-text);
@@ -91,6 +112,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Base page typography and colors applied to `<body>`. */
 body {
   background-color: var(--lore-bg);
   color: var(--lore-text);
@@ -98,7 +120,10 @@ body {
   line-height: 1.6;
 }
 
-/* Keyboard Skip-to-Content Link */
+/* Keyboard Skip-to-Content Link (`<a href="#content" class="skip-link">`):
+   Positioned off-screen (`inset-block-start: -999px`) during normal mouse browsing,
+   and slides into the top-left corner (`0.75rem`) the instant a keyboard user presses
+   `Tab` so they can jump straight past the navigation bars to `<main id="content">`! */
 .skip-link {
   position: absolute;
   inset-block-start: -999px;
@@ -118,7 +143,10 @@ body {
   inset-block-start: 0.75rem;
 }
 
-/* High-Visibility Focus Indicator Across Interactive Controls */
+/* High-Visibility Keyboard Focus Ring (`:focus-visible`):
+   Draws a crisp `3px` outline (royal blue in Light Mode, bright gold in Dark Mode)
+   around links, buttons, `<summary>` spoiler headers, and inputs when navigating
+   by keyboard (`Tab`), without leaving distracting rings after mouse clicks. */
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible,
@@ -129,11 +157,20 @@ select:focus-visible,
   outline-offset: 3px;
 }
 
+/* `<main id="content" tabIndex={-1}>` receives programmatic focus when activating
+   `.skip-link`, so we suppress an outline around the entire page container itself. */
 main:focus {
   outline: none;
 }
 
-/* Reusable Semantic Surfaces & Controls */
+/* ============================================================================
+   Reusable Semantic Design-System Surfaces & Controls
+   ============================================================================
+   Note on CSS Logical Properties (`min-block-size`, `min-inline-size`, `inset-block-start`):
+   Modern CSS uses `block` (vertical in English) and `inline` (horizontal in English)
+   so layouts automatically respect international writing directions!
+   `2.75rem` = `44px` minimum height/width, comfortably exceeding minimum touch-target guidelines. */
+
 .lore-card {
   background-color: var(--lore-surface);
   color: var(--lore-text);
@@ -202,6 +239,8 @@ main:focus {
   text-decoration: underline;
 }
 
+/* Underlined links (`text-decoration: underline`) ensure links inside body text
+   are always identifiable by shape/underline—never by color alone! */
 .lore-link {
   color: var(--lore-accent);
   text-decoration: underline;
@@ -227,7 +266,10 @@ main:focus {
   opacity: 0.85;
 }
 
-/* Accessible Native <details> / <summary> Spoiler Horizon Disclosure */
+/* Accessible Native `<details class="lore-spoiler">` / `<summary>` Disclosure:
+   HTML5 `<details>` provides built-in keyboard (`Enter`/`Space`), mouse, and
+   screen-reader expand/collapse (`expanded` / `collapsed` announcements) with
+   zero client-side JavaScript! */
 details.lore-spoiler {
   background-color: var(--lore-spoiler-bg);
   border: 1.5px solid var(--lore-spoiler-border);
@@ -251,7 +293,7 @@ details.lore-spoiler > .lore-spoiler-body {
   border-block-start: 1px solid var(--lore-spoiler-border);
 }
 
-/* Prose Color Alignment for Both Light & Dark Themes */
+/* Prose Color Alignment for `<MarkdownProse />` in Both Light & Dark Themes */
 .lore-prose {
   color: var(--lore-text);
 }
@@ -269,7 +311,9 @@ details.lore-spoiler > .lore-spoiler-body {
   text-underline-offset: 3px;
 }
 
-/* Windows High Contrast / Forced Colors Safety */
+/* Windows High Contrast / Forced Colors Mode (`@media (forced-colors: active)`):
+   When a low-vision reader enables OS Contrast Themes, Windows overrides background
+   colors, so we ensure crisp `1px solid ButtonText` system borders remain visible. */
 @media (forced-colors: active) {
   .lore-card,
   .lore-pill,
@@ -281,6 +325,9 @@ details.lore-spoiler > .lore-spoiler-body {
   }
 }
 
+/* Reduced Motion Protection (`@media (prefers-reduced-motion: reduce)`):
+   Instantly disables CSS transitions, keyframe animations, and smooth scrolling
+   for visitors who enable "Reduce Motion" in their operating system settings. */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
     animation-delay: -1ms !important;

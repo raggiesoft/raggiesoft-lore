@@ -3,10 +3,19 @@
  * ============================================================================
  * src/app/organizations/[slug]/page.tsx — In-Universe Organization Guide
  * ============================================================================
- * Architectural Overview:
- * Pre-rendered encyclopedia page (`output: "export"`) for fictional companies,
- * trusts, and imprints, connecting parent/subsidiary story structures, books,
- * and bands while prominently noting fictitious in-universe entity status.
+ * Plain-English Overview (Read-Along Guide):
+ *   - WHAT `[slug]` MEANS: Next.js App Router **Dynamic Route Segment** generating
+ *     one static HTML page per fictional organization (`/organizations/quantum-corporation`,
+ *     `/organizations/vectron-electronics`, `/organizations/engine-room-records-llc`, etc.)
+ *     at build time (`output: "export"`).
+ *   - WHEN IT RUNS: Build-time **React Server Component** (`next build` pre-renders
+ *     all organization dossiers into `out/organizations/` with zero client-side JS).
+ *   - WHAT DATA FEEDS INTO IT: Looks up `getOrganizationBySlug(slug)` and resolves
+ *     its parent organization (`org.parentSlug`), child divisions (`childOrgs`),
+ *     featured Books (`getBookBySlug`), and associated Bands (`getBandBySlug`).
+ *   - WHAT UI & METADATA IT PRODUCES: Schema.org `BreadcrumbList` + `Article`
+ *     JSON-LD, a "Fictional In-Universe Entity" badge header, parent/subsidiary
+ *     hierarchy cards, and sanitized Markdown prose rendered via `<MarkdownProse />`.
  * ============================================================================
  */
 
@@ -23,12 +32,20 @@ import {
 } from "@/lib/encyclopedia";
 import MarkdownProse from "@/components/MarkdownProse";
 
+// Reject any URL slug not enumerated by `generateStaticParams()` with a 404.
 export const dynamicParams = false;
 
+/**
+ * Supplies every compiled organization `{ slug }` to `next build` for static export.
+ */
 export function generateStaticParams() {
   return getOrganizations().map((o) => ({ slug: o.slug }));
 }
 
+/**
+ * Generates per-organization `<title>`, `<meta name="description">`, canonical
+ * URL, and OpenGraph (`type: "article"`) / Twitter social preview tags.
+ */
 export async function generateMetadata({
   params,
 }: {
@@ -65,10 +82,14 @@ export default async function OrganizationDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  // 1. Unwrap asynchronous `params` and look up the organization (404 if missing).
   const { slug } = await params;
   const org = getOrganizationBySlug(slug);
   if (!org) notFound();
 
+  // 2. Reconstruct parent <-> subsidiary hierarchy links plus related Books & Bands.
+  //    - `parentOrg`: looks up `org.parentSlug` if this entity is a subsidiary division.
+  //    - `childOrgs`: filters `allOrgs` to find any divisions whose `parentSlug` points here!
   const allOrgs = getOrganizations();
   const parentOrg = org.parentSlug ? getOrganizationBySlug(org.parentSlug) : null;
   const childOrgs = allOrgs.filter((o) => o.parentSlug === org.slug);
@@ -79,6 +100,9 @@ export default async function OrganizationDetailPage({
     .map((s) => getBandBySlug(s))
     .filter((b): b is NonNullable<typeof b> => Boolean(b));
 
+  // 3. Build Schema.org `BreadcrumbList` + `Article` JSON-LD (deliberately using
+  //    `Article` rather than `Corporation` so search engines clearly index this
+  //    page as a fictional lore encyclopedia article!).
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -117,11 +141,13 @@ export default async function OrganizationDetailPage({
 
   return (
     <article className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-10 space-y-10">
+      {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* Breadcrumb Trail (`Lore Home / Organizations / <Organization Name>`) */}
       <nav aria-label="Breadcrumb" className="text-sm">
         <ol className="flex flex-wrap items-center gap-2 list-none p-0 m-0">
           <li>
@@ -142,6 +168,7 @@ export default async function OrganizationDetailPage({
         </ol>
       </nav>
 
+      {/* Organization Hero Card (prominently badged "Fictional In-Universe Entity") */}
       <header className="lore-card p-6 sm:p-8 space-y-4">
         <div className="flex flex-wrap items-center gap-2">
           <span className="lore-pill">
@@ -178,6 +205,7 @@ export default async function OrganizationDetailPage({
         )}
       </header>
 
+      {/* In-Universe Corporate/Trust Hierarchy + Related Books & Bands */}
       {(parentOrg ||
         childOrgs.length > 0 ||
         relatedBooks.length > 0 ||
@@ -261,6 +289,7 @@ export default async function OrganizationDetailPage({
         </section>
       )}
 
+      {/* Sanitized Markdown Archival Dossier Body rendered at build time */}
       <section aria-labelledby="org-dossier-heading" className="lore-card p-6 sm:p-8 space-y-4">
         <h2 id="org-dossier-heading" className="text-2xl font-bold">
           Archival Overview

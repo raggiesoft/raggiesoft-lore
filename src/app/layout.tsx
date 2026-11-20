@@ -3,21 +3,38 @@
  * ============================================================================
  * src/app/layout.tsx — Root Layout, Schema.org Graph, Nav & Fictitious Footer
  * ============================================================================
- * Architectural Overview:
- * Shared shell for `https://lore.raggiesoft.com`. Provides:
- *   - `<meta name="color-scheme" content="light dark" />` for instant OS theme parity
- *   - Keyboard `.skip-link` targeting `<main id="content" tabIndex={-1}>`
- *   - RaggieSoft Ecosystem Network Bar + Lore Encyclopedia Section Header
- *   - Unified GA4 (`G-P9RG9JVYB6`) & Schema.org `WebSite` / `Organization` JSON-LD
- *   - Mandatory Global Fictitious Persons & Entities Disclaimer + CC BY-SA 4.0 / MIT
+ * Plain-English Overview (Read-Along Guide):
+ *   - WHAT THIS FILE IS: In Next.js 16's App Router (`src/app/`), `layout.tsx`
+ *     is the master outer shell ("picture frame") wrapping EVERY single page on
+ *     `https://lore.raggiesoft.com`. Whatever you put here—`<html>`, `<head>`,
+ *     the RaggieSoft Ecosystem top bar, the Lore section header, `<main>`, and
+ *     the legal/licensing `<footer>`—surrounds every child `page.tsx` automatically.
+ *   - WHEN IT RUNS: Build-time **React Server Component** (no `"use client"`).
+ *     Next.js runs this function once per route during `next build` to emit clean,
+ *     complete static HTML documents.
+ *   - WHAT DATA FEEDS INTO IT: Self-hosted Google Fonts (`Geist` & `Geist_Mono`),
+ *     `./globals.css`, default site-wide SEO `metadata`, and the `{ children }`
+ *     prop (which represents whichever page route is currently being rendered).
+ *   - WHAT UI & METADATA IT PRODUCES:
+ *       1. `<meta name="color-scheme" content="light dark" />` for instant OS theme parity
+ *       2. Keyboard `.skip-link` targeting `<main id="content" tabIndex={-1}>`
+ *       3. RaggieSoft Ecosystem Network Bar + Lore Encyclopedia Section Header
+ *       4. Unified GA4 (`G-P9RG9JVYB6`) & Schema.org `WebSite` / `Organization` JSON-LD
+ *       5. Mandatory Global Fictitious Persons & Entities Disclaimer + CC BY-SA 4.0 / MIT
  * ============================================================================
  */
 
 import type { Metadata } from "next";
 import Link from "next/link";
+// `next/font/google` downloads font files at *build time* and self-hosts them
+// alongside our static assets—preventing layout jump ("Cumulative Layout Shift")
+// and avoiding runtime requests to Google's font servers.
 import { Geist, Geist_Mono } from "next/font/google";
+// Importing `./globals.css` here applies our Tailwind v4 + theme styles site-wide.
 import "./globals.css";
 
+// Configure CSS Custom Property names (`--font-geist-sans` & `--font-geist-mono`)
+// that get attached to `<html className={...}>` and referenced in `globals.css`.
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,7 +45,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+/**
+ * Default site-wide SEO & social sharing metadata (`export const metadata`).
+ * Next.js automatically reads this exported constant at build time to generate
+ * `<title>`, `<meta name="description">`, `<link rel="canonical">`, OpenGraph
+ * (`og:*` preview cards for iMessage, Discord, Slack, Facebook, LinkedIn), and
+ * Twitter/X summary cards. Individual child pages can override any field with
+ * their own `metadata` or `generateMetadata()`.
+ */
 export const metadata: Metadata = {
+  // Base origin used to resolve relative URLs like `canonical: "/"` -> `"https://lore.raggiesoft.com/"`
   metadataBase: new URL("https://lore.raggiesoft.com"),
   title: "RaggieSoft Lore | Universe Guide, Characters & Music",
   description:
@@ -62,6 +88,13 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * Root HTML shell component.
+ * - `{ children }`: React's special slot prop containing the active page's JSX.
+ * - `Readonly<{ children: React.ReactNode }>`: TypeScript annotation ensuring
+ *   `props` is never accidentally mutated (`Readonly`) and accepts any valid
+ *   renderable React content (`React.ReactNode`).
+ */
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -73,8 +106,14 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <head>
+        {/* Note on `<html lang="en">` above: declaring the human language ("en" = English)
+            tells screen readers which pronunciation dictionary to use! */}
         <meta name="color-scheme" content="light dark" />
-        {/* Google Analytics 4 (GA4) Unified Ecosystem Property */}
+        {/* Google Analytics 4 (GA4) Unified Ecosystem Property.
+            Why `dangerouslySetInnerHTML`? By default, React escapes `<` and `>` inside text
+            to prevent Cross-Site Scripting (XSS) attacks. For trusted, static inline `<script>`
+            and JSON-LD blocks written by us at build time, `dangerouslySetInnerHTML={{ __html: ... }}`
+            emits the exact raw script content into `<head>`. */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-P9RG9JVYB6"
@@ -89,6 +128,10 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* Schema.org Structured Data (`application/ld+json`):
+            Machine-readable JSON graph telling Google, Bing, and knowledge engines
+            how `lore.raggiesoft.com` (`WebSite`), `RaggieSoft` (`Organization`), and
+            author `Michael P. Ragsdale` (`Person`) connect, plus CC BY-SA 4.0 licensing. */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -119,6 +162,7 @@ export default function RootLayout({
             }),
           }}
         />
+        {/* Shared cross-subdomain RaggieSoft Network Bar styles & interactive dropdown script (`defer` runs after HTML parses) */}
         <link
           rel="stylesheet"
           href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261118a"
@@ -129,11 +173,13 @@ export default function RootLayout({
         ></script>
       </head>
       <body className="min-h-screen flex flex-col">
+        {/* Keyboard Skip Link: First Tab stop on every page, jumping straight to `<main id="content">` */}
         <a href="#content" className="skip-link">
           Skip to main content
         </a>
 
-        {/* Global RaggieSoft Ecosystem Network Bar */}
+        {/* Global RaggieSoft Ecosystem Network Bar (`aria-label` distinguishes this `<nav>`
+            from the Lore Section `<nav>` below when screen-reader users list page landmarks) */}
         <nav className="rs-network-bar" aria-label="RaggieSoft Ecosystem Network">
           <div className="rs-network-bar-inner">
             <span className="rs-network-label">✦ RaggieSoft Network:</span>
@@ -151,6 +197,7 @@ export default function RootLayout({
                 <a href="https://music.raggiesoft.com">🎧 Music</a>
               </li>
               <li>
+                {/* `aria-current="page"` tells assistive tech that Lore is the active ecosystem site */}
                 <a href="https://lore.raggiesoft.com" aria-current="page">
                   🗺️ Lore
                 </a>
@@ -216,7 +263,7 @@ export default function RootLayout({
           </div>
         </nav>
 
-        {/* Lore Encyclopedia Section Navigation */}
+        {/* Lore Encyclopedia Section Navigation: uses Next.js `<Link>` for instant internal routing */}
         <header
           className="border-b"
           style={{
@@ -294,11 +341,16 @@ export default function RootLayout({
           </div>
         </header>
 
+        {/* Primary Page Content Landmark (`<main id="content" tabIndex={-1}>`):
+            - `tabIndex={-1}` lets the `.skip-link` (`href="#content"`) move keyboard &
+              screen-reader reading position directly onto `<main>` without making `<main>`
+              itself an extra stop when pressing `Tab` normally.
+            - `{children}` renders the active route's `page.tsx` output right here! */}
         <main id="content" tabIndex={-1} className="flex-1">
           {children}
         </main>
 
-        {/* Global Fictitious Persons & Entities Disclaimer + Licensing Footer */}
+        {/* Global Fictitious Persons & Entities Disclaimer + Dual Licensing Footer */}
         <footer
           className="border-t mt-16"
           style={{
@@ -307,6 +359,7 @@ export default function RootLayout({
           }}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-5 text-sm">
+            {/* Quick Footer Directory & Cross-Ecosystem Links */}
             <div className="flex flex-wrap gap-x-6 gap-y-2 font-semibold">
               <Link href="/" className="lore-link">
                 Constellation Map
@@ -340,6 +393,10 @@ export default function RootLayout({
               </a>
             </div>
 
+            {/* Mandatory Legal & Worldbuilding Transparency Box:
+                Clearly separates fictional in-universe `LLC` / university / transit
+                entities from Michael P. Ragsdale's real-world unincorporated creative brands.
+                (Note: `{" "}` in JSX inserts an explicit space beside inline `<strong>`/`<em>`/`<a>` tags.) */}
             <div
               className="p-4 rounded-xl border text-xs leading-relaxed space-y-2"
               style={{
@@ -376,6 +433,7 @@ export default function RootLayout({
               </p>
             </div>
 
+            {/* Copyright & Dual Licensing Notice (CC BY-SA 4.0 for creative content, MIT for source code) */}
             <p className="text-xs" style={{ color: "var(--lore-text-muted)" }}>
               © {new Date().getFullYear()} Michael P. Ragsdale (RaggieSoft). Creative
               stories, character profiles, and lore guides are licensed under{" "}

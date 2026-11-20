@@ -4,25 +4,35 @@
  * ============================================================================
  * scripts/compile-lore-encyclopedia.mjs — RaggieSoft Lore Encyclopedia Compiler
  * ============================================================================
- * Architectural Overview:
- * Automated build-time compiler for `https://lore.raggiesoft.com`. Ingests the
- * canonical structured data across `$HOME/Developer/raggiesoft-servers/` and
- * produces `src/generated/encyclopedia.json` for both:
- *   1. Pre-rendered static Next.js 16 encyclopedia routes (`/characters/[slug]`,
- *      `/bands/[slug]`, `/books/[slug]`, `/places/[slug]`,
- *      `/organizations/[slug]`, and `/timeline`), and
- *   2. The accessible 2D Universe Constellation Graph (`<LoreGraph />`) on `/`.
- *
- * Canonical Sources Ingested Automatically:
- *   - Public Book Allowlist & Sitemaps: `subdomains/books/sitemaps/{books,chapters,parts}.xml`
- *   - Paige Compiled Book Metadata & TOCs: `raggiesoft-assets/raggiesoft-books/books/<slug>/toc.json`
- *   - Narrative Chapter Frontmatter (POV): `raggiesoft-narratives/books/<slug>/eXXX/cXXX/pXXX.md`
- *   - Engine Room Records Catalog & Lore: `raggiesoft-assets/engine-room-records/catalog.json`
- *     + `subdomains/engineroom/src/data/artistLore.mjs`
- *   - In-Universe Corporate Hierarchy: `raggiesoft-assets/engine-room-records/json/corporate-structure.json`
- *   - Public Backstage Archival Dossiers: `raggiesoft-narratives/backstage/` (all `.md` files)
- *   - Sanitized Worldbuilding Gazetteer: `raggiesoft-narratives/universal-lore/` (root & `locations/` `.md` files)
- *   - Curated Character Vault Overrides: `subdomains/lore/vault/characters/` (`.md` files)
+ * Plain-English Overview (Read-Along Guide):
+ *   - LINE 1 (`#!/usr/bin/env node`): A Unix "shebang" line telling macOS/Linux
+ *     to execute this file with Node.js whenever invoked directly.
+ *   - WHAT THIS FILE IS: This is the automated build-time data pipeline ("compiler")
+ *     for `https://lore.raggiesoft.com`. Instead of querying a live SQL database
+ *     every time a reader clicks a character or band, this Node.js script reads
+ *     all of RaggieSoft's canonical books, albums, corporate trees, and worldbuilding
+ *     Markdown files across the monorepo, sanitizes them for everyday readers,
+ *     connects every cross-reference, and writes one unified JSON file:
+ *     `src/generated/encyclopedia.json`.
+ *   - WHEN IT RUNS: Exclusively at **build time** (or before `next dev`) in Node.js!
+ *     In `package.json`, `"prebuild": "node scripts/compile-lore-encyclopedia.mjs"`
+ *     uses npm's automatic `"prebuild"` lifecycle hook—so running `npm run build`
+ *     ALWAYS runs this script FIRST before Next.js renders a single HTML page.
+ *   - WHAT DATA FEEDS INTO IT:
+ *       1. Public Book Allowlist & Sitemaps: `subdomains/books/sitemaps/{books,chapters,parts}.xml`
+ *       2. Paige Compiled Book Metadata & TOCs: `raggiesoft-assets/raggiesoft-books/books/<slug>/toc.json`
+ *       3. Narrative Chapter Frontmatter (POV): `raggiesoft-narratives/books/<slug>/eXXX/cXXX/pXXX.md`
+ *       4. Engine Room Records Catalog & Lore: `raggiesoft-assets/engine-room-records/catalog.json`
+ *          + `subdomains/engineroom/src/data/artistLore.mjs`
+ *       5. In-Universe Corporate Hierarchy: `raggiesoft-assets/engine-room-records/json/corporate-structure.json`
+ *       6. Public Backstage Archival Dossiers: `raggiesoft-narratives/backstage/` (all `.md` files)
+ *       7. Sanitized Worldbuilding Gazetteer: `raggiesoft-narratives/universal-lore/` (root & `locations/` `.md` files)
+ *       8. Curated Character Vault Overrides: `subdomains/lore/vault/characters/` (`.md` files)
+ *   - WHAT OUTPUT IT PRODUCES: `src/generated/encyclopedia.json`, which powers:
+ *       1. All pre-rendered static Next.js 16 encyclopedia routes (`/characters/[slug]`,
+ *          `/bands/[slug]`, `/books/[slug]`, `/places/[slug]`,
+ *          `/organizations/[slug]`, and `/timeline`), and
+ *       2. The accessible 2D Universe Constellation Graph (`<LoreGraph />`) on `/`.
  *
  * Safety, Spoiler, & Copyright Guarantees:
  *   1. Zero Crystal Balls / Spoiler Horizon: Every book and character entry
@@ -35,16 +45,27 @@
  * ============================================================================
  */
 
+// Node.js standard library modules (`fs` for reading/writing files, `path` for
+// cross-platform folder paths, `url` for converting ES Module URLs <-> paths)
+// plus `gray-matter` (a popular npm library that splits Markdown files into
+// `{ data: <YAML frontmatter object>, content: <Markdown body string> }`).
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import matter from "gray-matter";
 
+// Compute absolute folder paths relative to this script's own location on disk
+// so the script works identically no matter which working directory you run it from:
+// - `__dirname`   -> `.../raggiesoft-servers/raggiesoft.com/subdomains/lore/scripts`
+// - `LORE_ROOT`   -> `.../raggiesoft-servers/raggiesoft.com/subdomains/lore`
+// - `SERVERS_ROOT`-> `.../raggiesoft-servers`
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const LORE_ROOT = path.resolve(__dirname, "..");
 const SERVERS_ROOT = path.resolve(LORE_ROOT, "../../..");
 
+// Central dictionary of every input directory/file across `raggiesoft-servers/`
+// and the single generated output file (`src/generated/encyclopedia.json`).
 const PATHS = {
   booksSitemapsDir: path.join(SERVERS_ROOT, "raggiesoft.com/subdomains/books/sitemaps"),
   musicBuildDir: path.join(SERVERS_ROOT, "raggiesoft.com/subdomains/music/build"),
@@ -69,6 +90,14 @@ const PATHS = {
  * Direct in-universe replacements applied across ingested lore prose so no
  * real-world brand, transit agency, Virginia Tech landmark, or legacy vessel
  * name leaks onto `lore.raggiesoft.com`.
+ *
+ * JavaScript Regular Expression (`RegExp`) Quick Primer:
+ *   - `/pattern/gi` : `/` delimiters wrap a pattern; `g` = replace ALL matches
+ *                     ("global"), `i` = ignore uppercase/lowercase ("case-insensitive").
+ *   - `\b`          : "word boundary" so `\bSNES\b` matches the standalone word
+ *                     `"SNES"` without accidentally matching letters inside another word.
+ *   - `\s+`         : matches one or more spaces/tabs.
+ *   - `(?:...)`     : groups alternatives together without capturing a numbered match.
  */
 const CANONICAL_TEXT_REPLACEMENTS = [
   [/\bU\.S\.S\.\s*Aethelgard\b/gi, "USCSS Ad Astra"],
@@ -156,6 +185,9 @@ const HARD_BLOCKLIST_PATTERNS = [
   { label: "Technical consumer-UI jargon", regex: /\b(?:HUMAN_VERIFIED|WebVTT|Inno\s+Setup|Zero-Database|Flat-File)\b/ },
 ];
 
+// Allowlist of the 9 official domains owned directly by Michael P. Ragsdale.
+// Storing them in a JavaScript `Set` makes `OWNED_DOMAINS.has(h)` an instant
+// O(1) hash lookup rather than scanning an array every time a URL is checked.
 const OWNED_DOMAINS = new Set([
   "aethelsaga.com",
   "engineroom-records.com",
@@ -168,6 +200,10 @@ const OWNED_DOMAINS = new Set([
   "thestardustengine.com",
 ]);
 
+/**
+ * Checks whether a URL's hostname belongs to one of our 9 owned domains or any
+ * `*.raggiesoft.com` subdomain (such as `books.raggiesoft.com` or `music.raggiesoft.com`).
+ */
 function isOwnedHost(hostname) {
   const h = hostname.toLowerCase().replace(/\.$/, "");
   if (OWNED_DOMAINS.has(h)) return true;
@@ -175,6 +211,16 @@ function isOwnedHost(hostname) {
   return false;
 }
 
+/**
+ * Cleans raw prose from books, catalogs, or lore files so it is 100% safe and
+ * friendly for everyday readers:
+ *   1. Expands `{{CDN}}` / `{{cms}}` template placeholders to `https://assets.raggiesoft.com`.
+ *   2. Removes HTML comments (`<!-- ... -->`) and converts LaTeX arrows to clean Unicode (`→`, `↔`).
+ *   3. Unwraps custom narrative XML tags (`<aac>`, `<sgn>`, `<asl>`, `<sms>`) into plain text
+ *      (`$1` inserts the text captured inside `(.*?)`).
+ *   4. Applies every `[pattern, replacement]` pair in `CANONICAL_TEXT_REPLACEMENTS`.
+ *   5. Strips any unowned external URLs while keeping official RaggieSoft URLs intact.
+ */
 function sanitizeConsumerText(raw) {
   if (!raw) return "";
   let text = String(raw)
@@ -205,6 +251,14 @@ function sanitizeConsumerText(raw) {
   return text.replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
 }
 
+/**
+ * Parses a raw `universal-lore/*.md` worldbuilding file with `gray-matter` and
+ * filters out internal writer-room notes line by line:
+ *   - Uses a boolean toggle (`inCodeFence = !inCodeFence`) as a tiny state machine
+ *     to skip fenced code blocks (` ``` ... ``` `).
+ *   - Skips comparison table rows and lines matching `INTERNAL_AUTHOR_LINE_PATTERNS`.
+ *   - Removes inline backticks (`` `term` `` -> `term`) so prose reads like an encyclopedia.
+ */
 function sanitizeUniversalLoreMarkdown(rawMd) {
   const { data, content } = matter(rawMd);
   const lines = content.split(/\r?\n/);
@@ -235,6 +289,10 @@ function sanitizeUniversalLoreMarkdown(rawMd) {
   return { frontmatter: data || {}, body: sanitizedBody };
 }
 
+/**
+ * Converts a display title like `"Engine Room Records, LLC"` into a clean,
+ * lowercase URL slug like `"engine-room-records-llc"`.
+ */
 function slugify(input) {
   return String(input || "")
     .toLowerCase()
@@ -243,6 +301,11 @@ function slugify(input) {
     .replace(/^-+|-+$/g, "");
 }
 
+/**
+ * Removes Markdown syntax (`#` headings, `**bold**`, `*italics*`, `[label](url)`
+ * links, and list bullets) to produce plain text suitable for `<meta name="description">`
+ * and directory preview cards.
+ */
 function stripMarkdownFormatting(md) {
   return sanitizeConsumerText(md)
     .replace(/^#+\s+/gm, "")
@@ -254,6 +317,10 @@ function stripMarkdownFormatting(md) {
     .trim();
 }
 
+/**
+ * Shortens `str` to at most `maxLen` characters on a clean word boundary
+ * (`lastIndexOf(" ")`) and appends an ellipsis (`…`) if truncated.
+ */
 function truncateClean(str, maxLen = 152) {
   const clean = stripMarkdownFormatting(str);
   if (clean.length <= maxLen) return clean;
@@ -262,12 +329,20 @@ function truncateClean(str, maxLen = 152) {
   return (lastSpace > 60 ? sliced.slice(0, lastSpace) : sliced).replace(/[.,;:—-]+$/, "") + "…";
 }
 
+/**
+ * Reads an XML sitemap file (like `books.xml`) and extracts every `<loc>...</loc>`
+ * URL into a deduplicated `Set` using `String.prototype.matchAll()`.
+ */
 function extractXmlLocs(xmlPath) {
   if (!fs.existsSync(xmlPath)) return new Set();
   const xml = fs.readFileSync(xmlPath, "utf8");
   return new Set([...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim()));
 }
 
+/**
+ * Ensures every cover/social image URL is an absolute `https://assets.raggiesoft.com/...`
+ * URL (falling back to our default OpenGraph card if missing).
+ */
 function normalizeAssetUrl(rawUrl) {
   if (!rawUrl) return "https://assets.raggiesoft.com/raggiesoft-lore/images/og/default-og.jpg";
   const cleaned = String(rawUrl).replace(/\{\{CDN\}\}/g, "https://assets.raggiesoft.com");
@@ -279,6 +354,9 @@ function normalizeAssetUrl(rawUrl) {
 // ============================================================================
 // 2. Load Canonical Sitemap Allowlists (Zero Broken Cross-Site Links!)
 // ============================================================================
+// By loading the actual published XML sitemaps from `books.raggiesoft.com` and
+// `backstage.raggiesoft.com` into `Set`s, we guarantee that `lore.raggiesoft.com`
+// ONLY links to public, live pages—never to unpublished drafts or broken 404 URLs!
 
 const validBookUrls = new Set([
   ...extractXmlLocs(path.join(PATHS.booksSitemapsDir, "books.xml")),
@@ -289,6 +367,7 @@ const validBookUrls = new Set([
 
 const validBackstageUrls = extractXmlLocs(PATHS.backstageSitemap);
 
+// Extract the sorted list of all 30 public book series slugs (e.g., `"ad-astra"`, `"katie"`).
 const publicBookSlugs = [...extractXmlLocs(path.join(PATHS.booksSitemapsDir, "books.xml"))]
   .map((u) => {
     const m = u.match(/^https:\/\/books\.raggiesoft\.com\/([a-z0-9-]+)$/);
@@ -297,6 +376,10 @@ const publicBookSlugs = [...extractXmlLocs(path.join(PATHS.booksSitemapsDir, "bo
   .filter(Boolean)
   .sort();
 
+/**
+ * Normalizes a relative or legacy book path into a verified `https://books.raggiesoft.com/...`
+ * URL, checking `validBookUrls.has(candidate)` and gracefully falling back if needed.
+ */
 function toCanonicalBookUrl(rawPath, fallbackBookSlug) {
   if (!rawPath) return `https://books.raggiesoft.com/${fallbackBookSlug}`;
   const clean = String(rawPath)
@@ -313,9 +396,13 @@ function toCanonicalBookUrl(rawPath, fallbackBookSlug) {
 // 3. Compile All 8 Bands & 40 Albums (`/bands/[slug]`)
 // ============================================================================
 
+// Top-level `await import(...)` dynamically loads the ES Module `artistLore.mjs`
+// from our sibling `engineroom` subdomain (`pathToFileURL` turns a disk path into `file:///...`).
 const { ARTIST_LORE_PROFILES } = await import(pathToFileURL(PATHS.artistLoreMjs).href);
 const rawCatalog = JSON.parse(fs.readFileSync(PATHS.errCatalogJson, "utf8"));
 
+// Group all 40 catalog albums by `artistSlug` inside a JavaScript `Map`
+// (`artistSlug` -> Array of sanitized album summary objects).
 const albumsByArtist = new Map();
 for (const album of rawCatalog) {
   if (!album.artistSlug) continue;
@@ -355,6 +442,9 @@ const BAND_PLACE_SLUGS = {
   "the-hoshizora-ensemble": ["commonwealth-polytechnic-institute"],
 };
 
+// Transform `ARTIST_LORE_PROFILES` (an object keyed by artist slug) into our
+// clean `bands` array using `Object.values(...)` + `.map(...)`, attaching each
+// band's chronologically sorted albums and verified companion book/place slugs.
 const bands = Object.values(ARTIST_LORE_PROFILES).map((p) => {
   const albums = (albumsByArtist.get(p.slug) || []).sort((a, b) =>
     String(a.year).localeCompare(String(b.year))
@@ -397,10 +487,15 @@ const bands = Object.values(ARTIST_LORE_PROFILES).map((p) => {
 // ============================================================================
 
 const books = [];
+// Lookup map indexing every chapter Part by `${bookSlug}::${povCharacterLower}`
+// so Character pages (`/characters/[slug]`) can automatically list every Part
+// narrated from that protagonist's Point of View (`pov:` YAML frontmatter)!
 const partAppearancesByBookAndPov = new Map(); // key: `${bookSlug}::${povLower}` -> array of part refs
 const backstageByBook = new Map();
 
-// Pre-scan public Backstage dossiers so books/organizations/places link straight to them
+/**
+ * Recursively walks a folder (`dir`) and returns the full path of every `.md` file.
+ */
 function walkMarkdownFiles(dir) {
   if (!fs.existsSync(dir)) return [];
   const results = [];
@@ -412,6 +507,8 @@ function walkMarkdownFiles(dir) {
   return results;
 }
 
+// Pre-scan public Backstage dossiers (`raggiesoft-narratives/backstage/books/<slug>/*.md`),
+// verifying each URL against `validBackstageUrls` so Book pages link straight to them.
 for (const bsFile of walkMarkdownFiles(PATHS.backstageNarrativesDir)) {
   const rel = path.relative(PATHS.backstageNarrativesDir, bsFile).replace(/\\/g, "/");
   const routePath = rel.endsWith("/index.md")
@@ -433,6 +530,8 @@ for (const bsFile of walkMarkdownFiles(PATHS.backstageNarrativesDir)) {
   }
 }
 
+// Iterate through every public book series and walk its 3-level hierarchy:
+// Series (`toc.json`) -> Eras (`e001`, `e002`...) -> Chapters (`c001`...) -> Parts (`p001.md`...).
 for (const bookSlug of publicBookSlugs) {
   const tocPath = path.join(PATHS.booksAssetsDir, bookSlug, "toc.json");
   if (!fs.existsSync(tocPath)) continue;
@@ -462,7 +561,9 @@ for (const bookSlug of publicBookSlugs) {
           eraDates.push(part.date);
         }
 
-        // Read `pov:` from the narrative markdown frontmatter if present
+        // Read `pov:` from the narrative markdown frontmatter if present.
+        // Performance trick: `.slice(0, 700)` inspects only the top 700 characters
+        // (the YAML frontmatter header) instead of parsing thousands of words of prose!
         let pov = "";
         if (part.file_path) {
           const mdPath = path.join(PATHS.narrativesBooksDir, bookSlug, part.file_path);
@@ -804,6 +905,8 @@ const CURATED_PLACES_SPEC = [
   },
 ];
 
+// Materialize each `PlaceEntry` by combining optional hand-written `synthesizedBody`
+// prose with sanitized Markdown bodies read from `raggiesoft-narratives/universal-lore/`.
 const places = CURATED_PLACES_SPEC.map((spec) => {
   const chunks = [];
   if (spec.synthesizedBody) chunks.push(spec.synthesizedBody);
@@ -836,6 +939,11 @@ const places = CURATED_PLACES_SPEC.map((spec) => {
 const rawCorpTree = JSON.parse(fs.readFileSync(PATHS.corporateJson, "utf8"));
 const organizations = [];
 
+/**
+ * Recursively flattens a nested corporate hierarchy tree (`node.children`) into
+ * a flat array of `OrganizationEntry` objects while recording each subsidiary's
+ * `parentSlug` so `/organizations/[slug]` can render both Parent and Child links!
+ */
 function flattenCorporateTree(node, parentSlug = null) {
   const slug = slugify(node.title);
   organizations.push({
@@ -1331,6 +1439,11 @@ const CHARACTER_SPECS = [
   },
 ];
 
+// Build each `CharacterEntry` from `CHARACTER_SPECS`:
+//   1. Collect and deduplicate every chapter Part matching `spec.bookKeys` (keyed by URL in `partMap`).
+//   2. Sort appearances chronologically and group them by Era (`Era 1` vs `Era 2+` for Spoiler Horizon).
+//   3. Merge any extended character dossier Markdown (`vault/characters/*.md` or `universal-lore/*.md`).
+//   4. Resolve debut dates, locations, and fallback cover images using optional chaining (`?.`).
 const characters = CHARACTER_SPECS.map((spec) => {
   // Gather chapter/part appearances across matching POV keys
   const partMap = new Map();
@@ -1404,6 +1517,10 @@ const characters = CHARACTER_SPECS.map((spec) => {
 // ============================================================================
 // 8. Compile Chronological Universe Timeline (`/timeline`)
 // ============================================================================
+// Combines all 40 Engine Room Records album releases (`isSpoiler: false`) with
+// every Ocean View Archives story Era (`Era 1` -> `isSpoiler: false`,
+// `Era 2+` -> `isSpoiler: true`), sorts them chronologically by ISO date string,
+// and buckets them into 5 historical/cosmic eras (`1978–1989` through `Stardate 49601`).
 
 const timelineEvents = [];
 
@@ -1488,6 +1605,13 @@ finalBucket.debutEvents.push({
 // ============================================================================
 // 9. Build Full-Universe 2D Constellation Graph (`nodes` + `links`)
 // ============================================================================
+// Computer Science Concept — Graph Data Structure:
+// A "Graph" models relationships as a network of:
+//   - Nodes (also called "vertices"): individual points (`char:katie-prairie`, `band:firelight`, etc.)
+//   - Links (also called "edges"): lines connecting two nodes (`source` <-> `target`)
+// Below, we add every Character, Band, Book, Place, and Organization as a Node,
+// wire their story/music connections as Links, validate that both endpoints exist,
+// and deduplicate any parallel `A <-> B` / `B <-> A` pairs.
 
 const graphNodes = [];
 const graphLinks = [];
@@ -1591,6 +1715,8 @@ for (const c of characters) {
     addLink(`char:${c.slug}`, `place:${pSlug}`, "setting", `${c.name}'s journey connects through this setting.`);
   }
   for (const relChar of c.relatedCharacterSlugs) {
+    // Alphabetical check (`c.slug < relChar`) avoids pushing the same mutual sibling
+    // bond twice (once from Katie -> Nate and again from Nate -> Katie).
     if (c.slug < relChar) {
       addLink(`char:${c.slug}`, `char:${relChar}`, "bond", "Connected family, twin, or chosen-family bond.");
     }
@@ -1622,11 +1748,12 @@ for (const org of organizations) {
   }
 }
 
+// Keep only edges where BOTH `source` and `target` exist in `nodeIds` (prevents dangling links).
 const validGraphLinks = graphLinks.filter(
   (l) => nodeIds.has(l.source) && nodeIds.has(l.target)
 );
 
-// Deduplicate parallel edges
+// Deduplicate parallel edges by sorting `[source, target]` into a canonical key `"A<->B"`.
 const seenEdgeKeys = new Set();
 const dedupedGraphLinks = validGraphLinks.filter((l) => {
   const k = [l.source, l.target].sort().join("<->");
@@ -1638,6 +1765,9 @@ const dedupedGraphLinks = validGraphLinks.filter((l) => {
 // ============================================================================
 // 10. Hard Post-Compile Safety, Copyright, & Link Audit
 // ============================================================================
+// Serialize the entire encyclopedia object to pretty-printed JSON (`null, 2` = 2-space indent),
+// run `HARD_BLOCKLIST_PATTERNS` across 100% of the output, and abort (`process.exit(1)`)
+// BEFORE writing `src/generated/encyclopedia.json` if even a single violation appears.
 
 const payload = {
   generatedAt: new Date().toISOString().slice(0, 10),

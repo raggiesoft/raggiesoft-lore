@@ -3,11 +3,25 @@
  * ============================================================================
  * src/app/bands/[slug]/page.tsx — Static Band Lore Profile & Album Guide
  * ============================================================================
- * Architectural Overview:
- * Pre-rendered band encyclopedia entry (`output: "export"`) emitting rich
- * Schema.org `MusicGroup` + `MusicAlbum` structured data, member roster cards,
- * canonical lore pillars, connected novel guides, and direct deep links into
- * `https://music.raggiesoft.com/<artist>/<album>`.
+ * Plain-English Overview (Read-Along Guide):
+ *   - WHAT `[slug]` IN THE FOLDER NAME MEANS: In Next.js App Router, wrapping a
+ *     folder name in square brackets (`[slug]`) creates a **Dynamic Route Segment**!
+ *     Instead of hand-writing 8 separate files for 8 bands, this single template
+ *     generates `/bands/the-stardust-engine`, `/bands/fractured-prisms`,
+ *     `/bands/firelight`, and all other band pages automatically.
+ *   - WHEN IT RUNS: Build-time **React Server Component** (`output: "export"`).
+ *     During `next build`, Next.js calls `generateStaticParams()` to get the list
+ *     of all 8 band slugs, then runs `generateMetadata()` and `BandDetailPage()`
+ *     once for each slug to write 8 finished static `.html` files into `out/bands/`.
+ *   - WHAT DATA FEEDS INTO IT: Looks up the band via `getBandBySlug(slug)` and
+ *     resolves cross-references to companion Books (`getBookBySlug`), Characters
+ *     (`getCharacters`), and Sanctuary Places (`getPlaceBySlug`).
+ *   - WHAT UI & STRUCTURED DATA IT PRODUCES:
+ *       1. Schema.org `BreadcrumbList` + `MusicGroup` + `MusicAlbum` JSON-LD
+ *       2. Band Hero Card with semantic `<dl>` (Description List) stats & stream buttons
+ *       3. Signature Sound, Member Roster cards, Lore Pillars, Complete Discography
+ *          deep links into `https://music.raggiesoft.com/<artist>/<album>`, and
+ *          cross-linked Books, Characters, and Places.
  * ============================================================================
  */
 
@@ -24,12 +38,28 @@ import {
   getPlaceBySlug,
 } from "@/lib/encyclopedia";
 
+// `dynamicParams = false` locks this route strictly to the slugs returned by
+// `generateStaticParams()` below—any unknown `/bands/xyz` URL serves a clean 404.
 export const dynamicParams = false;
 
+/**
+ * Next.js Static Export Hook #1 (`generateStaticParams`):
+ * Tells `next build` every `{ slug }` parameter value it must pre-render into
+ * static HTML (e.g., `[{ slug: "the-stardust-engine" }, { slug: "fractured-prisms" }, ...]`).
+ */
 export function generateStaticParams() {
   return getBands().map((b) => ({ slug: b.slug }));
 }
 
+/**
+ * Next.js Static Export Hook #2 (`generateMetadata`):
+ * Runs at build time for each `{ slug }` to generate that band's unique `<title>`,
+ * `<meta name="description">`, canonical URL, and OpenGraph / Twitter preview card.
+ *
+ * Note on `async` / `await` & `params: Promise<{ slug: string }>`:
+ * In Next.js 15/16, route `params` is passed as an asynchronous JavaScript `Promise`,
+ * so we write `const { slug } = await params;` to unwrap the `slug` string cleanly.
+ */
 export async function generateMetadata({
   params,
 }: {
@@ -68,10 +98,16 @@ export default async function BandDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  // 1. Unwrap the URL's `[slug]` parameter and look up the matching `BandEntry`.
   const { slug } = await params;
   const band = getBandBySlug(slug);
+  // If `band` is `undefined`, `notFound()` halts rendering immediately and serves
+  // `src/app/not-found.tsx` (and tells TypeScript that `band` is guaranteed non-null below!).
   if (!band) notFound();
 
+  // 2. Resolve relational cross-links from string slugs into full typed objects.
+  // The `.filter((b): b is NonNullable<typeof b> => Boolean(b))` pattern removes
+  // any `undefined` lookups AND narrows TypeScript's array type cleanly!
   const relatedBooks = band.relatedBookSlugs
     .map((s) => getBookBySlug(s))
     .filter((b): b is NonNullable<typeof b> => Boolean(b));
@@ -82,12 +118,15 @@ export default async function BandDetailPage({
     c.bandSlugs.includes(band.slug)
   );
 
+  // Collect verified external companion URLs for Schema.org `sameAs` entity linking.
   const sameAsLinks = [
     band.listeningRoomUrl,
     band.imprintUrl,
     band.bookReaderUrl,
   ].filter((u): u is string => Boolean(u));
 
+  // 3. Build Schema.org JSON-LD (`BreadcrumbList` + `MusicGroup` with `Person` members & `MusicAlbum`s)
+  // so search engines understand the band's lineup and discography relationships.
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -140,11 +179,13 @@ export default async function BandDetailPage({
 
   return (
     <article className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-10 space-y-10">
+      {/* Embed Schema.org JSON-LD inside `<article>` for crawlers */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* Breadcrumb Trail (`Lore Home / Bands & Music / <Band Name>`) */}
       <nav aria-label="Breadcrumb" className="text-sm">
         <ol className="flex flex-wrap items-center gap-2 list-none p-0 m-0">
           <li>
@@ -165,7 +206,7 @@ export default async function BandDetailPage({
         </ol>
       </nav>
 
-      {/* Band Hero Card */}
+      {/* Band Hero Card: Category Pills + Single Page `<h1>` + `<dl>` Key Facts + Action Links */}
       <header className="lore-card p-6 sm:p-8 space-y-5">
         <div className="flex flex-wrap items-center gap-2">
           <span className="lore-pill">
@@ -193,6 +234,8 @@ export default async function BandDetailPage({
 
         <p className="text-base leading-relaxed">{band.summary}</p>
 
+        {/* HTML `<dl>` ("Description List") pairs `<dt>` (term label) with `<dd>` (value)
+            so screen readers announce label-value pairs semantically! */}
         <dl
           className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-3 border-t text-sm"
           style={{ borderColor: "var(--lore-border-subtle)" }}
@@ -236,7 +279,7 @@ export default async function BandDetailPage({
         </div>
       </header>
 
-      {/* Musical Identity */}
+      {/* Musical Identity Section (rendered conditionally when `band.musicalStyle` is non-empty) */}
       {band.musicalStyle && (
         <section aria-labelledby="musical-sound-heading" className="lore-card p-6 space-y-2">
           <h2 id="musical-sound-heading" className="text-xl font-bold">
@@ -246,7 +289,7 @@ export default async function BandDetailPage({
         </section>
       )}
 
-      {/* Band Members */}
+      {/* Band Members Grid */}
       {band.members.length > 0 && (
         <section aria-labelledby="band-members-heading" className="space-y-4">
           <h2 id="band-members-heading" className="text-2xl font-bold">
@@ -272,7 +315,7 @@ export default async function BandDetailPage({
         </section>
       )}
 
-      {/* Lore Pillars */}
+      {/* Thematic Worldbuilding Lore Pillars */}
       {band.lorePillars.length > 0 && (
         <section aria-labelledby="lore-pillars-heading" className="space-y-4">
           <h2 id="lore-pillars-heading" className="text-2xl font-bold">
@@ -289,7 +332,7 @@ export default async function BandDetailPage({
         </section>
       )}
 
-      {/* Complete Discography Deep Links */}
+      {/* Complete Discography Deep Links (`https://music.raggiesoft.com/<artist>/<album>`) */}
       {band.albums.length > 0 && (
         <section aria-labelledby="discography-heading" className="space-y-4">
           <h2 id="discography-heading" className="text-2xl font-bold">
@@ -338,7 +381,9 @@ export default async function BandDetailPage({
         </section>
       )}
 
-      {/* Connected Books, Characters, and Places */}
+      {/* Connected Books, Characters, and Places across the Lore Encyclopedia
+          (`.sr-only` `<h2>` names the `<section>` landmark for screen readers while
+          keeping `<h3>` column cards visually balanced). */}
       {(relatedBooks.length > 0 ||
         relatedCharacters.length > 0 ||
         relatedPlaces.length > 0) && (
