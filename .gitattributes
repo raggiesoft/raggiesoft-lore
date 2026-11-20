@@ -1,0 +1,11 @@
+# ============================================================================
+# .gitattributes — raggiesoft-lore (lore.raggiesoft.com)
+# ============================================================================
+# Marks the pre-rendered Next.js static export (`out/`), compiled encyclopedia
+# JSON payload, and lockfile as generated artifacts so GitHub Linguist reports
+# the true TypeScript + React 19 source code breakdown while keeping `out/`
+# tracked for zero-Node server deployment via `sarah-deploy.sh`.
+# ============================================================================
+out/** linguist-generated=true
+src/generated/** linguist-generated=true
+package-lock.json linguist-generated=true
