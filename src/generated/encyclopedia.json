@@ -1,14 +1,14 @@
 {
   "generatedAt": "2026-11-21",
   "stats": {
-    "totalEntries": 116,
+    "totalEntries": 117,
     "characterCount": 31,
     "bandCount": 8,
     "albumCount": 40,
-    "bookCount": 32,
+    "bookCount": 33,
     "placeCount": 20,
     "organizationCount": 25,
-    "graphNodeCount": 116,
+    "graphNodeCount": 117,
     "graphEdgeCount": 294
   },
   "characters": [
@@ -43179,6 +43179,116 @@
       "relatedBands": [],
       "backstageDossiers": [],
       "eras": []
+    },
+    {
+      "slug": "waystation",
+      "title": "The Uncharted Waystation",
+      "coverImage": "https://assets.raggiesoft.com/raggiesoft-books/images/covers/2x3/waystation.jpg",
+      "heroImage": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_rift_meadow_arrival.jpg",
+      "heroImageAlt": "Under two glowing moons in a painted 1980s fantasy twilight meadow of soft silver-blue star-moss, barefoot 5-foot-7 stocky brother Nolan Lennox in a navy t-shirt and jeans and his taller 6-foot-1 curvy sister Gwen Lennox in a burgundy t-shirt and jeans sit side by side wrapped in their plaid sofa blanket on a mossy log with their silver and charcoal forearm crutches leaning beside their knees.",
+      "debutIntro": "Rain ticked steady against our second-floor apartment window while the hold music from Regional Mobility Supply warbled through the speaker of Gwen's phone on the scratched oak coffee table for the forty-seventh…",
+      "debutSettingNote": "Opens in Book One: Beyond the Living-Room Rift in The Star-Moss Hollow, Western Borderland of Vaeloria",
+      "shortDescription": "Rain ticked steady against our second-floor apartment window while the hold music from Regional Mobility Supply warbled through the speaker of…",
+      "fullSeriesSynopsis": "One quiet Friday evening, twenty-year-old Nolan Lennox and his tall nineteen-year-old sister Gwen were curled up barefoot in worn blue jeans and cotton t-shirts under a plaid throw blanket on their living-room sofa—both pairs of ergonomic forearm crutches leaning against the armrest while their wheelchairs sat parked across the rug. When an amber stained-glass rift swallows the sofa cushion, Nolan, Gwen, the blanket, and their crutches tumble into the painted twin-moon borderlands of Vaeloria while both wheelchairs stay behind on Earth. Facing a vast 1980s fantasy realm on bare feet and aluminum crutches, you choose at every Story Crossroads which winding road the brother and sister take—discovering a gentler, star-lit world they never want to leave.",
+      "bookReaderUrl": "https://books.raggiesoft.com/waystation",
+      "tocUrl": "https://books.raggiesoft.com/waystation/toc",
+      "firstChapterUrl": "https://books.raggiesoft.com/waystation/book-one-beyond-the-living-room-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-1-amber-glass-over-the-coffee-table",
+      "stats": {
+        "scaleLabel": "Short Fiction",
+        "readingHours": 0.3,
+        "storyPages": 17,
+        "eraCount": 1,
+        "chapterCount": 5,
+        "partCount": 6,
+        "illustrationCount": 6
+      },
+      "dateSpan": "",
+      "debutDate": "",
+      "primaryLocations": [
+        "The Star-Moss Hollow, Western Borderland of Vaeloria",
+        "The Whispering Quartz Causeway, Borderland of Vaeloria",
+        "The Sunken Three-Faced Milestone, Vaeloria Borderlands"
+      ],
+      "relatedBands": [],
+      "backstageDossiers": [],
+      "eras": [
+        {
+          "eraNum": 1,
+          "title": "Book One: Beyond the Living-Room Rift",
+          "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-living-room-rift",
+          "wordCount": 2800,
+          "illustrationCount": 3,
+          "dateSpan": "",
+          "locations": [
+            "The Star-Moss Hollow, Western Borderland of Vaeloria",
+            "The Whispering Quartz Causeway, Borderland of Vaeloria",
+            "The Sunken Three-Faced Milestone, Vaeloria Borderlands"
+          ],
+          "chapters": [
+            {
+              "chapNum": 1,
+              "title": "Chapter 1: No Wheelchairs in the Star-Moss",
+              "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-living-room-rift/chapter-1-no-wheelchairs-in-the-star-moss",
+              "partCount": 2,
+              "parts": [
+                {
+                  "partNum": 1,
+                  "title": "Part 1: Amber Glass Over the Coffee Table",
+                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-living-room-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-1-amber-glass-over-the-coffee-table",
+                  "date": "",
+                  "location": "The Star-Moss Hollow, Western Borderland of Vaeloria",
+                  "excerpt": "Rain ticked steady against our second-floor apartment window while the hold music from Regional Mobility Supply warbled through the speaker of Gwen's phone on the scratched oak coffee table for the forty-seventh…",
+                  "readingMinutes": 5,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_rift_meadow_arrival.jpg",
+                  "imageAlt": "Under two glowing moons in a painted 1980s fantasy twilight meadow of soft silver-blue star-moss, barefoot 5-foot-7 stocky brother Nolan Lennox in a navy t-shirt and jeans and his taller 6-foot-1 curvy sister Gwen Lennox in a burgundy t-shirt and jeans sit side by side wrapped in their plaid sofa blanket on a mossy log with their silver and charcoal forearm crutches leaning beside their knees.",
+                  "eraNum": 1,
+                  "eraTitle": "Book One: Beyond the Living-Room Rift",
+                  "chapNum": 1,
+                  "chapTitle": "Chapter 1: No Wheelchairs in the Star-Moss"
+                },
+                {
+                  "partNum": 2,
+                  "title": "Part 2: Six Inches Taller and Four Crutches Strong",
+                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-living-room-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong",
+                  "date": "",
+                  "location": "The Whispering Quartz Causeway, Borderland of Vaeloria",
+                  "excerpt": "Morning arrived in rose-gold and apricot across a sky so wide it made every ceiling I had ever lived under feel like a shoebox. I woke warm inside the green-and-navy plaid blanket inside the dry, hollow lee of…",
+                  "readingMinutes": 4,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p002_ancient_causeway_dawn.jpg",
+                  "imageAlt": "At golden-rose 1980s fantasy sunrise along an ancient satin-smooth quartz flagstone causeway beside a sparkling stream and golden honey-plum trees, barefoot 6-foot-1 curvy sister Gwen Lennox on matte-charcoal forearm crutches and her shorter 5-foot-7 stocky brother Nolan Lennox on matte-silver forearm crutches with a plaid sofa blanket slung over his shoulder walk unhurriedly side by side.",
+                  "eraNum": 1,
+                  "eraTitle": "Book One: Beyond the Living-Room Rift",
+                  "chapNum": 1,
+                  "chapTitle": "Chapter 1: No Wheelchairs in the Star-Moss"
+                }
+              ]
+            },
+            {
+              "chapNum": 2,
+              "title": "Chapter 2: The Three Roads of the Sunken Milestone",
+              "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-living-room-rift/chapter-2-the-three-roads-of-the-sunken-milestone",
+              "partCount": 1,
+              "parts": [
+                {
+                  "partNum": 1,
+                  "title": "Where the Flagstones Divide",
+                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-living-room-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
+                  "date": "",
+                  "location": "The Sunken Three-Faced Milestone, Vaeloria Borderlands",
+                  "excerpt": "The applewood smoke belonged to a round copper kettle bubbling on a folding iron brazier beside the cheerfulest wooden tinker's cart I had ever laid eyes on. Strings ofblown-glass lanterns in cobalt, amber, and…",
+                  "readingMinutes": 4,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/waystation/e001/e001_c002_p001_three_roads_milestone.jpg",
+                  "imageAlt": "In warm afternoon light at a mossy stone crossroads with a carved three-faced fantasy milestone where a blue-lantern canal dock, a lush emerald moss forest road, and a cliffside brass counterweight gondola station diverge, barefoot Gwen Lennox (6-foot-1, charcoal forearm crutches) and barefoot Nolan Lennox (5-foot-7, silver forearm crutches) share mugs of spiced cider beside friendly white-whiskered peddler Bramwell Kettle and his lantern-hung wooden cart.",
+                  "eraNum": 1,
+                  "eraTitle": "Book One: Beyond the Living-Room Rift",
+                  "chapNum": 2,
+                  "chapTitle": "Chapter 2: The Three Roads of the Sunken Milestone"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "places": [
@@ -46716,6 +46826,18 @@
         "externalLabel": "Open in Book Reader",
         "summary": "A breathtaking science fiction adventure exploring the submerged landscapes of a mysterious, aquatic world.",
         "subtitle": "Lore & Outline • 0 Eras"
+      },
+      {
+        "id": "book:waystation",
+        "slug": "waystation",
+        "name": "The Uncharted Waystation",
+        "group": "book",
+        "val": 9,
+        "href": "/books/waystation",
+        "externalUrl": "https://books.raggiesoft.com/waystation",
+        "externalLabel": "Open in Book Reader",
+        "summary": "Rain ticked steady against our second-floor apartment window while the hold music from Regional Mobility Supply warbled through the speaker of Gwen's phone on the scratched oak coffee table for the forty-seventh…",
+        "subtitle": "Short Fiction • 1 Eras"
       },
       {
         "id": "place:commonwealth-polytechnic-institute",
