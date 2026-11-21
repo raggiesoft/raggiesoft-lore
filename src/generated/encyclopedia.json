@@ -1,14 +1,14 @@
 {
   "generatedAt": "2026-11-21",
   "stats": {
-    "totalEntries": 115,
+    "totalEntries": 116,
     "characterCount": 31,
     "bandCount": 8,
     "albumCount": 40,
-    "bookCount": 31,
+    "bookCount": 32,
     "placeCount": 20,
     "organizationCount": 25,
-    "graphNodeCount": 115,
+    "graphNodeCount": 116,
     "graphEdgeCount": 294
   },
   "characters": [
@@ -19660,6 +19660,116 @@
                   "eraTitle": "Summer 2015",
                   "chapNum": 1,
                   "chapTitle": "A Tale of Two Sanctuaries"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cedar-run",
+      "title": "Cedar Run",
+      "coverImage": "https://assets.raggiesoft.com/raggiesoft-books/images/covers/2x3/cedar-run.jpg",
+      "heroImage": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/cedar-run/e001/jun_2000_cedar_run_night_one_campfire_tent.jpg",
+      "heroImageAlt": "Eighteen-year-old triplets Luke, Tessa, and Sadie Bridger sitting close together by a warm stone keyhole campfire in front of their blue-and-white dome tent beside a clear mountain stream under twilight Colville National Forest pines, as Sadie fingerpicks Grandpa Owen's vintage spruce-top acoustic guitar.",
+      "debutIntro": "The bottom strand of rusted barbed wire groaned under my boot heel as I held the middle wire up by a weathered tamarack post so Tessa and Sadie could duck through with Grandpa Owen's guitar case. Down through…",
+      "debutSettingNote": "Opens in Episode 1: Past the Back Fence (2000-06-20) in Colville National Forest, Kettle River Range, Ferry County, Washington",
+      "shortDescription": "The bottom strand of rusted barbed wire groaned under my boot heel as I held the middle wire up by a weathered tamarack post so Tessa and Sadie…",
+      "fullSeriesSynopsis": "All their lives, fraternal brother Luke Bridger and his identical twin sisters Tessa and Sadie wanted to do everything together—and all their lives, their parents screamed at them to spread their wings and go separate ways. Thrown out on their eighteenth birthday for refusing to separate, the three step past the back boundary fence into the vast, non-volcanic Kettle River wilderness of Colville National Forest with three canvas packs, a weathered dome tent, Grandpa Owen's tool roll, and his 1974 acoustic guitar. One blissful first night without shouting turns into a daring pact to stay—forcing you to choose at every Story Crossroads how they gather food, engineer shelter from fallen cedar and living granite, and survive before October snow.",
+      "bookReaderUrl": "https://books.raggiesoft.com/cedar-run",
+      "tocUrl": "https://books.raggiesoft.com/cedar-run/toc",
+      "firstChapterUrl": "https://books.raggiesoft.com/cedar-run/episode-1-past-the-back-fence/chapter-1-first-night-without-shouting/part-1-five-miles-past-the-wire",
+      "stats": {
+        "scaleLabel": "Short Fiction",
+        "readingHours": 0.5,
+        "storyPages": 26,
+        "eraCount": 1,
+        "chapterCount": 5,
+        "partCount": 6,
+        "illustrationCount": 6
+      },
+      "dateSpan": "2000–2000",
+      "debutDate": "2000-06-20",
+      "primaryLocations": [
+        "Colville National Forest, Kettle River Range, Ferry County, Washington",
+        "Cedar Run Creek, Colville National Forest, Washington",
+        "Cedar Run Valley, Colville National Forest, Washington"
+      ],
+      "relatedBands": [],
+      "backstageDossiers": [],
+      "eras": [
+        {
+          "eraNum": 1,
+          "title": "Episode 1: Past the Back Fence",
+          "url": "https://books.raggiesoft.com/cedar-run/episode-1-past-the-back-fence",
+          "wordCount": 4650,
+          "illustrationCount": 3,
+          "dateSpan": "2000-06-20 to 2000-06-22",
+          "locations": [
+            "Colville National Forest, Kettle River Range, Ferry County, Washington",
+            "Cedar Run Creek, Colville National Forest, Washington",
+            "Cedar Run Valley, Colville National Forest, Washington"
+          ],
+          "chapters": [
+            {
+              "chapNum": 1,
+              "title": "Chapter 1: First Night Without Shouting",
+              "url": "https://books.raggiesoft.com/cedar-run/episode-1-past-the-back-fence/chapter-1-first-night-without-shouting",
+              "partCount": 2,
+              "parts": [
+                {
+                  "partNum": 1,
+                  "title": "Part 1: Five Miles Past the Wire",
+                  "url": "https://books.raggiesoft.com/cedar-run/episode-1-past-the-back-fence/chapter-1-first-night-without-shouting/part-1-five-miles-past-the-wire",
+                  "date": "2000-06-20",
+                  "location": "Colville National Forest, Kettle River Range, Ferry County, Washington",
+                  "excerpt": "The bottom strand of rusted barbed wire groaned under my boot heel as I held the middle wire up by a weathered tamarack post so Tessa and Sadie could duck through with Grandpa Owen's guitar case. Down through…",
+                  "readingMinutes": 8,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/cedar-run/e001/jun_2000_cedar_run_night_one_campfire_tent.jpg",
+                  "imageAlt": "Eighteen-year-old triplets Luke, Tessa, and Sadie Bridger sitting close together by a warm stone keyhole campfire in front of their blue-and-white dome tent beside a clear mountain stream under twilight Colville National Forest pines, as Sadie fingerpicks Grandpa Owen's vintage spruce-top acoustic guitar.",
+                  "eraNum": 1,
+                  "eraTitle": "Episode 1: Past the Back Fence",
+                  "chapNum": 1,
+                  "chapTitle": "Chapter 1: First Night Without Shouting"
+                },
+                {
+                  "partNum": 2,
+                  "title": "Part 2: Snowmelt and Red Cedar",
+                  "url": "https://books.raggiesoft.com/cedar-run/episode-1-past-the-back-fence/chapter-1-first-night-without-shouting/part-2-snowmelt-and-red-cedar",
+                  "date": "2000-06-21",
+                  "location": "Cedar Run Creek, Colville National Forest, Washington",
+                  "excerpt": "Sunlight woke us—not an alarm clock, not knuckles hammering on hollow-core bedroom doors, just warm gold filtering through green pine needles and painting bright dappled coins across the blue nylon tent wall…",
+                  "readingMinutes": 6,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/cedar-run/e001/jun_2000_cedar_run_morning_creek_pool_folded_clothes_boulder.jpg",
+                  "imageAlt": "Folded denim jeans, faded olive flannel, cream henley, navy-striped shirt, and leather work boots stacked neatly dry on a sun-warmed gray granite boulder beside a misty emerald mountain creek pool in Colville National Forest, while Luke, Tessa, and Sadie Bridger laugh collarbone-deep in the brisk snowmelt water.",
+                  "eraNum": 1,
+                  "eraTitle": "Episode 1: Past the Back Fence",
+                  "chapNum": 1,
+                  "chapTitle": "Chapter 1: First Night Without Shouting"
+                }
+              ]
+            },
+            {
+              "chapNum": 2,
+              "title": "Chapter 2: Three Footholds in the Valley",
+              "url": "https://books.raggiesoft.com/cedar-run/episode-1-past-the-back-fence/chapter-2-three-footholds-in-the-valley",
+              "partCount": 1,
+              "parts": [
+                {
+                  "partNum": 1,
+                  "title": "Food, Timber, and the Fork in the Drainage",
+                  "url": "https://books.raggiesoft.com/cedar-run/episode-1-past-the-back-fence/chapter-2-three-footholds-in-the-valley/food-timber-and-the-fork-in-the-drainage",
+                  "date": "2000-06-22",
+                  "location": "Cedar Run Valley, Colville National Forest, Washington",
+                  "excerpt": "On our second full morning in the woods, Tessa spread a clean cotton bandana flat on the granite hearth-slab and poured out every dry ration left in our three packs so nobody could kid themselves about the math…",
+                  "readingMinutes": 6,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/cedar-run/e001/jun_2000_cedar_run_scouting_three_footholds.jpg",
+                  "imageAlt": "Luke, Tessa, and Sadie Bridger standing together on a sunlit granite pine overlook in Colville National Forest scouting the wild Cedar Run valley below—surveying the creek-bend red-cedar bench, the sunlit granite cliff overhang above a berry meadow, and the high tamarack saddle.",
+                  "eraNum": 1,
+                  "eraTitle": "Episode 1: Past the Back Fence",
+                  "chapNum": 2,
+                  "chapTitle": "Chapter 2: Three Footholds in the Valley"
                 }
               ]
             }
@@ -44437,6 +44547,18 @@
           "isSpoiler": false
         },
         {
+          "id": "book-cedar-run-e1",
+          "date": "2000-06-20",
+          "year": "2000",
+          "kind": "Series Debut Era",
+          "title": "Cedar Run — Episode 1: Past the Back Fence",
+          "summary": "The bottom strand of rusted barbed wire groaned under my boot heel as I held the middle wire up by a weathered tamarack post so Tessa and Sadie could duck through with Grandpa Owen's guitar case. Down through…",
+          "internalHref": "/books/cedar-run",
+          "externalUrl": "https://books.raggiesoft.com/cedar-run/episode-1-past-the-back-fence",
+          "externalLabel": "Read Opening Era",
+          "isSpoiler": false
+        },
+        {
           "id": "album-the-stardust-engine-2001-midnight-drivers",
           "date": "2001-01-01",
           "year": "2001",
@@ -46294,6 +46416,18 @@
         "externalLabel": "Open in Book Reader",
         "summary": "The hospital room was cold and sterile, the only sound the soft, rhythmic beep of the heart monitor. Emily Jenkins, all of fifteen years old, sat in a chair pulled up close to her father's bed. On her lap sat…",
         "subtitle": "Novella • 4 Eras"
+      },
+      {
+        "id": "book:cedar-run",
+        "slug": "cedar-run",
+        "name": "Cedar Run",
+        "group": "book",
+        "val": 9,
+        "href": "/books/cedar-run",
+        "externalUrl": "https://books.raggiesoft.com/cedar-run",
+        "externalLabel": "Open in Book Reader",
+        "summary": "The bottom strand of rusted barbed wire groaned under my boot heel as I held the middle wire up by a weathered tamarack post so Tessa and Sadie could duck through with Grandpa Owen's guitar case. Down through…",
+        "subtitle": "Short Fiction • 1 Eras"
       },
       {
         "id": "book:crimson-node",
