@@ -165,10 +165,10 @@ export default function RootLayout({
         {/* Shared cross-subdomain RaggieSoft Network Bar styles & interactive dropdown script (`defer` runs after HTML parses) */}
         <link
           rel="stylesheet"
-          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261121d"
+          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261121e"
         />
         <script
-          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261121d"
+          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261121e"
           defer
         ></script>
       </head>
@@ -263,81 +263,105 @@ export default function RootLayout({
           </div>
         </nav>
 
-        {/* Lore Encyclopedia Section Navigation: uses Next.js `<Link>` for instant internal routing */}
+        {/* Lore Encyclopedia Section Navigation: compact single-row mobile header with hamburger drawer + Next.js `<Link>` routing */}
         <header
-          className="border-b"
+          className="sticky top-0 z-40 border-b"
           style={{
             backgroundColor: "var(--lore-surface)",
             borderColor: "var(--lore-border-subtle)",
           }}
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-            <div className="flex items-center gap-2.5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 md:py-3 flex flex-wrap items-center justify-between gap-2.5">
+            <div className="flex items-center gap-2.5 min-w-0">
               <Link
                 href="/"
-                className="text-lg font-extrabold tracking-tight no-underline hover:underline"
+                className="text-base sm:text-lg font-extrabold tracking-tight no-underline hover:underline truncate"
                 style={{ color: "var(--lore-text)" }}
               >
-                ✦ RaggieSoft Lore Encyclopedia
+                ✦ RaggieSoft Lore
               </Link>
             </div>
-            <nav aria-label="Lore Encyclopedia Sections">
-              <ul className="flex flex-wrap items-center gap-1.5 sm:gap-2 list-none p-0 m-0 text-sm font-semibold">
-                <li>
-                  <Link href="/" className="lore-btn-secondary text-xs py-1.5 px-3">
-                    ✦ Constellation Map
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/characters"
-                    className="lore-btn-secondary text-xs py-1.5 px-3"
-                  >
-                    ● Characters
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/bands"
-                    className="lore-btn-secondary text-xs py-1.5 px-3"
-                  >
-                    ◆ Bands &amp; Music
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/books"
-                    className="lore-btn-secondary text-xs py-1.5 px-3"
-                  >
-                    ■ Books
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/places"
-                    className="lore-btn-secondary text-xs py-1.5 px-3"
-                  >
-                    ▲ Places &amp; Transit
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/organizations"
-                    className="lore-btn-secondary text-xs py-1.5 px-3"
-                  >
-                    ⬡ Organizations
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/timeline"
-                    className="lore-btn-secondary text-xs py-1.5 px-3"
-                  >
-                    ⏳ Timeline
-                  </Link>
-                </li>
-              </ul>
-            </nav>
+
+            <button
+              type="button"
+              className="rs-mobile-header-toggle"
+              data-rs-mobile-toggle=""
+              data-open-label="Open Lore sections menu"
+              data-close-label="Close Lore sections menu"
+              aria-expanded="false"
+              aria-controls="header-navigation-panel"
+              aria-label="Open Lore sections menu"
+            >
+              <svg className="rs-icon-bars" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.25" strokeLinecap="round" aria-hidden="true" focusable="false">
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </svg>
+              <svg className="rs-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.25" strokeLinecap="round" aria-hidden="true" focusable="false">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+
+            <div id="header-navigation-panel" data-rs-collapsible="true" className="lore-nav-panel">
+              <nav aria-label="Lore Encyclopedia Sections">
+                <ul className="lore-nav-list flex flex-wrap items-center gap-1.5 sm:gap-2 list-none p-0 m-0 text-sm font-semibold">
+                  <li>
+                    <Link href="/" className="lore-btn-secondary text-xs py-1.5 px-3">
+                      ✦ Constellation Map
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/characters"
+                      className="lore-btn-secondary text-xs py-1.5 px-3"
+                    >
+                      ● Characters
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/bands"
+                      className="lore-btn-secondary text-xs py-1.5 px-3"
+                    >
+                      ◆ Bands &amp; Music
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/books"
+                      className="lore-btn-secondary text-xs py-1.5 px-3"
+                    >
+                      ■ Books
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/places"
+                      className="lore-btn-secondary text-xs py-1.5 px-3"
+                    >
+                      ▲ Places &amp; Transit
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/organizations"
+                      className="lore-btn-secondary text-xs py-1.5 px-3"
+                    >
+                      ⬡ Organizations
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/timeline"
+                      className="lore-btn-secondary text-xs py-1.5 px-3"
+                    >
+                      ⏳ Timeline
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </header>
 

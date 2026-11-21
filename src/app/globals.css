@@ -239,6 +239,20 @@ main:focus {
   text-decoration: underline;
 }
 
+@media (max-width: 767.98px) {
+  .lore-nav-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 0.4rem !important;
+  }
+
+  .lore-nav-list .lore-btn-secondary {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
 /* Underlined links (`text-decoration: underline`) ensure links inside body text
    are always identifiable by shape/underline—never by color alone! */
 .lore-link {
