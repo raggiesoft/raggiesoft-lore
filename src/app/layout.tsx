@@ -165,10 +165,10 @@ export default function RootLayout({
         {/* Shared cross-subdomain RaggieSoft Network Bar styles & interactive dropdown script (`defer` runs after HTML parses) */}
         <link
           rel="stylesheet"
-          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261120b"
+          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261121b"
         />
         <script
-          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261120b"
+          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261121b"
           defer
         ></script>
       </head>
