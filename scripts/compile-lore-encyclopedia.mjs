@@ -139,6 +139,12 @@ const CANONICAL_TEXT_REPLACEMENTS = [
   [/\bNew\s+Flyer\b/gi, "Prairie Coachworks"],
   [/\bGillig\b/gi, "Stalwart"],
   [/\bAmtrak\b/gi, "American Rail Transit System (ARTS)"],
+  [/\bThe\s+Episcopal\s+Church\b/gi, "The Diocesan Church"],
+  [/\bEpiscopalians?\b/gi, "Diocesans"],
+  [/\bEpiscopal\b/gi, "Diocesan"],
+  [/\bAnglican\s+Communion\b/gi, "Albion Communion"],
+  [/\bAnglican\b/gi, "Albion"],
+  [/\bChurch\s+of\s+England\b/gi, "Church of Albion"],
   [/\b1091\s+Daniel\s+Maloney(?:\s+Dr(?:ive)?)?(?:,\s*Virginia\s+Beach,\s*VA\s*\d*)?/gi, "Virginia Beach, VA"],
   [/\b\d+\s+Progress\s+Street(?:\s+NE)?\b/gi, "Progress Street NE"],
 ];
