@@ -165,10 +165,10 @@ export default function RootLayout({
         {/* Shared cross-subdomain RaggieSoft Network Bar styles & interactive dropdown script (`defer` runs after HTML parses) */}
         <link
           rel="stylesheet"
-          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261121e"
+          href="https://assets.raggiesoft.com/common/css/raggiesoft-network.css?v=20261125g"
         />
         <script
-          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261121e"
+          src="https://assets.raggiesoft.com/common/js/raggiesoft-network.js?v=20261125g"
           defer
         ></script>
       </head>
@@ -414,6 +414,15 @@ export default function RootLayout({
               </a>
               <a href="https://backstage.raggiesoft.com" className="lore-link">
                 Backstage Archives ↗
+              </a>
+              <a href="https://raggiesoft.com/about/privacy" className="lore-link">
+                Privacy Policy ↗
+              </a>
+              <a href="https://raggiesoft.com/about/terms" className="lore-link">
+                Terms of Service ↗
+              </a>
+              <a href="https://raggiesoft.com/about/ai-disclaimer" className="lore-link">
+                AI &amp; Creative Process | RaggieSoft Governance ↗
               </a>
             </div>
 
