@@ -43194,13 +43194,13 @@
       "tocUrl": "https://books.raggiesoft.com/waystation/toc",
       "firstChapterUrl": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-route-13-forty-eight-hours-notice-and-home-to-emerald-creek",
       "stats": {
-        "scaleLabel": "Short Fiction",
-        "readingHours": 0.8,
-        "storyPages": 45,
+        "scaleLabel": "Novella",
+        "readingHours": 1.2,
+        "storyPages": 67,
         "eraCount": 1,
-        "chapterCount": 6,
-        "partCount": 10,
-        "illustrationCount": 8
+        "chapterCount": 9,
+        "partCount": 16,
+        "illustrationCount": 11
       },
       "dateSpan": "",
       "debutDate": "",
@@ -43213,13 +43213,20 @@
         "The Sunken Three-Faced Milestone, Vaeloria Borderlands"
       ],
       "relatedBands": [],
-      "backstageDossiers": [],
+      "backstageDossiers": [
+        {
+          "title": "The Paused 9:15 PM VCR Clock & Reciprocal Time Between Studio 2B and Vaeloria",
+          "subtitle": "Why the Twin-Ring Astrolabe Chose Nolan & Gwen, Why They Didn't Know Earth Stood Still Until Returning, and What Happened Inside Their Emerald Creek Apartment",
+          "date": "2001-10-19",
+          "url": "https://backstage.raggiesoft.com/books/waystation/the-paused-vcr-clock-and-two-world-time"
+        }
+      ],
       "eras": [
         {
           "eraNum": 1,
           "title": "Book One: Beyond the Studio Rift",
           "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift",
-          "wordCount": 10220,
+          "wordCount": 10561,
           "illustrationCount": 5,
           "dateSpan": "",
           "locations": [
@@ -43310,8 +43317,8 @@
                   "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed",
                   "date": "",
                   "location": "Studio 2B in Emerald Creek, Chesapeake to The Star-Moss Hollow, Vaeloria",
-                  "excerpt": "October rain ticked steady against the silent window air-conditioner above our headboard while tinny hold music from Regional Mobility Supply warbled through the beige corded speakerphone on our milk-crate…",
-                  "readingMinutes": 6,
+                  "excerpt": "October rain ticked steady against the silent window air-conditioner above our corner headboard while tinny hold music from Regional Mobility Supply warbled through the beige corded speakerphone on our…",
+                  "readingMinutes": 7,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_rift_meadow_arrival.jpg",
                   "imageAlt": "Under two glowing moons in a painted 1980s fantasy twilight meadow of soft silver-blue star-moss, barefoot twenty-four-year-old brother Nolan Lennox (5-foot-7, navy t-shirt and jeans) and his taller nineteen-year-old sister Gwen Lennox (6-foot-1, burgundy t-shirt and jeans) sit hugging and cuddling closely together under Grandpa Walter's green-and-navy plaid wool blanket on a mossy cedar log, with Nolan's matte-silver Lofstrand forearm crutches and Gwen's matte-charcoal Lofstrand forearm crutches leaning beside them.",
                   "eraNum": 1,
@@ -46910,7 +46917,7 @@
         "externalUrl": "https://books.raggiesoft.com/waystation",
         "externalLabel": "Open in Book Reader",
         "summary": "By eight-thirty on Tuesday morning inside Tammy's smoke-stained single-wide trailer at Pinecrest Court, we had already fought twice before coffee—once because my manual wheelchair tire left a damp mark two…",
-        "subtitle": "Short Fiction • 1 Eras"
+        "subtitle": "Novella • 1 Eras"
       },
       {
         "id": "place:commonwealth-polytechnic-institute",
