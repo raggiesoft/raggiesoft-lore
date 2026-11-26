@@ -43195,17 +43195,18 @@
       "firstChapterUrl": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-aisle-four-cutback-transfers-and-ready-for-everything",
       "stats": {
         "scaleLabel": "Novella",
-        "readingHours": 1.5,
-        "storyPages": 81,
+        "readingHours": 1.6,
+        "storyPages": 88,
         "eraCount": 1,
         "chapterCount": 9,
-        "partCount": 17,
-        "illustrationCount": 18
+        "partCount": 18,
+        "illustrationCount": 19
       },
       "dateSpan": "",
       "debutDate": "",
       "primaryLocations": [
         "Emerald Creek Blue Tech & Emerald Creek Mall Upper-Level Food Court, Chesapeake, Virginia",
+        "Pinecrest Court Off Route 13 in Chesapeake, Virginia",
         "Pinecrest Trailer Park off Route 13 in Chesapeake to the Norfolk Pathfinder Terminal & Emerald Creek",
         "Grandpa Walter's House Near Emerald Creek Mall, Chesapeake, Virginia",
         "Studio 2B, Emerald Creek Area of Chesapeake, Virginia",
@@ -43227,22 +43228,22 @@
           "eraNum": 1,
           "title": "Book One: Beyond the Studio Rift",
           "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift",
-          "wordCount": 14397,
-          "illustrationCount": 6,
+          "wordCount": 16158,
+          "illustrationCount": 7,
           "dateSpan": "",
           "locations": [
             "Emerald Creek Blue Tech & Emerald Creek Mall Upper-Level Food Court, Chesapeake, Virginia",
+            "Pinecrest Court Off Route 13 in Chesapeake, Virginia",
             "Pinecrest Trailer Park off Route 13 in Chesapeake to the Norfolk Pathfinder Terminal & Emerald Creek",
             "Grandpa Walter's House Near Emerald Creek Mall, Chesapeake, Virginia",
-            "Studio 2B, Emerald Creek Area of Chesapeake, Virginia",
-            "Studio 2B in Emerald Creek, Chesapeake to The Star-Moss Hollow, Vaeloria"
+            "Studio 2B, Emerald Creek Area of Chesapeake, Virginia"
           ],
           "chapters": [
             {
               "chapNum": 1,
               "title": "Chapter 1: Two Names on One Studio Lease",
               "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease",
-              "partCount": 5,
+              "partCount": 6,
               "parts": [
                 {
                   "partNum": 1,
@@ -43251,7 +43252,7 @@
                   "date": "",
                   "location": "Emerald Creek Blue Tech & Emerald Creek Mall Upper-Level Food Court, Chesapeake, Virginia",
                   "excerpt": "Fifteen minutes before the end of my Saturday morning shift in Aisle Four at the Emerald Creek Blue Tech, every blister pack of seventy-five-ohm coaxial cable splitters hung flush with the front plastic lip of…",
-                  "readingMinutes": 10,
+                  "readingMinutes": 9,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_emerald_creek_food_court_day1.jpg",
                   "imageAlt": "At a sunlit corner table along the brass-and-glass mezzanine railing of the upper-level Food Court inside Emerald Creek Mall beneath its white peaked fabric tent canopy and skylights, twenty-four-year-old Tammy (five-foot-nothing, straight jet-black hair swept behind her shoulders, pastel baby-blue zip-up fleece cardigan pulled open off her shoulders over a modest white ribbed camisole) perches forward on her chair, arches her back, and puffs her chest out across the table as she smiles boldly at twenty-one-year-old Nolan Lennox (five-foot-seven, wearing his royal-blue Blue Tech polo shirt after his morning shift), who grins back innocently over a French fry without looking down from her face while his two single-tube matte-silver Lofstrand forearm crutches lean cleanly beside his chair on the warm terracotta quarry tile floor.",
                   "eraNum": 1,
@@ -43261,8 +43262,23 @@
                 },
                 {
                   "partNum": 2,
-                  "title": "Part 2: Route 13, Forty-Eight Hours' Notice, and Home to Emerald Creek",
-                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-2-route-13-forty-eight-hours-notice-and-home-to-emerald-creek",
+                  "title": "Part 2: Four Wooden Steps, Sofa Cuddles, and Your Older Sister?",
+                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-2-four-wooden-steps-sofa-cuddles-and-your-older-sister",
+                  "date": "",
+                  "location": "Pinecrest Court Off Route 13 in Chesapeake, Virginia",
+                  "excerpt": "Four steep pressure-treated wooden steps led up from the rutted gravel lane of Pinecrest Court to Tammy's narrow aluminum storm door, which was the exact reason my manual wheelchair was sitting folded back in…",
+                  "readingMinutes": 8,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p002_older_sister_trailer_pickup.jpg",
+                  "imageAlt": "At golden October dusk on the gravel driveway outside Tammy's beige-and-white single-wide mobile home with four wooden steps, taller sixteen-year-old Gwen Lennox (six-foot-one, in a modest burgundy pullover and jeans) wraps her shorter twenty-one-year-old brother Nolan Lennox (five-foot-seven, in a blue plaid flannel shirt and jeans) in their trademark warm greeting hug beside all four of their single-tube matte-silver and matte-charcoal Lofstrand forearm crutches leaning against their healthy seventy-six-year-old grandfather Walter Lennox's parked sedan, while five-foot-nothing Tammy stands at the foot of the wooden steps in her baby-blue cardigan and platform sneakers tilting her head way up in wide-eyed surprise to ask if Gwen is Nolan's older sister, as Grandpa Walter smiles warmly beside the car.",
+                  "eraNum": 1,
+                  "eraTitle": "Book One: Beyond the Studio Rift",
+                  "chapNum": 1,
+                  "chapTitle": "Chapter 1: Two Names on One Studio Lease"
+                },
+                {
+                  "partNum": 3,
+                  "title": "Part 3: Route 13, Forty-Eight Hours' Notice, and Home to Emerald Creek",
+                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-route-13-forty-eight-hours-notice-and-home-to-emerald-creek",
                   "date": "",
                   "location": "Pinecrest Trailer Park off Route 13 in Chesapeake to the Norfolk Pathfinder Terminal & Emerald Creek",
                   "excerpt": "By eight-thirty on Tuesday morning inside Tammy's stifling, un-air-conditioned single-wide trailer at Pinecrest Court, we had already fought twice before coffee—once because my manual wheelchair tire left a damp…",
@@ -43275,9 +43291,9 @@
                   "chapTitle": "Chapter 1: Two Names on One Studio Lease"
                 },
                 {
-                  "partNum": 3,
-                  "title": "Part 3: Eighteen Candles, One Brass Key, and Everything Left Behind",
-                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-eighteen-candles-one-brass-key-and-everything-left-behind",
+                  "partNum": 4,
+                  "title": "Part 4: Eighteen Candles, One Brass Key, and Everything Left Behind",
+                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-eighteen-candles-one-brass-key-and-everything-left-behind",
                   "date": "",
                   "location": "Grandpa Walter's House Near Emerald Creek Mall, Chesapeake, Virginia",
                   "excerpt": "Yellow wax dripped down eighteen crooked birthday candles stuck into a homemade chocolate sheet cake at the center of Grandpa Walter's kitchen table while Gwen beamed bright enough to light the whole Emerald…",
@@ -43290,9 +43306,9 @@
                   "chapTitle": "Chapter 1: Two Names on One Studio Lease"
                 },
                 {
-                  "partNum": 4,
-                  "title": "Part 4: Moving Into a Rectangular Box and Quantum OS 2000",
-                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-moving-into-a-rectangular-box-and-quantum-os-2000",
+                  "partNum": 5,
+                  "title": "Part 5: Moving Into a Rectangular Box and Quantum OS 2000",
+                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-moving-into-a-rectangular-box-and-quantum-os-2000",
                   "date": "",
                   "location": "Studio 2B, Emerald Creek Area of Chesapeake, Virginia",
                   "excerpt": "The afternoon the estate realtor hung the UNDER CONTRACT rider on Grandpa Walter's front lawn and Nolan unlocked the door of Studio 2B for me to move in officially, I took one look inside his tiny rectangular…",
@@ -43305,9 +43321,9 @@
                   "chapTitle": "Chapter 1: Two Names on One Studio Lease"
                 },
                 {
-                  "partNum": 5,
-                  "title": "Part 5: Eighty-Nine Degrees and One Rattling Fan",
-                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-eighty-nine-degrees-and-one-rattling-fan",
+                  "partNum": 6,
+                  "title": "Part 6: Eighty-Nine Degrees and One Rattling Fan",
+                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-eighty-nine-degrees-and-one-rattling-fan",
                   "date": "",
                   "location": "Studio 2B, Emerald Creek Area of Chesapeake, Virginia",
                   "excerpt": "By the third week of August, the small beige window air-conditioner wedged above the corner of my full-sized bed sounded like a tin can rattling loose bolts and barely cooled Studio 2B two degrees below the…",
