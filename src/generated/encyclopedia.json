@@ -43195,12 +43195,12 @@
       "firstChapterUrl": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-aisle-four-cutback-transfers-and-ready-for-everything",
       "stats": {
         "scaleLabel": "Compact Novel",
-        "readingHours": 3,
-        "storyPages": 163,
+        "readingHours": 3.1,
+        "storyPages": 169,
         "eraCount": 1,
         "chapterCount": 9,
-        "partCount": 28,
-        "illustrationCount": 23
+        "partCount": 29,
+        "illustrationCount": 24
       },
       "dateSpan": "1999–2002",
       "debutDate": "1999-10-23",
@@ -43228,8 +43228,8 @@
           "eraNum": 1,
           "title": "Book One: Beyond the Studio Rift",
           "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift",
-          "wordCount": 36805,
-          "illustrationCount": 11,
+          "wordCount": 38530,
+          "illustrationCount": 12,
           "dateSpan": "1999-10-23 to 2002-08-17",
           "locations": [
             "Emerald Creek Blue Tech & Emerald Creek Mall Upper-Level Food Court, Chesapeake, Virginia",
@@ -43243,7 +43243,7 @@
               "chapNum": 1,
               "title": "Chapter 1: Two Names on One Studio Lease",
               "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease",
-              "partCount": 16,
+              "partCount": 17,
               "parts": [
                 {
                   "partNum": 1,
@@ -43472,8 +43472,23 @@
                 },
                 {
                   "partNum": 16,
-                  "title": "Part 16: Eighty-Nine Degrees and One Rattling Fan",
-                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-eighty-nine-degrees-and-one-rattling-fan",
+                  "title": "Part 16: Third-Floor Food Court, Laced Fingers, and Nothing Left to Weaponize",
+                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize",
+                  "date": "2002-06-01",
+                  "location": "Third-Floor Food Court, The Admiral Center, Downtown Norfolk, Virginia",
+                  "excerpt": "Sunlight poured down through the vaulted third-floor glass skylights of The Admiral Center in Downtown Norfolk while Gwen tapped a crispy french fry against mine in a celebratory toast over our food-court trays…",
+                  "readingMinutes": 7,
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p016_admiral_center_food_court_tammy.jpg",
+                  "imageAlt": "Beneath the bright vaulted glass skylights of the third-floor food court at The Admiral Center in Downtown Norfolk in June 2002, twenty-four-year-old Nolan Lennox (5-foot-7, navy collared shirt) and Mallory Walsh (5-foot-5, copper-auburn ponytail, thin silver wire-rimmed glasses, sage-green top) sit side by side at a food-court table with Mallory's fingers laced firmly and protectively over Nolan's hand on the tabletop beside eighteen-year-old Gwen Lennox (6-foot-1, burgundy tee) seated calmly in her manual wheelchair, while petite five-foot-tall ex-girlfriend Tammy (glossy straight black hair, baby-blue cardigan over white tank, flared jeans, chunky platform sneakers) stands three feet back in stunned, speechless jealousy as her attempt to poison Mallory over Nolan and Gwen's shared studio completely backfires.",
+                  "eraNum": 1,
+                  "eraTitle": "Book One: Beyond the Studio Rift",
+                  "chapNum": 1,
+                  "chapTitle": "Chapter 1: Two Names on One Studio Lease"
+                },
+                {
+                  "partNum": 17,
+                  "title": "Part 17: Eighty-Nine Degrees and One Rattling Fan",
+                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-17-eighty-nine-degrees-and-one-rattling-fan",
                   "date": "2002-08-17",
                   "location": "Studio 205, Harborview Towers off West Brambleton Avenue, Norfolk, Virginia",
                   "excerpt": "By the third week of August, the small beige window air-conditioner wedged above the corner of my full-sized bed sounded like a tin can rattling loose bolts and barely cooled Studio 205 two degrees below the…",
