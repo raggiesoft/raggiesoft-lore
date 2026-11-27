@@ -43200,7 +43200,7 @@
         "eraCount": 1,
         "chapterCount": 9,
         "partCount": 21,
-        "illustrationCount": 20
+        "illustrationCount": 21
       },
       "dateSpan": "1998–2001",
       "debutDate": "1998-10-24",
@@ -43229,7 +43229,7 @@
           "title": "Book One: Beyond the Studio Rift",
           "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift",
           "wordCount": 23614,
-          "illustrationCount": 8,
+          "illustrationCount": 9,
           "dateSpan": "1998-10-24 to 2001-08-18",
           "locations": [
             "Emerald Creek Blue Tech & Emerald Creek Mall Upper-Level Food Court, Chesapeake, Virginia",
@@ -43313,8 +43313,8 @@
                   "location": "Pinecrest Court Trailer Park off Route 13, Chesapeake, Virginia",
                   "excerpt": "Burnt black coffee steamed out of a chipped ceramic mug beside a dented metal cashbox as Mr. Pruitt, the landlord over Pinecrest Court, pinched his reading glasses onto the end of his nose and squinted down at…",
                   "readingMinutes": 11,
-                  "image": null,
-                  "imageAlt": "",
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p005_bodged_wooden_trailer_ramp.jpg",
+                  "imageAlt": "Exterior view of Tammy's weathered, rust-streaked single-wide mobile home at Pinecrest Court on an overcast late-November afternoon in Chesapeake, showing dark roof-tar leak patches overhead, the shuttered living-room window on the left, the center scroll-grille storm door behind four weathered wooden steps and a flat wooden top landing, and the landlord's steep, uninspected unpainted plywood-and-two-by-four wheelchair ramp resting on crooked stacks of unmortared cinder blocks and wooden shims over the loose gravel driveway along the windowless right wall.",
                   "eraNum": 1,
                   "eraTitle": "Book One: Beyond the Studio Rift",
                   "chapNum": 1,
