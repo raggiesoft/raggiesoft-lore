@@ -43200,7 +43200,7 @@
         "eraCount": 2,
         "chapterCount": 17,
         "partCount": 52,
-        "illustrationCount": 51
+        "illustrationCount": 60
       },
       "dateSpan": "1999–2002",
       "debutDate": "1999-10-23",
@@ -43221,6 +43221,12 @@
           "subtitle": "What Nolan's Locked First-Person POV Never Saw—Tammy's Secret Pinecrest Non-Renewal, Ninety Hours of Multi-Stall Depots, Pasco's Locking Restroom, and Her Pre-Planned Move With Cousin Travis",
           "date": "2001-08-25",
           "url": "https://backstage.raggiesoft.com/books/waystation/from-monticello-to-pasco-why-there-were-no-family-restrooms"
+        },
+        {
+          "title": "Two Different Phone Lines, One Glowing Review: Ray Halstead's Reference Calls to CCHR",
+          "subtitle": "What Happened Behind the Campus IT Director's Closed Door—Ray Halstead's Store #421 Reference on the Mainline Route vs. His Careful Off-the-Clock Home-Line Defense on the Rescue Routes",
+          "date": "2002-02-20",
+          "url": "https://backstage.raggiesoft.com/books/waystation/ray-halsteads-two-telephone-references-for-cchr"
         },
         {
           "title": "The Escalator Blindspot, Code of Virginia § 18.2-387, and What Nolan Never Saw",
@@ -43247,7 +43253,7 @@
           "title": "Book One: Tidewater and Studio 205",
           "url": "https://books.raggiesoft.com/waystation/book-one-tidewater-and-studio-205",
           "wordCount": 35413,
-          "illustrationCount": 13,
+          "illustrationCount": 15,
           "dateSpan": "1999-10-23 to 2002-08-17",
           "locations": [
             "Emerald Creek Blue Tech & Emerald Creek Mall Upper-Level Food Court, Chesapeake, Virginia",
@@ -43451,8 +43457,8 @@
                   "location": "Grandpa Walter's House Near Emerald Creek Mall, Chesapeake, Virginia",
                   "excerpt": "Yellow wax dripped down eighteen crooked birthday candles stuck into a homemade chocolate sheet cake at the center of Grandpa Walter's kitchen table while Gwen beamed bright enough to light the whole Emerald…",
                   "readingMinutes": 9,
-                  "image": null,
-                  "imageAlt": "",
+                  "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/waystation/paths/seattle_p007_eighteen_candles_walter_table.jpg",
+                  "imageAlt": "Around Grandpa Walter Lennox's warm Chesapeake kitchen table on Friday evening, October 19, 2001 with a homemade chocolate sheet cake glowing with eighteen lit candles at the center, beaming seventy-nine-year-old Grandpa Walter (with nasal oxygen tubing tucked neatly behind his ears and his green-and-navy plaid wool blanket across his knees) reaches across the table as newly eighteen-year-old Gwen Lennox (seated in her manual wheelchair) throws both arms joyfully around her twenty-three-year-old brother Nolan Lennox's neck, with their matte-silver and matte-charcoal single-tube Lofstrand forearm crutches leaning neatly nearby.",
                   "eraNum": 1,
                   "eraTitle": "Book One: Tidewater and Studio 205",
                   "chapNum": 1,
