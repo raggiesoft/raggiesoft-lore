@@ -43195,12 +43195,12 @@
       "firstChapterUrl": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-aisle-four-cutback-transfers-and-ready-for-everything",
       "stats": {
         "scaleLabel": "Compact Novel",
-        "readingHours": 4.1,
-        "storyPages": 222,
+        "readingHours": 4.3,
+        "storyPages": 236,
         "eraCount": 1,
-        "chapterCount": 12,
-        "partCount": 41,
-        "illustrationCount": 40
+        "chapterCount": 14,
+        "partCount": 43,
+        "illustrationCount": 45
       },
       "dateSpan": "1999–2002",
       "debutDate": "1999-10-23",
@@ -43233,6 +43233,12 @@
           "subtitle": "Why the Twin-Ring Astrolabe Chose Nolan & Gwen, Why They Didn't Know Earth Stood Still Until Returning, and What Happened Inside Their Norfolk High-Rise Studio",
           "date": "2002-10-25",
           "url": "https://backstage.raggiesoft.com/books/waystation/the-paused-vcr-clock-and-two-world-time"
+        },
+        {
+          "title": "Cab Forty-Seven With the Meter Switched Off: Why Denise Carter Drove Nolan Home for Free",
+          "subtitle": "What Strict First-Person POV Left Off-Camera on Monticello Avenue—A Norfolk Owner-Operator Who Had Just Escaped Her Own Abuser Seven Months Earlier",
+          "date": "2001-08-21",
+          "url": "https://backstage.raggiesoft.com/books/waystation/the-turned-off-meter-denises-cab-from-monticello-avenue"
         }
       ],
       "eras": [
@@ -43240,8 +43246,8 @@
           "eraNum": 1,
           "title": "Book One: Beyond the Studio Rift",
           "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift",
-          "wordCount": 38854,
-          "illustrationCount": 15,
+          "wordCount": 38674,
+          "illustrationCount": 16,
           "dateSpan": "1999-10-23 to 2002-08-17",
           "locations": [
             "Emerald Creek Blue Tech & Emerald Creek Mall Upper-Level Food Court, Chesapeake, Virginia",
@@ -43394,14 +43400,14 @@
                 },
                 {
                   "partNum": 10,
-                  "title": "Part 10: Rolling Out Past the Lockers, Fellow Passengers, and Safe Home to Emerald Creek",
-                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-fellow-passengers-and-safe-home-to-emerald-creek",
+                  "title": "Part 10: Rolling Out Past the Lockers, Denise's Turned-Off Meter, and Safe Home to Emerald Creek",
+                  "url": "https://books.raggiesoft.com/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-denise-s-turned-off-meter-and-safe-home-to-emerald-creek",
                   "date": "2001-08-21",
                   "location": "Norfolk Pathfinder Terminal on Monticello Avenue to Grandpa Walter's Porch & Emerald Creek Blue Tech, Virginia",
                   "excerpt": "Twice before inside Pinecrest Court, having Tammy lift her shirt and whisper in her Week-One voice had scrambled every circuit in my lonely head and pulled me straight back under her thumb. Sitting in my manual…",
-                  "readingMinutes": 12,
+                  "readingMinutes": 11,
                   "image": "https://assets.raggiesoft.com/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_safe_home_emerald_creek_porch.jpg",
-                  "imageAlt": "On the cozy covered front porch of Grandpa Walter's two-story brick-and-siding home near Emerald Creek Mall in Chesapeake on an overcast late-summer afternoon, taller seventeen-year-old Gwen Lennox (6-foot-1, in a modest burgundy plaid flannel shirt and jeans) wraps both arms joyfully and protectively around her shorter twenty-three-year-old brother Nolan Lennox (5-foot-7, in a navy tee and olive jacket with his battered duffel bag at his feet) after he breaks free from his abusive girlfriend at the Norfolk bus station, while all four of their matte-silver and matte-charcoal single-tube Lofstrand forearm crutches lean cleanly against the wooden porch railing beside them.",
+                  "imageAlt": "On the cozy covered front porch of Grandpa Walter's two-story brick-and-siding home near Emerald Creek Mall in Chesapeake on an overcast late-summer morning, taller seventeen-year-old Gwen Lennox (6-foot-1, in a modest burgundy plaid flannel shirt and jeans) wraps both arms joyfully and protectively around her shorter twenty-three-year-old brother Nolan Lennox (5-foot-7, in a navy tee and olive jacket with his battered duffel bag at his feet) after a kind Norfolk cab driver brings him straight home from the bus station at zero charge, while all four of their matte-silver and matte-charcoal single-tube Lofstrand forearm crutches lean cleanly against the wooden porch railing beside them.",
                   "eraNum": 1,
                   "eraTitle": "Book One: Beyond the Studio Rift",
                   "chapNum": 1,
